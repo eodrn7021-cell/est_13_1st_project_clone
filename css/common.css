@@ -2,6 +2,53 @@
 @import url(reset.css);
 
 /* Variants */
+:root {
+  /* Base units */
+  --base-unit: 27px;
+  --base-unit-x2: 54px;
+  --base-unit-x3: 81px;
+
+  /* Color styles */
+  --deep--green: rgba(35, 41, 38, 1);
+  --dark--green: rgba(30, 61, 58, 1);
+  --green: rgba(47, 111, 106, 1);
+  --primary: rgba(78, 174, 163, 1);
+  --primary--light: rgba(117, 220, 205, 1);
+  --secondary: rgba(167, 220, 212, 1);
+  --secondary--light: rgba(215, 255, 248, 1);
+  --greenish--gray: rgba(88, 103, 97, 1);
+  --cool--gray: rgba(224, 228, 228, 1);
+  --ghost--gray: rgba(241, 245, 249, 1);
+  --snow--gray: rgba(248, 250, 252, 1);
+  --ice: rgba(244, 255, 253, 1);
+  --vanilla: rgba(255, 247, 237, 1);
+  --white: rgba(255, 255, 255, 1);
+  --point: rgba(255, 122, 107, 1);
+  --alyak-color: rgba(198, 255, 0, 1);
+
+  /* Text-size styles */
+  --heading--x-l: 64px;
+  --heading--l: 40px;
+  --heading--m: 30px;
+  --heading--s: 22px;
+  --heading--x-s: 16px;
+  --body--l: 28px;
+  --body--m: 20px;
+  --body--m: 16px;
+  --body--s: 14px;
+  --nav--item: 24px;
+  --link: 16px;
+  --button---primary: 14px;
+  --button---secondary: 14px;
+
+  /* Effect styles */
+  --standard--shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
+  --content-blur: 6px 6px 15px rgba(0, 0, 0, 0.3);
+  --highlight--register: 0px 0px 20px rgba(78, 174, 163, 1);
+  --highlight--right: 3px 4px 20px rgba(78, 174, 163, 1);
+  --highlight--blur--s: 0px 0px 15px rgba(167, 220, 212, 1);
+  --highlight--blur--l: 0px 0px 30px rgba(167, 220, 212, 1);
+}
 
 /* Layout */
 
