@@ -1,5 +1,4 @@
 /* 유태구 */
-
 /* Header */
 header {
   width: 100%;
@@ -40,8 +39,26 @@ header {
   position: absolute;
 }
 /* //Graduates Employment Status */
-
 /* //유태구 */
+
+/* 박채원 */
+.review-section-title {
+  text-align: center;
+  margin-bottom: 72px;
+}
+
+.review-section-title h2 {
+  font-size: 64px;
+  font-weight: 800;
+  color: #111827;
+  margin-bottom: 20px;
+}
+
+.review-section-title p {
+  font-size: 24px;
+  color: #6b7280;
+}
+/* 박채원 */
 
 /* 박소영 */
 /* Top Slogan */
