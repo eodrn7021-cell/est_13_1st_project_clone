@@ -34,7 +34,7 @@
   --heading--s: 22px;
   --heading--x-s: 16px;
   --body--l: 28px;
-  --body--m-x: 20px;
+  --body--m-p: 20px;
   --body--m: 16px;
   --body--s: 14px;
   --nav--item: 24px;
@@ -68,6 +68,41 @@ main {
 }
 
 /* Typography */
+.heading-xl {
+  font-size: var(--heading--x-l);
+  line-height: var(--base-unit-x3);
+}
+.heading-l {
+  font-size: var(--heading--l);
+  line-height: var(--base-unit-x2);
+}
+.heading-m {
+  font-size: var(--heading--m);
+  line-height: var(--base-unit-x2);
+}
+.heading-s {
+  font-size: var(--heading--s);
+  line-height: var(--base-unit);
+}
+.heading-xs {
+  font-size: var(--heading--x-s);
+  line-height: var(--base-unit);
+}
+.body-l {
+  font-size: var(--body--l);
+}
+.body-mp {
+  font-size: var(--nav--item);
+  line-height: var(--base-unit);
+}
+.body-m {
+  font-size: var(--nav--item);
+  line-height: var(--base-unit);
+}
+.body-s {
+  font-size: var(--nav--item);
+  line-height: var(--base-unit);
+}
 .nav-item {
   font-size: var(--nav--item);
   line-height: var(--base-unit-x2);
