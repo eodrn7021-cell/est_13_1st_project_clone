@@ -197,3 +197,24 @@ body {
   color: var(--dark--green);
 }
 /* //introduction-card */
+
+/* Statistics Item */
+.statistics-item {
+  display: inline-block;
+  width: 408px;
+  padding: var(--base-unit) 0;
+  background: var(--ghost--gray);
+  border-radius: 10px;
+  box-shadow: var(--standard--shadow);
+  text-align: center;
+  box-sizing: border-box;
+}
+.statistics-item h6 {
+  font-size: var(--heading--m);
+  color: var(--dark--green);
+}
+.statistics-item p {
+  font-size: var(--heading--l);
+  color: var(--primary);
+}
+/* //Statistics Item */
