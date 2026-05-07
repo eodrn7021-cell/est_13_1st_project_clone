@@ -5,14 +5,9 @@
   color: var(--white);
   text-align: center;
 }
-.top-slogan h4 {
+.top-slogan h2 {
   display: block;
-  font-size: var(--heading-s);
 }
-.top-slogan h1 {
-  display: block;
-  font-size: var(--heading-x-l);
-}
-.top-slogan h1 span {
+.top-slogan h2 span {
   color: var(--alyak-color);
 }
