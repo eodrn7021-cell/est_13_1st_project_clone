@@ -68,6 +68,9 @@ main {
 }
 
 /* Typography */
+body {
+  font-family: "Noto Sans", sans-serif;
+}
 .heading-xl {
   font-size: var(--heading--x-l);
   line-height: var(--base-unit-x3);
