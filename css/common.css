@@ -111,7 +111,7 @@ body {
   line-height: var(--base-unit);
 }
 .body-s {
-  font-size: var(--nav--item);
+  font-size: var(--body--s);
   line-height: var(--base-unit);
 }
 .nav-item {
