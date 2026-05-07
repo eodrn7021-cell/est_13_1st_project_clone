@@ -202,6 +202,7 @@ body {
 .arrow {
   font-size: 84px;
   color: var(--secondary);
+  text-shadow: var(--standard--shadow);
 }
 .arrow:hover {
   color: var(--primary);
