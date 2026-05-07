@@ -179,7 +179,6 @@ body {
 /* Benefit Title */
 .benefit-title {
   text-align: center;
-  align-items: center;
   gap: 10px;
 }
 .tag {
