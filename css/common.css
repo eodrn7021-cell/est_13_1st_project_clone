@@ -111,7 +111,7 @@ body {
   line-height: var(--base-unit);
 }
 .body-s {
-  font-size: var(--nav--item);
+  font-size: var(--body--s);
   line-height: var(--base-unit);
 }
 .nav-item {
@@ -244,6 +244,35 @@ body {
   color: var(--dark--green);
 }
 /* //introduction-card */
+/* 박소영 */
+/* Benefit Title */
+.benefit-title {
+  text-align: center;
+  align-items: center;
+  gap: 10px;
+}
+.tag {
+  display: inline-block;
+  width: 123px;
+  padding: 0 24px;
+  border-radius: 50px;
+  background: var(--primary);
+  color: var(--white);
+}
+.benefit-title :is(.title, p) {
+  color: var(--dark--green);
+}
+/* //Benefit Title */
+
+/* Arrow */
+.arrow {
+  font-size: 84px;
+  color: var(--secondary);
+}
+.arrow:hover {
+  color: var(--primary);
+}
+/* //Arrow */
 
 /* Statistics Item */
 .statistics-item {
@@ -265,3 +294,4 @@ body {
   color: var(--primary);
 }
 /* //Statistics Item */
+/* //박소영 */
