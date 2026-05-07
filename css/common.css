@@ -152,3 +152,22 @@ header .logo-group h1 a {
 header nav {
   gap: 24px;
 }
+
+/* Statistics Item */
+.statistics-item {
+  display: inline-block;
+  width: 408px;
+  padding: var(--base-unit) 0;
+  background: var(--ghost--gray);
+  border-radius: 10px;
+  box-shadow: var(--standard--shadow);
+  text-align: center;
+}
+.statistics-item h6 {
+  font-size: var(--heading--m);
+  color: var(--dark--green);
+}
+.statistics-item p {
+  font-size: var(--heading--l);
+  color: var(--primary);
+}
