@@ -189,6 +189,10 @@ body {
   background: var(--primary);
   color: var(--white);
 }
+.tag h2 {
+  display: inline;
+  vertical-align: middle;
+}
 .benefit-title :is(.title, p) {
   color: var(--dark--green);
 }
