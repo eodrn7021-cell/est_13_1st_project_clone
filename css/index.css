@@ -1,3 +1,11 @@
+/* 유태구 */
+
+/* Graduates Employment Status */
+
+/* //Graduates Employment Status */
+
+/* //유태구 */
+
 .est-content {
   padding: 81px 324px;
   text-align: center;
@@ -35,4 +43,17 @@
 .card-body h3 {
   padding: 20px 25px;
   word-break: keep-all;
+
+.top-slogan {
+  width: 100%;
+  padding: 135px 0 108px;
+  background: url(../image/top-slogan.jpg) no-repeat 0 0 / 100% 100%;
+  color: var(--white);
+  text-align: center;
+}
+.top-slogan h2 {
+  display: block;
+}
+.top-slogan h2 span {
+  color: var(--alyak-color);
 }

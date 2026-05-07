@@ -3,13 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/index.css" />
     <title>Document</title>
   </head>
   <body>
     <!-- 유태구 -->
-    <header><h1>제목</h1></header>
+    <header class="d-flex justify-content-center">
+      <div class="container d-flex justify-content-between">
+        <div class="logo-group d-flex align-items-center">
+          <a href=""></a>
+          <h1>
+            <a href=""><span class="ir">EST Camp</span></a>
+          </h1>
+        </div>
+        <nav class="d-flex">
+          <a href="" class="nav-item">강좌보기</a>
+          <a href="" class="nav-item">지원하기</a>
+        </nav>
+      </div>
+    </header>
     <!-- //유태구-->
 
     <!-- 조승아 -->
@@ -20,11 +40,16 @@
     <main>
       <!-- 유태구-->
       <section class="hero"></section>
-      <section class="employment-status"></section>
+      <section class="employment-status d-flex flex-column align-items-center">
+        <section class="d-flex flex-column g-1"></section>
+      </section>
       <!-- //유태구 -->
 
       <!-- 박소영 -->
-      <section class="top-slogan"></section>
+      <section class="top-slogan">
+        <h2 class="heading-s">기업이 원하는 인재가 되고 싶다면?</h2>
+        <h2 class="heading-xl"><span>이스트소프트</span>가 정답인 이유</h2>
+      </section>
       <section class="benefits"></section>
       <section class="statistics"></section>
       <!-- //박소영 -->
