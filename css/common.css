@@ -137,6 +137,53 @@ body {
   color: var(--primary);
   box-shadow: var(--highlight--register);
 }
+
+.cta-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+
+  width: 192px;
+  padding: calc(var(--base-unit) * 0.5) 0;
+  border: var(--primary) 2px solid;
+  box-sizing: border-box;
+  background-color: var(--deep--green);
+  border-radius: 10px;
+
+  color: var(--white);
+  font-size: var(--heading--s);
+  line-height: var(--base-unit);
+  font-weight: bold;
+  text-align: center;
+}
+.cta-btn .material-icons {
+  color: var(--primary);
+  font-size: var(--base-unit);
+}
+.cta-btn.cta-btn-l {
+  gap: 10px;
+  font-size: var(--heading--m);
+  line-height: var(--base-unit-x2);
+}
+.cta-btn:hover {
+  box-shadow: var(--highlight--register);
+}
+.cta-btn.cta-btn-white {
+  gap: 10px;
+  border: none;
+  background-color: var(--white);
+  color: var(--primary);
+}
+.cta-btn.cta-btn-white:hover {
+  background-color: var(--primary);
+  color: white;
+  box-shadow: none;
+}
+.cta-btn.cta-btn-white:hover .material-icons {
+  color: var(--white);
+}
+
 /* //Linked Buttons */
 
 /* header-container */
