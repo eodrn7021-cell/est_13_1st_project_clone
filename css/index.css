@@ -114,13 +114,7 @@ header {
   right: 0;
   bottom: 0;
   left: 0;
-  background: linear-gradient(
-    to right,
-    #ffffffff 5%,
-    #ffffff00 30%,
-    #ffffff00 70%,
-    #ffffffff 95%
-  );
+  background: linear-gradient(to right, #ffffffff 5%, #ffffff00 30%, #ffffff00 70%, #ffffffff 95%);
   position: absolute;
 }
 /* //Graduates Employment Status */
@@ -593,3 +587,30 @@ header {
   }
 }
 /* //조승아 */
+/* 권유진 */
+.footer {
+  background: var(--deep--green);
+  padding: var(--base-unit) 324px var(--base-unit-x2);
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 27px;
+}
+.footer-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+}
+
+.info {
+  color: var(--cool--gray);
+}
+
+.nav {
+  display: flex;
+  gap: 12px;
+  font-weight: bold;
+  color: var(--white);
+}
+/* 권유진 */

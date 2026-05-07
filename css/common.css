@@ -295,3 +295,19 @@ body {
 }
 /* //Statistics Item */
 /* //박소영 */
+/* 권유진 푸터 social icon */
+.icon {
+  display: flex;
+  gap: 10px;
+}
+.social-icon {
+  color: var(--cool--gray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 54px;
+  background-color: var(--dark--green);
+  border-radius: 50%;
+}
+/* 권유진 */
