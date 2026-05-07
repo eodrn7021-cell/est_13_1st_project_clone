@@ -84,7 +84,16 @@ header {
 /* //Top Slogan */
 
 /* Benefits */
-
+.benefits {
+  padding: var(--base-unit-x3) 324px;
+  background: var(--ghost--gray);
+  gap: var(--base-unit-x3);
+}
+.benefit5 {
+  padding-top: var(--base-unit-x3);
+  box-sizing: border-box;
+  border-top: 1px solid var(--cool--gray);
+}
 /* //Benefits */
 
 /* Statistics */
