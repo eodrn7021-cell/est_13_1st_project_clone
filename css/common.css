@@ -184,7 +184,6 @@ body {
 }
 .tag {
   display: inline-block;
-  width: 123px;
   padding: 0 24px;
   border-radius: 50px;
   background: var(--primary);
