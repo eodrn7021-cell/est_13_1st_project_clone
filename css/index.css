@@ -43,6 +43,40 @@ header {
 
 /* //유태구 */
 
+/* 박소영 */
+/* Top Slogan */
+.top-slogan {
+  width: 100%;
+  padding: 135px 0 108px;
+  background: url(../image/top-slogan.jpg) no-repeat 0 0 / 100% 100%;
+  color: var(--white);
+  text-align: center;
+}
+.top-slogan h2 {
+  display: block;
+}
+.top-slogan h2 span {
+  color: var(--alyak-color);
+}
+/* //Top Slogan */
+
+/* Benefits */
+/* //Benefits */
+
+/* Statistics */
+.statistics .container {
+  padding: var(--base-unit-x3) 0;
+}
+.statistics-items-wrapper {
+  justify-content: space-between;
+}
+.statistics h2 {
+  text-align: center;
+  color: var(--dark-green);
+}
+/* //Statistics */
+/* 박소영 */
+
 .est-content {
   padding: 81px 324px;
   text-align: center;
@@ -80,18 +114,4 @@ header {
 .card-body h3 {
   padding: 20px 25px;
   word-break: keep-all;
-}
-
-.top-slogan {
-  width: 100%;
-  padding: 135px 0 108px;
-  background: url(../image/top-slogan.jpg) no-repeat 0 0 / 100% 100%;
-  color: var(--white);
-  text-align: center;
-}
-.top-slogan h2 {
-  display: block;
-}
-.top-slogan h2 span {
-  color: var(--alyak-color);
 }
