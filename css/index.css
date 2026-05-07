@@ -26,5 +26,14 @@
 /* //Benefits */
 /* Statistics */
 /* //Statistics */
-
+.statistics .container {
+  padding: var(--base-unit-x3) 0;
+}
+.statistics-items-wrapper {
+  justify-content: space-between;
+}
+.statistics h2 {
+  text-align: center;
+  color: var(--dark-green);
+}
 /* 박소영 */

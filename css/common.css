@@ -162,6 +162,7 @@ header nav {
   border-radius: 10px;
   box-shadow: var(--standard--shadow);
   text-align: center;
+  box-sizing: border-box;
 }
 .statistics-item h6 {
   font-size: var(--heading--m);
