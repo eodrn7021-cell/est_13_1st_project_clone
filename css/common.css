@@ -174,3 +174,26 @@ body {
   background-color: var(--green);
 }
 /* //pagination */
+
+/* introduction-card */
+.introduction-card {
+  width: 192px;
+  height: calc(var(--base-unit) * 5);
+  background: var(--white);
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.introduction-card .material-icons {
+  font-size: 48px;
+  line-height: var(--base-unit);
+  color: var(--primary);
+}
+.introduction-card .body-mp {
+  color: var(--dark--green);
+}
+/* //introduction-card */
