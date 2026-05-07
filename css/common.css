@@ -176,6 +176,35 @@ body {
 /* //pagination */
 
 /* 박소영 */
+/* Benefit Title */
+.benefit-title {
+  text-align: center;
+  align-items: center;
+  gap: 10px;
+}
+.tag {
+  display: inline-block;
+  width: 123px;
+  padding: 0 24px;
+  border-radius: 50px;
+  background: var(--primary);
+  color: var(--white);
+}
+.benefit-title :is(.title, p) {
+  color: var(--dark--green);
+}
+/* //Benefit Title */
+
+/* Arrow */
+.arrow {
+  font-size: 84px;
+  color: var(--secondary);
+}
+.arrow:hover {
+  color: var(--primary);
+}
+/* //Arrow */
+
 /* Statistics Item */
 .statistics-item {
   display: inline-block;
@@ -196,23 +225,4 @@ body {
   color: var(--primary);
 }
 /* //Statistics Item */
-
-/* Benefit Title */
-.benefit-title {
-  text-align: center;
-  align-items: center;
-  gap: 10px;
-}
-.tag {
-  display: inline-block;
-  width: 123px;
-  padding: 0 24px;
-  border-radius: 50px;
-  background: var(--primary);
-  color: var(--white);
-}
-.benefit-title :is(.title, p) {
-  color: var(--dark--green);
-}
-/* //Benefit Title */
 /* //박소영 */

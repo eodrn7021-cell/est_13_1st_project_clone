@@ -35,7 +35,13 @@ header {
   right: 0;
   bottom: 0;
   left: 0;
-  background: linear-gradient(to right, #ffffffff 5%, #ffffff00 30%, #ffffff00 70%, #ffffffff 95%);
+  background: linear-gradient(
+    to right,
+    #ffffffff 5%,
+    #ffffff00 30%,
+    #ffffff00 70%,
+    #ffffffff 95%
+  );
   position: absolute;
 }
 /* //Graduates Employment Status */
@@ -78,6 +84,7 @@ header {
 /* //Top Slogan */
 
 /* Benefits */
+
 /* //Benefits */
 
 /* Statistics */
