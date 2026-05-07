@@ -66,6 +66,7 @@
 main {
   padding-top: 81px;
 }
+/* //Layout */
 
 /* Typography */
 body {
@@ -74,22 +75,29 @@ body {
 .heading-xl {
   font-size: var(--heading--x-l);
   line-height: var(--base-unit-x3);
+  font-weight: bold;
+  letter-spacing: 2%;
 }
 .heading-l {
   font-size: var(--heading--l);
   line-height: var(--base-unit-x2);
+  font-weight: bold;
+  letter-spacing: 2%;
 }
 .heading-m {
   font-size: var(--heading--m);
   line-height: var(--base-unit-x2);
+  font-weight: bold;
 }
 .heading-s {
   font-size: var(--heading--s);
   line-height: var(--base-unit);
+  font-weight: bold;
 }
 .heading-xs {
   font-size: var(--heading--x-s);
   line-height: var(--base-unit);
+  font-weight: 600;
 }
 .body-l {
   font-size: var(--body--l);
@@ -109,7 +117,9 @@ body {
 .nav-item {
   font-size: var(--nav--item);
   line-height: var(--base-unit-x2);
+  font-weight: bold;
 }
+/* //Typography */
 
 /* Linked Buttons */
 header .nav-item {
@@ -127,6 +137,7 @@ header .nav-item:hover {
   color: var(--primary);
   box-shadow: var(--highlight--register);
 }
+/* //Linked Buttons */
 
 /* Header */
 header {
@@ -152,3 +163,4 @@ header .logo-group h1 a {
 header nav {
   gap: 24px;
 }
+/* //Header */
