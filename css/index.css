@@ -1,30 +1,19 @@
 /* 유태구 */
+/* Header */
+header {
+  width: 100%;
+  padding: 13.5px 0;
+  background: var(--deep--green);
+  position: fixed;
+  z-index: 65535;
+}
+/* //Header */
 
 /* Hero Section */
 
 /* // Hero Section */
 
 /* Graduates Employment Status */
-
-/* 박채원 */
-.review-section-title {
-  text-align: center;
-  margin-bottom: 72px;
-}
-
-.review-section-title h2 {
-  font-size: 64px;
-  font-weight: 800;
-  color: #111827;
-  margin-bottom: 20px;
-}
-
-.review-section-title p {
-  font-size: 24px;
-  color: #6b7280;
-}
-/* 박채원 */
-
 .employment-status {
   padding: var(--base-unit-x2);
 }
@@ -50,8 +39,60 @@
   position: absolute;
 }
 /* //Graduates Employment Status */
-
 /* //유태구 */
+
+/* 박채원 */
+.review-section-title {
+  text-align: center;
+  margin-bottom: 72px;
+}
+
+.review-section-title h2 {
+  font-size: 64px;
+  font-weight: 800;
+  color: #111827;
+  margin-bottom: 20px;
+}
+
+.review-section-title p {
+  font-size: 24px;
+  color: #6b7280;
+}
+/* 박채원 */
+
+/* 박소영 */
+/* Top Slogan */
+.top-slogan {
+  width: 100%;
+  padding: 135px 0 108px;
+  background: url(../image/top-slogan.jpg) no-repeat 0 0 / 100% 100%;
+  color: var(--white);
+  text-align: center;
+}
+.top-slogan h2 {
+  display: block;
+}
+.top-slogan h2 span {
+  color: var(--alyak-color);
+}
+/* //Top Slogan */
+
+/* Benefits */
+/* //Benefits */
+
+/* Statistics */
+.statistics .container {
+  padding: var(--base-unit-x3) 0;
+}
+.statistics-items-wrapper {
+  justify-content: space-between;
+}
+.statistics h2 {
+  text-align: center;
+  color: var(--dark-green);
+}
+/* //Statistics */
+/* 박소영 */
 
 .est-content {
   padding: 81px 324px;
@@ -90,18 +131,4 @@
 .card-body h3 {
   padding: 20px 25px;
   word-break: keep-all;
-}
-
-.top-slogan {
-  width: 100%;
-  padding: 135px 0 108px;
-  background: url(../image/top-slogan.jpg) no-repeat 0 0 / 100% 100%;
-  color: var(--white);
-  text-align: center;
-}
-.top-slogan h2 {
-  display: block;
-}
-.top-slogan h2 span {
-  color: var(--alyak-color);
 }

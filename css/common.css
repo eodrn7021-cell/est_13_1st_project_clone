@@ -122,7 +122,7 @@ body {
 /* //Typography */
 
 /* Linked Buttons */
-header .nav-item {
+.header-container nav a {
   display: inline-block;
   padding: 0px 12px;
 
@@ -133,34 +133,65 @@ header .nav-item {
 
   transition: 300ms ease-out;
 }
-header .nav-item:hover {
+.header-container nav a:hover {
   color: var(--primary);
   box-shadow: var(--highlight--register);
 }
 /* //Linked Buttons */
 
-/* Header */
-header {
-  width: 100%;
-  padding: 13.5px 0;
-  background: var(--deep--green);
-  position: fixed;
-}
-header .logo-group {
+/* header-container */
+.header-container .logo-group {
   gap: 12px;
 }
-header .logo-group > a {
+.header-container .logo-group > a {
   width: 51px;
   height: 54px;
   background: url("/image/mascot-transparent.png") no-repeat 0 0 / cover;
 }
-header .logo-group h1 a {
+.header-container .logo-group h1 a {
   display: block;
   width: 205px;
   height: 27px;
   background: url("/image/est-logo-header.png") no-repeat 0 0 / cover;
 }
-header nav {
+.header-container nav ul {
   gap: 24px;
 }
-/* //Header */
+/* //header-container */
+
+/* pagination */
+.pagination {
+  padding: 8.5px;
+  gap: 15px;
+}
+.pagination button {
+  width: 40px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: var(--secondary);
+}
+.pagination button.active {
+  background-color: var(--green);
+}
+/* //pagination */
+
+/* Statistics Item */
+.statistics-item {
+  display: inline-block;
+  width: 408px;
+  padding: var(--base-unit) 0;
+  background: var(--ghost--gray);
+  border-radius: 10px;
+  box-shadow: var(--standard--shadow);
+  text-align: center;
+  box-sizing: border-box;
+}
+.statistics-item h6 {
+  font-size: var(--heading--m);
+  color: var(--dark--green);
+}
+.statistics-item p {
+  font-size: var(--heading--l);
+  color: var(--primary);
+}
+/* //Statistics Item */
