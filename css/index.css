@@ -217,7 +217,7 @@ header {
 
 .course-content p {
   color: var(--primary);
-  padding-top: 5px;
+  /* padding-top: 5px; */
 }
 
 .courses h2 {
