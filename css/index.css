@@ -1,0 +1,19 @@
+.top-slogan {
+  width: 100%;
+  height: 351px;
+  padding: 135px 0 108px;
+  background: url(../image/top-slogan.png) no-repeat 0 -350px / 100% 100%;
+  color: var(--white);
+  text-align: center;
+}
+.top-slogan h4 {
+  display: block;
+  font-size: var(--heading-s);
+}
+.top-slogan h1 {
+  display: block;
+  font-size: var(--heading-x-l);
+}
+.top-slogan h1 span {
+  color: var(--alyak-color);
+}
