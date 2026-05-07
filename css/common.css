@@ -64,7 +64,7 @@
   overflow: hidden;
 }
 main {
-  padding-top: 81px;
+  padding-top: var(--base-unit-x3);
 }
 /* //Layout */
 
