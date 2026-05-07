@@ -34,15 +34,15 @@ header {
 }
 .hero-slider li:nth-child(1) {
   left: 0%;
-  /* background-color: crimson; */
+  background: url("../image/hero-bg-company.jpg") no-repeat 0 0 / cover;
 }
 .hero-slider li:nth-child(2) {
   left: 100%;
-  /* background-color: maroon; */
+  background: url("../image/hero_bg_vision.jpg") no-repeat 0 0 / cover;
 }
 .hero-slider li:nth-child(3) {
   left: 200%;
-  /* background-color: crimson; */
+  background: url("../image/frontend.png") no-repeat 0 0 / cover;
 }
 .hero .pagination {
   position: absolute;
