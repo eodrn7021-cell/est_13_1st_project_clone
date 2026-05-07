@@ -1,10 +1,3 @@
-.est-content {
-  padding: 81px 324px;
-  text-align: center;
-  max-width: 1920px;
-  margin: 0 auto;
-  position: relative;
-}
 .section-header {
   gap: 27px;
 }
@@ -22,4 +15,14 @@
   justify-content: center;
   margin-top: 54px;
   gap: 24px;
+}
+.card-item {
+  flex: 1;
+  background: white;
+  overflow: hidden;
+  text-align: left;
+}
+.card-body h3 {
+  padding: 20px 25px;
+  word-break: keep-all;
 }
