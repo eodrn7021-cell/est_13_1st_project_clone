@@ -167,6 +167,24 @@ header {
 .bottom-slogan h2 span {
   color: var(--primary);
 }
+
+.cta-btn {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+
+  padding: 14px 30px;
+
+  border-radius: 10px;
+
+  text-decoration: none;
+}
+
+.cta-btn:hover {
+  box-shadow: var(--highlight--register);
+}
 /* bottom-slogan */
 /* training-eligibility */
 .condition-wrap {
