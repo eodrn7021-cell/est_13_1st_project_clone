@@ -678,3 +678,9 @@ header {
   color: var(--white);
 }
 /* 권유진 */
+
+@media (max-width: 1280px) {
+}
+
+@media (max-width: 768px) {
+}
