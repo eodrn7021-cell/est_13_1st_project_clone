@@ -389,6 +389,7 @@ header {
   font-weight: bold;
 }
 /* courses 반응형 */
+
 /* 1280px 이하 */
 @media (max-width: 1280px) {
   .courses .inner {
