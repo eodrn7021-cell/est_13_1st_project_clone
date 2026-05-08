@@ -114,13 +114,7 @@ header {
   right: 0;
   bottom: 0;
   left: 0;
-  background: linear-gradient(
-    to right,
-    #ffffffff 5%,
-    #ffffff00 30%,
-    #ffffff00 70%,
-    #ffffffff 95%
-  );
+  background: linear-gradient(to right, #ffffffff 5%, #ffffff00 30%, #ffffff00 70%, #ffffffff 95%);
   position: absolute;
 }
 /* //Graduates Employment Status */
@@ -202,11 +196,11 @@ header {
   height: 5px;
   background: var(--dark--green);
 }
-.benefit-section li:first-child .pass-notice .message {
+.benefit-section li:first-child .message {
   padding: 0 var(--base-unit-x2);
   gap: 10px;
 }
-.benefit-section li:first-child .pass-notice .message img {
+.benefit-section li:first-child .message img {
   width: 132px;
   height: 34px;
 }
@@ -229,6 +223,52 @@ header {
 .benefit-section li:first-child .benefit-card img {
   width: 87px;
   height: 110px;
+}
+
+.benefit-section > .container {
+  position: relative;
+}
+.benefit-section > .container > div:has(label[for^="slide"]) {
+  position: absolute;
+  top: calc(100% + var(--base-unit));
+  left: 50%;
+}
+.benefit-section input[type="radio"] {
+  display: none;
+}
+.benefit-section label[for^="slide"] {
+  display: inline-block;
+  width: 40px;
+  height: 10px;
+  border-radius: 5px;
+  background: var(--green);
+}
+.benefit-section #slide1:checked ~ div > label[for="slide1"] {
+  background: var(--secondary);
+}
+.benefit-section #slide2:checked ~ div > label[for="slide2"] {
+  background: var(--secondary);
+}
+.benefit-section #slide3:checked ~ div > label[for="slide3"] {
+  background: var(--secondary);
+}
+.benefit-section #slide4:checked ~ div > label[for="slide4"] {
+  background: var(--secondary);
+}
+.benefit-section ul > li {
+  display: none;
+}
+#slide1:checked ~ ul li:nth-child(1) {
+  display: flex;
+}
+#slide2:checked ~ ul li:nth-child(2) {
+  display: flex;
+}
+#slide3:checked ~ ul li:nth-child(3) {
+  display: flex;
+}
+#slide4:checked ~ ul li:nth-child(4) {
+  display: flex;
 }
 
 .benefit5 {
