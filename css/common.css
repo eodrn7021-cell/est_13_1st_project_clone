@@ -343,12 +343,12 @@ body {
 /* 박소영 */
 /* Benefit Title */
 .benefit-title {
-  text-align: center;
+  padding: 0 11px 6px;
   gap: 10px;
 }
 .tag {
   display: inline-block;
-  padding: 0 24px;
+  padding: 0 20px;
   border-radius: 50px;
   background: var(--primary);
   color: var(--white);
