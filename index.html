@@ -12,18 +12,15 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/index.css" />
-    <title>Document</title>
+    <title>이스트소프트 | 부트캠프 모집 홈페이지</title>
   </head>
   <body>
     <!-- 유태구 -->
     <header class="d-flex justify-content-center">
       <div class="container header-container d-flex justify-content-between">
-        <div class="logo-group d-flex align-items-center">
-          <a href="index.html"></a>
-          <h1>
-            <a href="index.html"><span class="ir">EST Camp</span></a>
-          </h1>
-        </div>
+        <h1>
+          <a href="index.html"><span class="ir">EST Camp</span></a>
+        </h1>
         <nav>
           <ul class="d-flex">
             <li><a href="" class="nav-item">강좌보기</a></li>
@@ -35,8 +32,11 @@
     <!-- //유태구-->
 
     <!-- 조승아 -->
-      <aside class="side-bar">
-        <nav>
+    <aside>
+      <nav>
+        <aside class="side-bar"></aside>
+      </nav>
+      <nav>
         <a href="#top" class="side-item top-btn">
           <span class="material-icons heading-l">vertical_align_top</span>TOP
         </a>
@@ -56,41 +56,50 @@
     <main>
       <!-- 유태구-->
       <section class="hero">
-        <div class="container">
-          <div
-            class="slider-controller container d-flex justify-content-between align-items-center"
-          >
-            <button class="slider-button material-icons">keyboard_arrow_left</button>
-            <button class="slider-button material-icons">keyboard_arrow_right</button>
-          </div>
+        <div
+          class="hero-slider-controller container d-flex justify-content-between align-items-center"
+        >
+          <button class="material-icons">keyboard_arrow_left</button>
+          <button class="material-icons">keyboard_arrow_right</button>
         </div>
         <ul class="hero-slider d-flex">
           <li class="d-flex justify-content-center align-items-center">
-            <div class="hero-company-container d-flex flex-column align-items-center g-1">
-              <h2 class="heading-l">국민 백신 <em>'알약'</em>을 만든 기업</h2>
+            <div
+              class="hero-company-container d-flex flex-column align-items-center text-center g-1"
+            >
+              <h2 class="heading-l">국민 백신<em class="r-line-break">'알약'</em>을 만든 기업</h2>
               <div class="d-flex flex-column">
-                <p class="heading-s">이스트소프트는 1993년 설립된 대한민국 1세대 IT 기업입니다.</p>
-                <p class="heading-s">32년간 축적된 AI 기술력과 보안 소프트웨어 노하우를 바탕으로</p>
-                <p class="heading-s">대한민국 IT 역사의 새로운 페이지를 써내려가고 있습니다.</p>
+                <p class="heading-s">
+                  이스트소프트는 1993년 설립된
+                  <span class="r-line-break">대한민국 1세대 IT 기업입니다.</span>
+                </p>
+                <p class="heading-s">
+                  32년간 축적된 AI 기술력과
+                  <span class="r-line-break">보안 소프트웨어 노하우를 바탕으로</span>
+                </p>
+                <p class="heading-s">
+                  대한민국 IT 역사의
+                  <span class="r-line-break">새로운 페이지를 써내려가고 있습니다.</span>
+                </p>
               </div>
-              <div class="introduction-card-box d-flex align-items-center">
-                <div class="introduction-card">
+              <ul class="introduction-card-list">
+                <li class="introduction-card">
                   <span class="material-icons">shield</span>
                   <span class="body-mp">알약(Alyac)</span>
-                </div>
-                <div class="introduction-card">
+                </li>
+                <li class="introduction-card">
                   <span class="material-icons">smart_toy</span>
                   <span class="body-mp">Perso.ai</span>
-                </div>
-                <div class="introduction-card">
+                </li>
+                <li class="introduction-card">
                   <span class="material-icons">co_present</span>
                   <span class="body-mp">Zum</span>
-                </div>
-                <div class="introduction-card">
+                </li>
+                <li class="introduction-card">
                   <span class="material-icons">visibility</span>
                   <span class="body-mp">ROUNZ</span>
-                </div>
-              </div>
+                </li>
+              </ul>
             </div>
           </li>
           <li class="d-flex justify-content-center align-items-center">
@@ -99,8 +108,10 @@
                 <h2 class="heading-l">교육은 균등하게,<br />성장은 <span>압도적으로.</span></h2>
                 <h3 class="heading-s">mission &amp; vision</h3>
                 <p class="heading-s">
-                  누구나 자신의 한계를 뛰어넘어 AI 전문가로 성장할 수 있도록,<br />
-                  이스트소프트가 축적해온 32년의 IT 리더십을 아낌없이 공유합니다.
+                  누구나 자신의 한계를 뛰어넘어
+                  <span class="r-line-break">AI 전문가로 성장할 수 있도록,</span><br />
+                  이스트소프트가 축적해온 32년의
+                  <span class="r-line-break">IT 리더십을 아낌없이 공유합니다.</span>
                 </p>
               </div>
               <a href="" class="cta-btn cta-btn-l">
@@ -279,201 +290,199 @@
 
       <!-- 박채원 -->
       <section class="review">
-        <div class="container">
-          <div class="section-title">
-            <h2>수강후기</h2>
-            <p>먼저 경험한 수료생들의 <span>생생한 후기</span>를 만나보세요!</p>
-          </div>
+        <div class="section-title">
+          <h2>수강후기</h2>
+          <p>먼저 경험한 수료생들의 <span>생생한 후기</span>를 만나보세요!</p>
+        </div>
 
-          <div class="review-wrapper">
-            <!-- TOP -->
-            <div class="review-slider">
-              <div class="review-track track-top">
-                <div class="review-card">
-                  <div class="review-image">
-                    <img src="image/review_1.jpg" />
-                  </div>
-
-                  <div class="review-info">
-                    <h3>이스트소프트 정우님</h3>
-
-                    <p>
-                      강사님들과 멘토님들의 진심이 이 과정의 가장 큰 장점입니다. 개발자로 직무전환을
-                      위해 공부했던 이전의 과정은 단순 지식만을 전달받는 느낌이 강했는데,
-                      이스트소프트의 백엔드 개발 과정에서는 강사님들과 멘토님, 그리고 운영진이 나의
-                      취업을 진심을 다해 도와주시고 계신다는 느낌을 받아 지칠때마다 다시 힘을 낼 수
-                      있었습니다.
-                    </p>
-                  </div>
+        <div class="review-wrapper">
+          <!-- TOP -->
+          <div class="review-slider">
+            <div class="review-track track-top">
+              <div class="review-card">
+                <div class="review-image">
+                  <img src="image/review-1.jpg" alt="리뷰 얼굴 이미지" />
                 </div>
 
-                <div class="review-card">
-                  <div class="review-image">
-                    <img src="image/review_2.jpg" />
-                  </div>
+                <div class="review-info">
+                  <h3>이스트소프트 정O익님</h3>
 
-                  <div class="review-info">
-                    <h3>지브이랩 김O연님</h3>
+                  <p>
+                    강사님들과 멘토님들의 진심이 이 과정의 가장 큰 장점입니다. 개발자로 직무전환을
+                    위해 공부했던 이전의 과정은 단순 지식만을 전달받는 느낌이 강했는데,
+                    이스트소프트의 백엔드 개발 과정에서는 강사님들과 멘토님, 그리고 운영진이 나의
+                    취업을 진심을 다해 도와주시고 계신다는 느낌을 받아 지칠때마다 다시 힘을 낼 수
+                    있었습니다.
+                  </p>
+                </div>
+              </div>
 
-                    <p>
-                      강사님들과 멘토님들의 진심이 이 과정의 가장 큰 장점입니다. 개발자로 직무전환을
-                      위해 공부했던 이전의 과정은 단순 지식만을 전달받는 느낌이 강했는데,
-                      이스트소프트의 백엔드 개발 과정에서는 강사님들과 멘토님, 그리고 운영진이 나의
-                      취업을 진심을 다해 도와주시고 계신다는 느낌을 받아 지칠때마다 다시 힘을 낼 수
-                      있었습니다.
-                    </p>
-                  </div>
+              <div class="review-card">
+                <div class="review-image">
+                  <img src="image/review-2.jpg" alt="리뷰 얼굴 이미지" />
                 </div>
 
-                <div class="review-card">
-                  <div class="review-image">
-                    <img src="image/review_3.jpg" />
-                  </div>
+                <div class="review-info">
+                  <h3>지브이랩 김O연님</h3>
 
-                  <div class="review-info">
-                    <h3>지브이랩 권O진님</h3>
+                  <p>
+                    강사님들과 멘토님들의 진심이 이 과정의 가장 큰 장점입니다. 개발자로 직무전환을
+                    위해 공부했던 이전의 과정은 단순 지식만을 전달받는 느낌이 강했는데,
+                    이스트소프트의 백엔드 개발 과정에서는 강사님들과 멘토님, 그리고 운영진이 나의
+                    취업을 진심을 다해 도와주시고 계신다는 느낌을 받아 지칠때마다 다시 힘을 낼 수
+                    있었습니다.
+                  </p>
+                </div>
+              </div>
 
-                    <p>
-                      강사님들과 멘토님들의 진심이 이 과정의 가장 큰 장점입니다. 개발자로 직무전환을
-                      위해 공부했던 이전의 과정은 단순 지식만을 전달받는 느낌이 강했는데,
-                      이스트소프트의 백엔드 개발 과정에서는 강사님들과 멘토님, 그리고 운영진이 나의
-                      취업을 진심을 다해 도와주시고 계신다는 느낌을 받아 지칠때마다 다시 힘을 낼 수
-                      있었습니다.
-                    </p>
-                  </div>
+              <div class="review-card">
+                <div class="review-image">
+                  <img src="image/review-3.jpg" alt="리뷰 얼굴 이미지" />
                 </div>
 
-                <div class="review-card">
-                  <div class="review-image">
-                    <img src="image/review_4.jpg" />
-                  </div>
+                <div class="review-info">
+                  <h3>지브이랩 권O진님</h3>
 
-                  <div class="review-info">
-                    <h3>이스트소프트 정우님</h3>
+                  <p>
+                    강사님들과 멘토님들의 진심이 이 과정의 가장 큰 장점입니다. 개발자로 직무전환을
+                    위해 공부했던 이전의 과정은 단순 지식만을 전달받는 느낌이 강했는데,
+                    이스트소프트의 백엔드 개발 과정에서는 강사님들과 멘토님, 그리고 운영진이 나의
+                    취업을 진심을 다해 도와주시고 계신다는 느낌을 받아 지칠때마다 다시 힘을 낼 수
+                    있었습니다.
+                  </p>
+                </div>
+              </div>
 
-                    <p>
-                      강사님들과 멘토님들의 진심이 이 과정의 가장 큰 장점입니다. 개발자로 직무전환을
-                      위해 공부했던 이전의 과정은 단순 지식만을 전달받는 느낌이 강했는데,
-                      이스트소프트의 백엔드 개발 과정에서는 강사님들과 멘토님, 그리고 운영진이 나의
-                      취업을 진심을 다해 도와주시고 계신다는 느낌을 받아 지칠때마다 다시 힘을 낼 수
-                      있었습니다.
-                    </p>
-                  </div>
+              <div class="review-card">
+                <div class="review-image">
+                  <img src="image/review-4.jpg" alt="리뷰 얼굴 이미지" />
                 </div>
 
-                <div class="review-card">
-                  <div class="review-image">
-                    <img src="image/review_5.jpg" />
-                  </div>
+                <div class="review-info">
+                  <h3>이스트소프트 정O익님</h3>
 
-                  <div class="review-info">
-                    <h3>지브이랩 김OO님</h3>
+                  <p>
+                    강사님들과 멘토님들의 진심이 이 과정의 가장 큰 장점입니다. 개발자로 직무전환을
+                    위해 공부했던 이전의 과정은 단순 지식만을 전달받는 느낌이 강했는데,
+                    이스트소프트의 백엔드 개발 과정에서는 강사님들과 멘토님, 그리고 운영진이 나의
+                    취업을 진심을 다해 도와주시고 계신다는 느낌을 받아 지칠때마다 다시 힘을 낼 수
+                    있었습니다.
+                  </p>
+                </div>
+              </div>
 
-                    <p>
-                      강사님들과 멘토님들의 진심이 이 과정의 가장 큰 장점입니다. 개발자로 직무전환을
-                      위해 공부했던 이전의 과정은 단순 지식만을 전달받는 느낌이 강했는데,
-                      이스트소프트의 백엔드 개발 과정에서는 강사님들과 멘토님, 그리고 운영진이 나의
-                      취업을 진심을 다해 도와주시고 계신다는 느낌을 받아 지칠때마다 다시 힘을 낼 수
-                      있었습니다.
-                    </p>
-                  </div>
+              <div class="review-card">
+                <div class="review-image">
+                  <img src="image/review-5.jpg" alt="리뷰 얼굴 이미지" />
+                </div>
+
+                <div class="review-info">
+                  <h3>지브이랩 김O연님</h3>
+
+                  <p>
+                    강사님들과 멘토님들의 진심이 이 과정의 가장 큰 장점입니다. 개발자로 직무전환을
+                    위해 공부했던 이전의 과정은 단순 지식만을 전달받는 느낌이 강했는데,
+                    이스트소프트의 백엔드 개발 과정에서는 강사님들과 멘토님, 그리고 운영진이 나의
+                    취업을 진심을 다해 도와주시고 계신다는 느낌을 받아 지칠때마다 다시 힘을 낼 수
+                    있었습니다.
+                  </p>
                 </div>
               </div>
             </div>
+          </div>
 
-            <!-- BOTTOM -->
-            <div class="review-slider">
-              <div class="review-track track-bottom">
-                <div class="review-card">
-                  <div class="review-image">
-                    <img src="image/review_6.jpg" />
-                  </div>
-
-                  <div class="review-info">
-                    <h3>위니브 정O연님</h3>
-
-                    <p>
-                      강사님들과 멘토님들의 진심이 이 과정의 가장 큰 장점입니다. 개발자로 직무전환을
-                      위해 공부했던 이전의 과정은 단순 지식만을 전달받는 느낌이 강했는데,
-                      이스트소프트의 백엔드 개발 과정에서는 강사님들과 멘토님, 그리고 운영진이 나의
-                      취업을 진심을 다해 도와주시고 계신다는 느낌을 받아 지칠때마다 다시 힘을 낼 수
-                      있었습니다.
-                    </p>
-                  </div>
+          <!-- BOTTOM -->
+          <div class="review-slider">
+            <div class="review-track track-bottom">
+              <div class="review-card">
+                <div class="review-image">
+                  <img src="image/review-1.jpg" alt="리뷰 얼굴 이미지" />
                 </div>
 
-                <div class="review-card">
-                  <div class="review-image">
-                    <img src="image/review_1.jpg" />
-                  </div>
+                <div class="review-info">
+                  <h3>위니브 정O인님</h3>
 
-                  <div class="review-info">
-                    <h3>위니브 황O현님</h3>
+                  <p>
+                    강사님들과 멘토님들의 진심이 이 과정의 가장 큰 장점입니다. 개발자로 직무전환을
+                    위해 공부했던 이전의 과정은 단순 지식만을 전달받는 느낌이 강했는데,
+                    이스트소프트의 백엔드 개발 과정에서는 강사님들과 멘토님, 그리고 운영진이 나의
+                    취업을 진심을 다해 도와주시고 계신다는 느낌을 받아 지칠때마다 다시 힘을 낼 수
+                    있었습니다.
+                  </p>
+                </div>
+              </div>
 
-                    <p>
-                      강사님들과 멘토님들의 진심이 이 과정의 가장 큰 장점입니다. 개발자로 직무전환을
-                      위해 공부했던 이전의 과정은 단순 지식만을 전달받는 느낌이 강했는데,
-                      이스트소프트의 백엔드 개발 과정에서는 강사님들과 멘토님, 그리고 운영진이 나의
-                      취업을 진심을 다해 도와주시고 계신다는 느낌을 받아 지칠때마다 다시 힘을 낼 수
-                      있었습니다.
-                    </p>
-                  </div>
+              <div class="review-card">
+                <div class="review-image">
+                  <img src="image/review-2.jpg" alt="리뷰 얼굴 이미지" />
                 </div>
 
-                <div class="review-card">
-                  <div class="review-image">
-                    <img src="image/review_2.jpg" />
-                  </div>
+                <div class="review-info">
+                  <h3>위니브 황O현님</h3>
 
-                  <div class="review-info">
-                    <h3>위니브 정O인님</h3>
+                  <p>
+                    강사님들과 멘토님들의 진심이 이 과정의 가장 큰 장점입니다. 개발자로 직무전환을
+                    위해 공부했던 이전의 과정은 단순 지식만을 전달받는 느낌이 강했는데,
+                    이스트소프트의 백엔드 개발 과정에서는 강사님들과 멘토님, 그리고 운영진이 나의
+                    취업을 진심을 다해 도와주시고 계신다는 느낌을 받아 지칠때마다 다시 힘을 낼 수
+                    있었습니다.
+                  </p>
+                </div>
+              </div>
 
-                    <p>
-                      강사님들과 멘토님들의 진심이 이 과정의 가장 큰 장점입니다. 개발자로 직무전환을
-                      위해 공부했던 이전의 과정은 단순 지식만을 전달받는 느낌이 강했는데,
-                      이스트소프트의 백엔드 개발 과정에서는 강사님들과 멘토님, 그리고 운영진이 나의
-                      취업을 진심을 다해 도와주시고 계신다는 느낌을 받아 지칠때마다 다시 힘을 낼 수
-                      있었습니다.
-                    </p>
-                  </div>
+              <div class="review-card">
+                <div class="review-image">
+                  <img src="image/review-3.jpg" alt="리뷰 얼굴 이미지" />
                 </div>
 
-                <!-- duplicate -->
+                <div class="review-info">
+                  <h3>위니브 윤O민님</h3>
 
-                <div class="review-card">
-                  <div class="review-image">
-                    <img src="image/review_3.jpg" />
-                  </div>
+                  <p>
+                    강사님들과 멘토님들의 진심이 이 과정의 가장 큰 장점입니다. 개발자로 직무전환을
+                    위해 공부했던 이전의 과정은 단순 지식만을 전달받는 느낌이 강했는데,
+                    이스트소프트의 백엔드 개발 과정에서는 강사님들과 멘토님, 그리고 운영진이 나의
+                    취업을 진심을 다해 도와주시고 계신다는 느낌을 받아 지칠때마다 다시 힘을 낼 수
+                    있었습니다.
+                  </p>
+                </div>
+              </div>
 
-                  <div class="review-info">
-                    <h3>위니브 정O연님</h3>
+              <!-- duplicate -->
 
-                    <p>
-                      강사님들과 멘토님들의 진심이 이 과정의 가장 큰 장점입니다. 개발자로 직무전환을
-                      위해 공부했던 이전의 과정은 단순 지식만을 전달받는 느낌이 강했는데,
-                      이스트소프트의 백엔드 개발 과정에서는 강사님들과 멘토님, 그리고 운영진이 나의
-                      취업을 진심을 다해 도와주시고 계신다는 느낌을 받아 지칠때마다 다시 힘을 낼 수
-                      있었습니다.
-                    </p>
-                  </div>
+              <div class="review-card">
+                <div class="review-image">
+                  <img src="image/review-4.jpg" alt="리뷰 얼굴 이미지" />
                 </div>
 
-                <div class="review-card">
-                  <div class="review-image">
-                    <img src="image/review_4.jpg" />
-                  </div>
+                <div class="review-info">
+                  <h3>위니브 정O연님</h3>
 
-                  <div class="review-info">
-                    <h3>위니브 황O현님</h3>
+                  <p>
+                    강사님들과 멘토님들의 진심이 이 과정의 가장 큰 장점입니다. 개발자로 직무전환을
+                    위해 공부했던 이전의 과정은 단순 지식만을 전달받는 느낌이 강했는데,
+                    이스트소프트의 백엔드 개발 과정에서는 강사님들과 멘토님, 그리고 운영진이 나의
+                    취업을 진심을 다해 도와주시고 계신다는 느낌을 받아 지칠때마다 다시 힘을 낼 수
+                    있었습니다.
+                  </p>
+                </div>
+              </div>
 
-                    <p>
-                      강사님들과 멘토님들의 진심이 이 과정의 가장 큰 장점입니다. 개발자로 직무전환을
-                      위해 공부했던 이전의 과정은 단순 지식만을 전달받는 느낌이 강했는데,
-                      이스트소프트의 백엔드 개발 과정에서는 강사님들과 멘토님, 그리고 운영진이 나의
-                      취업을 진심을 다해 도와주시고 계신다는 느낌을 받아 지칠때마다 다시 힘을 낼 수
-                      있었습니다.
-                    </p>
-                  </div>
+              <div class="review-card">
+                <div class="review-image">
+                  <img src="image/review-5.jpg" alt="리뷰 얼굴 이미지" />
+                </div>
+
+                <div class="review-info">
+                  <h3>위니브 황O현님</h3>
+
+                  <p>
+                    강사님들과 멘토님들의 진심이 이 과정의 가장 큰 장점입니다. 개발자로 직무전환을
+                    위해 공부했던 이전의 과정은 단순 지식만을 전달받는 느낌이 강했는데,
+                    이스트소프트의 백엔드 개발 과정에서는 강사님들과 멘토님, 그리고 운영진이 나의
+                    취업을 진심을 다해 도와주시고 계신다는 느낌을 받아 지칠때마다 다시 힘을 낼 수
+                    있었습니다.
+                  </p>
                 </div>
               </div>
             </div>
@@ -485,106 +494,146 @@
         <div class="container">
           <h2>잠깐! 교육 <span>대상</span> 신청자인가요?</h2>
         </div>
-      </section>
+        <div class="condition-card">
+          <div class="icon-box">
+            <span class="material-icons">schedule</span>
+          </div>
 
-      <section class="bottom-slogan">
-        <div class="container">
-          <div class="cta-content">
-            <h2>
-              이스트캠프에 참여하고<br />
-              <span>시장에서 찾는 전문가</span>로 거듭나세요!
-            </h2>
-            <a href="#" class="cta-btn">
-              지원하기
-              <span class="material-symbols-rounded"> done_outline </span>
-            </a>
+          <div class="text-box">
+            평일 오전 9시부터 오후 6시까지<br />
+            교육 참여가 가능한 분
           </div>
         </div>
+
+        <!-- 카드 2 -->
+        <div class="condition-card">
+          <div class="icon-box">
+            <span class="material-icons">credit_card</span>
+          </div>
+
+          <div class="text-box">국민내일배움카드 발급이 가능하신 분</div>
         </div>
+
+        <!-- 카드 3 -->
+        <div class="condition-card">
+          <div class="icon-box">
+            <span class="material-icons">play_lesson</span>
+          </div>
+
+          <div class="text-box">
+            5년 이내 K-디지털 트레이닝<br />
+            과정 수강이력이 없는 분
+          </div>
+        </div>
+
+        <!-- 카드 4 -->
+        <div class="condition-card">
+          <div class="icon-box">
+            <span class="material-icons">school</span>
+          </div>
+
+          <div class="text-box">
+            졸업까지 남은 연한이 2년 이내인 분<br />
+            *4년제 - 2학년 2학기 종료 시부터 지원 가능<br />
+            *3년제 - 1학년 2학기 종료 시부터 지원 가능<br />
+            *2년제 - 1학년 입학시부터 지원 가능
+          </div>
+        </div>
+      </section>
+
+      <section class="bottom-slogan justify-content-center align-items-center">
+        <h2 class="heading-l">
+          이스트캠프에 참여하고<br />
+          <span>시장에서 찾는 전문가</span>로 거듭나세요!
+        </h2>
+        <a href="" class="cta-btn justify-content-center align-items-center">
+          지원하기
+          <span class="material-icons">done_outline</span>
+        </a>
       </section>
       <!-- //박채원 -->
 
       <!-- 조승아 -->
-<section class="courses">
-  <div class="inner">
-    <h2 class="heading-m">ESTSoft 부트캠프</h2>
-    <div class="course-list">
-      <article class="course-card">
-        <div class="course-img-box">
-          <div class="course-img-wrap">
-            <img src="image/course-image.png" alt="프론트엔드 부트캠프 이미지" />
-          </div>
-          <span class="course-badge recruiting">모집중</span>
-        </div>
-        <div class="course-content">
-          <h3 class="heading-xs"><a href="#">프론트엔드 14기</a></h3>
-          <p class="body-s">모집 기간 ~26.04.28 (화)</p>
-        </div>
-      </article>
+      <section class="courses">
+        <div class="inner">
+          <h2 class="heading-m">ESTSoft 부트캠프</h2>
+          <div class="course-list">
+            <article class="course-card">
+              <div class="course-img-box">
+                <div class="course-img-wrap">
+                  <img src="image/course_image.png" alt="프론트엔드 부트캠프 이미지" />
+                </div>
+                <span class="course-badge recruiting">모집중</span>
+              </div>
+              <div class="course-content">
+                <h3 class="heading-xs"><a href="#">프론트엔드 14기</a></h3>
+                <p class="body-s">모집 기간 ~26.04.28 (화)</p>
+              </div>
+            </article>
 
-      <article class="course-card">
-        <div class="course-img-box">
-          <div class="course-img-wrap">
-            <img src="image/course-image.png" alt="프론트엔드 부트캠프 이미지" />
+            <article class="course-card">
+              <div class="course-img-box">
+                <div class="course-img-wrap">
+                  <img src="image/course_image.png" alt="프론트엔드 부트캠프 이미지" />
+                </div>
+                <span class="course-badge">모집예정</span>
+              </div>
+              <div class="course-content">
+                <h3 class="heading-xs"><a href="#">강의명</a></h3>
+                <p class="body-s">모집 기간 ~26.04.28 (화)</p>
+              </div>
+            </article>
+            <article class="course-card">
+              <div class="course-img-box">
+                <div class="course-img-wrap">
+                  <img src="image/course_image.png" alt="프론트엔드 부트캠프 이미지" />
+                </div>
+                <span class="course-badge">모집예정</span>
+              </div>
+              <div class="course-content">
+                <h3 class="heading-xs"><a href="#">강의명</a></h3>
+                <p class="body-s">모집 기간 ~26.04.28 (화)</p>
+              </div>
+            </article>
+            <article class="course-card">
+              <div class="course-img-box">
+                <div class="course-img-wrap">
+                  <img src="image/course_image.png" alt="프론트엔드 부트캠프 이미지" />
+                </div>
+                <span class="course-badge">모집예정</span>
+              </div>
+              <div class="course-content">
+                <h3 class="heading-xs"><a href="#">강의명</a></h3>
+                <p class="body-s">모집 기간 ~26.04.28 (화)</p>
+              </div>
+            </article>
+            <article class="course-card">
+              <div class="course-img-box">
+                <div class="course-img-wrap">
+                  <img src="image/course_image.png" alt="프론트엔드 부트캠프 이미지" />
+                </div>
+                <span class="course-badge">모집예정</span>
+              </div>
+              <div class="course-content">
+                <h3 class="heading-xs"><a href="#">강의명</a></h3>
+                <p class="body-s">모집 기간 ~26.04.28 (화)</p>
+              </div>
+            </article>
+            <article class="course-card">
+              <div class="course-img-box">
+                <div class="course-img-wrap">
+                  <img src="image/course_image.png" alt="프론트엔드 부트캠프 이미지" />
+                </div>
+                <span class="course-badge">모집예정</span>
+              </div>
+              <div class="course-content">
+                <h3 class="heading-xs"><a href="#">강의명</a></h3>
+                <p class="body-s">모집 기간 ~26.04.28 (화)</p>
+              </div>
+            </article>
           </div>
-          <span class="course-badge">모집예정</span>
         </div>
-        <div class="course-content">
-          <h3 class="heading-xs"><a href="#">강의명</a></h3>
-          <p class="body-s">모집 기간 ~26.04.28 (화)</p>
-        </div>
-      </article>
-      <article class="course-card">
-        <div class="course-img-box">
-          <div class="course-img-wrap">
-            <img src="image/course-image.png" alt="프론트엔드 부트캠프 이미지" />
-          </div>
-          <span class="course-badge">모집예정</span>
-        </div>
-        <div class="course-content">
-          <h3 class="heading-xs"><a href="#">강의명</a></h3>
-          <p class="body-s">모집 기간 ~26.04.28 (화)</p>
-        </div>
-      </article>
-      <article class="course-card">
-        <div class="course-img-box">
-          <div class="course-img-wrap">
-            <img src="image/course-image.png" alt="프론트엔드 부트캠프 이미지" />
-          </div>
-          <span class="course-badge">모집예정</span>
-        </div>
-        <div class="course-content">
-          <h3 class="heading-xs"><a href="#">강의명</a></h3>
-          <p class="body-s">모집 기간 ~26.04.28 (화)</p>
-        </div>
-      </article>
-      <article class="course-card">
-        <div class="course-img-box">
-          <div class="course-img-wrap">
-            <img src="image/course-image.png" alt="프론트엔드 부트캠프 이미지" />
-          </div>
-          <span class="course-badge">모집예정</span>
-        </div>
-        <div class="course-content">
-          <h3 class="heading-xs"><a href="#">강의명</a></h3>
-          <p class="body-s">모집 기간 ~26.04.28 (화)</p>
-        </div>
-      </article>
-      <article class="course-card">
-        <div class="course-img-box">
-          <div class="course-img-wrap">
-            <img src="image/course-image.png" alt="프론트엔드 부트캠프 이미지" />
-          </div>
-          <span class="course-badge">모집예정</span>
-        </div>
-        <div class="course-content">
-          <h3 class="heading-xs"><a href="#">강의명</a></h3>
-          <p class="body-s">모집 기간 ~26.04.28 (화)</p>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
+      </section>
 
       <section class="target-audience">
         <div class="inner">
@@ -627,8 +676,8 @@
             <a href="#" class="page-dot active"></a>
             <a href="#" class="page-dot"></a>
             <a href="#" class="page-dot"></a>
-           </div>
           </div>
+        </div>
       </section>
       <!-- //조승아 -->
 
