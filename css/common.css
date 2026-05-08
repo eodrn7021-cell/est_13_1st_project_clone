@@ -192,19 +192,11 @@ body {
 
 /* 유태구 */
 /* header-container */
-.header-container .logo-group {
-  gap: 12px;
-}
-.header-container .logo-group > a {
-  width: 51px;
-  height: 54px;
-  background: url("/image/mascot-transparent.png") no-repeat 0 0 / cover;
-}
-.header-container .logo-group h1 a {
+.header-container h1 a {
   display: block;
-  width: 205px;
-  height: 27px;
-  background: url("/image/est-logo-header.png") no-repeat 0 0 / cover;
+  width: 268px;
+  height: 54px;
+  background: url("/image/logo.png") no-repeat 0 0 / cover;
 }
 .header-container nav ul {
   gap: 24px;
