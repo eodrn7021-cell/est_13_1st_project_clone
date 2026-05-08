@@ -39,7 +39,7 @@ header {
   flex-shrink: 0;
 }
 .hero-slider > li:nth-child(1) {
-  background: url("../image/hero-bg-company.jpg") no-repeat 0 0 / cover;
+  background: url("../image/hero-bg-company.jpg") no-repeat center / cover;
 }
 .hero-company-container {
   width: 840px;
@@ -66,7 +66,7 @@ header {
 }
 
 .hero-slider > li:nth-child(2) {
-  background: url("../image/hero-bg-vision.jpg") no-repeat 0 0 / cover;
+  background: url("../image/hero-bg-vision.jpg") no-repeat center / cover;
 }
 .hero-vision-container {
   padding-top: calc(var(--base-unit) * 5);
@@ -82,7 +82,10 @@ header {
 }
 
 .hero-slider > li:nth-child(3) {
-  background: url("../image/hero-bg-estcamp.jpg") no-repeat 0 0 / cover;
+  background: url("../image/hero-bg-estcamp.jpg") no-repeat center / cover;
+}
+.hero-estcamp-container {
+  padding-top: 27px;
 }
 .hero-estcamp-container h2 {
   color: var(--primary--light);
@@ -108,11 +111,15 @@ header {
   transform: translateX(-50%);
 }
 
+@media (max-width: 1280px) {
+  .hero-estcamp-container {
+    padding-left: 24px;
+  }
+}
 @media (max-width: 768px) {
   .hero {
     padding-bottom: var(--base-unit-x2);
   }
-
   .hero-company-container {
     padding-top: 0px;
     border: none;
@@ -126,7 +133,13 @@ header {
   .introduction-card-list {
     grid-template-columns: repeat(2, 1fr);
   }
-
+  .hero-vision-container p {
+    font-size: var(--heading--x-s);
+  }
+  .hero-estcamp-container h3 {
+    font-size: var(--heading--l);
+    line-height: var(--base-unit-x2);
+  }
   .hero .pagination {
     bottom: 0;
   }
