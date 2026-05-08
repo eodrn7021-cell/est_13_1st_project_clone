@@ -169,59 +169,64 @@ header {
   background: var(--ghost--gray);
   color: var(--dark--green);
 }
-.benefit-section {
+.benefit-section div:first-child {
   flex-wrap: nowrap;
 }
-.benefits-slider li {
+.benefit-section li {
+  padding: 0 216px;
   flex-shrink: 0;
   gap: var(--base-unit-x2);
 }
-.benefits-slider li:first-child .pass-notice {
+.benefit-section li > img {
+  border: var(--primary) solid 3px;
+  border-radius: 15px;
+}
+.benefit-section li:first-child .pass-notice {
   width: 624px;
   padding-bottom: var(--base-unit);
   gap: 10px;
   border-radius: 15px;
   background: var(--white);
 }
-.benefits-slider li:first-child .pass-notice .sender-info {
+.benefit-section li:first-child .pass-notice .sender-info {
   padding: 0 27px;
 }
-.benefits-slider li:first-child .pass-notice > div:first-child {
+.benefit-section li:first-child .pass-notice > div:first-child {
   width: 100%;
   height: var(--base-unit);
   border-radius: 15px 15px 0 0;
   background: var(--dark--green);
 }
-.benefits-slider li:first-child .pass-notice .bar {
+.benefit-section li:first-child .pass-notice .bar {
   width: 40px;
   height: 5px;
   background: var(--dark--green);
 }
-.benefits-slider li:first-child .pass-notice .message {
+.benefit-section li:first-child .pass-notice .message {
   padding: 0 var(--base-unit-x2);
   gap: 10px;
 }
-.benefits-slider li:first-child .pass-notice .message img {
+.benefit-section li:first-child .pass-notice .message img {
   width: 132px;
   height: 34px;
 }
-.benefits-slider li:first-child .benefit-card-container {
+.benefit-section li:first-child .benefit-card-container {
   gap: 24px;
 }
-.benefits-slider li:first-child .benefit-card {
+.benefit-section li:first-child .benefit-card {
   width: 408px;
   padding: var(--base-unit) 10px;
   border-radius: 10px;
   background: var(--white);
   box-shadow: var(--standard--shadow);
 }
-.benefits-slider li:first-child .benefit-card h6 {
+.benefit-section li:first-child .benefit-card h6 {
   color: var(--dark--green);
 }
-.benefits-slider li:first-child .benefit-card p {
+.benefit-section li:first-child .benefit-card p {
   color: var(--green);
 }
-.benefits-slider li:first-child .benefit-card img {
+.benefit-section li:first-child .benefit-card img {
   width: 87px;
   height: 110px;
 }
