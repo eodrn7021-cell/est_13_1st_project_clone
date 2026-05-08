@@ -302,7 +302,6 @@ header {
   border-radius: 15px;
 }
 .benefit-section li:first-child .pass-notice {
-  width: 624px;
   padding-bottom: var(--base-unit);
   gap: 10px;
   border-radius: 15px;
@@ -334,21 +333,18 @@ header {
   gap: 24px;
 }
 .benefit-section li:first-child .benefit-card {
-  width: 408px;
-  padding: var(--base-unit) 10px;
+  width: 300px;
+  padding: 27px 15px;
   border-radius: 10px;
   background: var(--white);
   box-shadow: var(--standard--shadow);
-}
-.benefit-section li:first-child .benefit-card h6 {
-  color: var(--dark--green);
 }
 .benefit-section li:first-child .benefit-card p {
   color: var(--green);
 }
 .benefit-section li:first-child .benefit-card img {
-  width: 87px;
-  height: 110px;
+  width: 74px;
+  height: 94px;
 }
 
 .benefit-section > .container {
