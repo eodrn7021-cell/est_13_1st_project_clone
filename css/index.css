@@ -357,7 +357,9 @@ header {
 .benefit-section > .container > div:has(label[for^="slide"]) {
   position: absolute;
   top: calc(100% + var(--base-unit));
-  left: 50%;
+  left: calc(50% - 105.2px);
+  padding: 8.5px 0;
+  gap: 15px;
 }
 .benefit-section input[type="radio"],
 .benefit-section ul > li {
