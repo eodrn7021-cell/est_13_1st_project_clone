@@ -278,22 +278,19 @@ header {
 }
 
 /* COURSES 조승아 */
-.container {
+.inner {
   width: 100%;
   max-width: 1272px;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 .courses {
   width: 100%;
-  margin: 0 auto;
-  padding: 81px 108px;
-  box-sizing: border-box;
   background-color: var(--ghost--gray);
 }
 
-.courses-inner {
-  width: fit-content;
-  margin: 0 auto;
+.courses .inner {
+  padding: 81px 108px;
 }
 
 /* 카드 전체 묶음 */
@@ -302,7 +299,7 @@ header {
   grid-template-columns: repeat(3, 300px);
   column-gap: 78px;
   row-gap: 81px;
-  width: fit-content;
+  justify-content: center;
 }
 
 /* 카드 */
@@ -378,42 +375,43 @@ header {
 
 .course-content p {
   color: var(--primary);
-  /* padding-top: 5px; */
 }
 
 .courses h2 {
   color: var(--deep--green);
-  margin: 0 0 27px;
+  margin: 0 0 var(--base-unit-x2);
   font-weight: 700;
 }
 
 .course-content h3 {
-  margin: 0 0 10px;
+  margin: 0 0 5px;
   color: var(--dark--green);
   font-weight: bold;
 }
 /* courses 반응형 */
 /* 1100px 이하 */
 @media (max-width: 1100px) {
-  .courses {
-    padding: 60px 40px;
+  .courses .inner {
+    padding: var(--base-unit-x3) 40px 108px;
   }
 
   .course-list {
     grid-template-columns: repeat(2, 300px);
     column-gap: 40px;
+    justify-content: center;
   }
 }
 
 /* 700px 이하 */
 @media (max-width: 700px) {
-  .courses {
-    padding: 40px 20px;
+  .courses .inner {
+    padding: var(--base-unit-x3) 20px 108px;
   }
 
   .course-list {
     grid-template-columns: 300px;
-    row-gap: 40px;
+    justify-content: center;
+    row-gap: var(--base-unit-x2);
   }
 
   .courses h2 {
@@ -421,17 +419,17 @@ header {
   }
 }
 /* target-audience 조승아*/
-.target-audience .container {
+
+.target-audience .inner {
   width: 100%;
   max-width: 1272px;
   margin: 0 auto;
-  padding: var(--base-unit-x3);
+  padding: var(--base-unit-x3) 0;
   background: #fff;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   gap: 54px;
-  align-items: center;
 }
 
 .target-audience h2 {
@@ -439,6 +437,7 @@ header {
   text-align: center;
   color: var(--dark--green);
   font-weight: bold;
+  white-space: nowrap;
 }
 
 .target-audience h2 strong {
@@ -447,14 +446,16 @@ header {
 
 /* 카드 묶음 */
 .target-list {
+  width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 371px);
+  grid-template-columns: repeat(3, 300px);
   gap: 77px;
+  justify-content: center;
 }
 
 /* 카드 */
 .target-card {
-  width: 371px;
+  width: 300px;
   min-height: 437px;
   background: #fff;
   border: 1px solid rgba(132, 132, 132, 0.3);
@@ -464,7 +465,6 @@ header {
   transition: all 0.3s ease;
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
 }
 
 .target-card:hover {
@@ -497,6 +497,7 @@ header {
   word-break: keep-all;
   color: var(--dark--green);
   max-width: 270px;
+  max-width: none;
 }
 
 /* 이미지 */
@@ -520,10 +521,11 @@ header {
   }
 
   .target-list {
-    grid-template-columns: repeat(2, 371px);
+    grid-template-columns: repeat(2, 300px);
     justify-content: center;
     gap: 40px;
     width: fit-content;
+    margin: 0 auto;
   }
 
   .target-audience h2 {
@@ -531,12 +533,12 @@ header {
   }
 
   .target-card {
-    width: 371px;
+    width: 300px;
   }
 }
 /* 700px 이하 */
 @media (max-width: 700px) {
-  .target-audience .container {
+  .target-audience .inner {
     display: flex;
     flex-direction: column;
     padding: 40px 27px;
@@ -547,6 +549,8 @@ header {
   .target-audience h2 {
     text-align: center;
     line-height: 1.2;
+    font-size: var(--heading--s);
+    white-space: normal;
   }
 
   .target-list {
@@ -562,7 +566,8 @@ header {
   .target-card:first-child {
     display: flex;
     width: 100%;
-    max-width: 371px;
+    max-width: 300px;
+    margin: 0 auto;
   }
 
   .target-content {
@@ -614,14 +619,13 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 15px;
+  gap: 10px;
 }
 
 .side-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 5px;
   margin-bottom: 0;
   text-decoration: none;
   color: #17302d;
