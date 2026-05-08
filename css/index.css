@@ -17,13 +17,28 @@ header {
   position: relative;
 }
 
-.hero-slider li {
+.hero-slider-controller {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 50;
+}
+.hero-slider-controller .material-icons {
+  font-size: 84px;
+  color: var(--secondary);
+  text-shadow: var(--standard--shadow);
+}
+.hero-slider-controller .material-icons:hover {
+  color: var(--primary);
+}
+
+.hero-slider > li {
   width: 100%;
   height: calc(var(--base-unit) * 30);
   flex-shrink: 0;
 }
-
-.hero-slider li:nth-child(1) {
+.hero-slider > li:nth-child(1) {
   background: url("../image/hero-bg-company.jpg") no-repeat 0 0 / cover;
 }
 .hero-company-container {
@@ -44,8 +59,13 @@ header {
 .hero-company-container > div:has(p) {
   gap: 10px;
 }
+.introduction-card-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
 
-.hero-slider li:nth-child(2) {
+.hero-slider > li:nth-child(2) {
   background: url("../image/hero-bg-vision.jpg") no-repeat 0 0 / cover;
 }
 .hero-vision-container {
@@ -61,7 +81,7 @@ header {
   color: var(--alyak-color);
 }
 
-.hero-slider li:nth-child(3) {
+.hero-slider > li:nth-child(3) {
   background: url("../image/hero-bg-estcamp.jpg") no-repeat 0 0 / cover;
 }
 .hero-estcamp-container h2 {
@@ -86,6 +106,30 @@ header {
   bottom: var(--base-unit-x2);
   left: 50%;
   transform: translateX(-50%);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding-bottom: var(--base-unit-x2);
+  }
+
+  .hero-company-container {
+    padding-top: 0px;
+    border: none;
+  }
+  .hero-company-container > div:has(p) {
+    gap: 0;
+  }
+  .hero-company-container .heading-s {
+    font-size: var(--heading--x-s);
+  }
+  .introduction-card-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero .pagination {
+    bottom: 0;
+  }
 }
 /* // Hero Section */
 
@@ -118,6 +162,79 @@ header {
 /* //유태구 */
 
 /* 박채원 */
+/* bottom-slogan */
+.bottom-slogan {
+  width: 100%;
+  padding: 81px 0 81px;
+  background: url(../image/bottom_slogan.png) no-repeat 0 0 / 100% 100%;
+  color: var(--white, --cool--gray);
+  text-align: center;
+}
+
+.bottom-slogan h2 span {
+  color: var(--primary);
+}
+/* bottom-slogan */
+/* training-eligibility */
+.condition-wrap {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 24px;
+
+  margin: 60px auto;
+}
+
+/* 카드 */
+.condition-card {
+  display: flex;
+  align-items: center;
+
+  min-height: 140px;
+
+  background: #ffffff;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+  overflow: hidden;
+}
+
+/* 왼쪽 아이콘 영역 */
+.icon-box {
+  width: 110px;
+  min-width: 110px;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #b8ddd7;
+}
+
+/* 아이콘 */
+.icon-box .material-icons {
+  font-size: 48px;
+  color: #ffffff;
+
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.18);
+}
+
+/* 텍스트 영역 */
+.text-box {
+  padding: 24px 28px;
+
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.6;
+
+  color: #3d2f35;
+
+  word-break: keep-all;
+}
+/* training-eligibility */
 .review-section-title {
   text-align: center;
   margin-bottom: 72px;
