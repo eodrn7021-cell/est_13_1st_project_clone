@@ -359,7 +359,8 @@ header {
   top: calc(100% + var(--base-unit));
   left: 50%;
 }
-.benefit-section input[type="radio"] {
+.benefit-section input[type="radio"],
+.benefit-section ul > li {
   display: none;
 }
 .benefit-section label[for^="slide"] {
@@ -374,9 +375,6 @@ header {
 .benefit-section #slide3:checked ~ div > label[for="slide3"],
 .benefit-section #slide4:checked ~ div > label[for="slide4"] {
   background: var(--secondary);
-}
-.benefit-section ul > li {
-  display: none;
 }
 #slide1:checked ~ ul li:nth-child(1),
 #slide2:checked ~ ul li:nth-child(2),
