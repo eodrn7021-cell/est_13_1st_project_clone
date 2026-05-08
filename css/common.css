@@ -197,16 +197,23 @@ body {
 }
 /* //Benefit Title */
 
-/* Arrow */
-.arrow {
+/* Slider Button */
+/* 부모에 position: relative; 추가 필요 */
+.slider-controller {
+  width: 1272px;
+  position: absolute;
+  top: 50%;
+  z-index: 50;
+}
+.slider-button {
   font-size: 84px;
   color: var(--secondary);
   text-shadow: var(--standard--shadow);
 }
-.arrow:hover {
+.slider-button:hover {
   color: var(--primary);
 }
-/* //Arrow */
+/* //Slider Button */
 
 /* Statistics Item */
 .statistics-item {
