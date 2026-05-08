@@ -148,6 +148,9 @@ header {
   text-decoration: none;
 }
 
+.cta-btn:hover {
+  box-shadow: var(--highlight--register);
+}
 /* bottom-slogan */
 .review-section-title {
   text-align: center;
