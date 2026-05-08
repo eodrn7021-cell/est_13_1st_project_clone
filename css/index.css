@@ -81,15 +81,22 @@ header {
 .hero-slider li:nth-child(3) {
   left: 200%;
   background: url("../image/hero-bg-estcamp.jpg") no-repeat 0 0 / cover;
-  background: var(--greenish--gray);
-}
-.hero-estcamp-container {
-  padding-top: var(--base-unit);
-  gap: calc(var(--base-unit) * 13);
-  color: var(--cool--gray);
 }
 .hero-estcamp-container h2 {
-  order: 1;
+  color: var(--primary--light);
+}
+.hero-estcamp-container h3 {
+  color: var(--deep--green);
+}
+.hero-estcamp-container h3 span::before {
+  content: "\A";
+  white-space: pre;
+}
+.hero-estcamp-container h3 span {
+  color: var(--primary);
+}
+.hero-estcamp-container p {
+  color: var(--deep--green);
 }
 
 .hero .pagination {
