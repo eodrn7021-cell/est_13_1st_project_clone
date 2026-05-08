@@ -17,13 +17,6 @@ header {
   position: relative;
 }
 
-.hero > .container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
 .hero-slider li {
   width: 100%;
   height: calc(var(--base-unit) * 30);
