@@ -389,8 +389,9 @@ header {
   font-weight: bold;
 }
 /* courses 반응형 */
-/* 1100px 이하 */
-@media (max-width: 1100px) {
+
+/* 1280px 이하 */
+@media (max-width: 1280px) {
   .courses .inner {
     padding: var(--base-unit-x3) 40px 108px;
   }
@@ -402,8 +403,8 @@ header {
   }
 }
 
-/* 700px 이하 */
-@media (max-width: 700px) {
+/* 768px 이하 */
+@media (max-width: 768px) {
   .courses .inner {
     padding: var(--base-unit-x3) 20px 108px;
   }
@@ -514,8 +515,8 @@ header {
   gap: 15px;
   margin-top: 27px;
 }
-/* 1100px 이하 */
-@media (max-width: 1100px) {
+/* 1280px 이하 */
+@media (max-width: 1280px) {
   .target-audience {
     padding: 60px 40px;
   }
@@ -535,9 +536,13 @@ header {
   .target-card {
     width: 300px;
   }
+  .target-card:last-child {
+    grid-column: 1 / 3; /* 수정 */
+    justify-self: center; /* 수정 */
+  }
 }
-/* 700px 이하 */
-@media (max-width: 700px) {
+/* 768px 이하 */
+@media (max-width: 768px) {
   .target-audience .inner {
     display: flex;
     flex-direction: column;
@@ -649,7 +654,7 @@ header {
 .top-btn {
   gap: 0;
 }
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   .side-bar {
     display: none;
   }
