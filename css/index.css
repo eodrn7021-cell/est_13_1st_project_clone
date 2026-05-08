@@ -24,13 +24,6 @@ header {
   transform: translate(-50%, -50%);
 }
 
-/* 차후 common에 적용된 컴포넌트로 변경할 예정 */
-.hero > .container button .material-icons {
-  font-size: 84px;
-  color: var(--green);
-  text-shadow: var(--standard--shadow);
-}
-
 .hero-slider li {
   width: 100%;
   height: calc(var(--base-unit) * 30);
