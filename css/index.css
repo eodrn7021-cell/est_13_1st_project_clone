@@ -135,22 +135,24 @@ header {
 }
 
 /* COURSES 조승아 */
-.container {
+/* .container {
   width: 100%;
   max-width: 1272px;
   margin: 0 auto;
+} */
+.inner {
+  width: 100%;
+  max-width: 1272px;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 .courses {
   width: 100%;
-  margin: 0 auto;
-  padding: 81px 108px;
-  box-sizing: border-box;
   background-color: var(--ghost--gray);
 }
 
-.courses-inner {
-  width: fit-content;
-  margin: 0 auto;
+.courses .inner {
+  padding: 81px 108px;
 }
 
 /* 카드 전체 묶음 */
@@ -160,6 +162,7 @@ header {
   column-gap: 78px;
   row-gap: 81px;
   width: fit-content;
+  justify-content: center;
 }
 
 /* 카드 */
