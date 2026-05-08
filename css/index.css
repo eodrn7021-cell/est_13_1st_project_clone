@@ -114,7 +114,13 @@ header {
   right: 0;
   bottom: 0;
   left: 0;
-  background: linear-gradient(to right, #ffffffff 5%, #ffffff00 30%, #ffffff00 70%, #ffffffff 95%);
+  background: linear-gradient(
+    to right,
+    #ffffffff 5%,
+    #ffffff00 30%,
+    #ffffff00 70%,
+    #ffffffff 95%
+  );
   position: absolute;
 }
 /* //Graduates Employment Status */
@@ -157,65 +163,65 @@ header {
 /* //Top Slogan */
 
 /* Benefits */
-.benefits {
-  padding: var(--base-unit-x3) 324px;
+.benefit-section {
+  padding: var(--base-unit-x3) 0;
+  gap: calc(var(--base-unit) * 4);
   background: var(--ghost--gray);
-  gap: var(--base-unit-x3);
   color: var(--dark--green);
 }
-.benefits .container {
-  position: relative;
+.benefit-section {
+  flex-wrap: nowrap;
 }
-.benefit1 {
+.benefits-slider li {
+  flex-shrink: 0;
   gap: var(--base-unit-x2);
 }
-.benefit1 .pass-notice {
+.benefits-slider li:first-child .pass-notice {
   width: 624px;
   padding-bottom: var(--base-unit);
   gap: 10px;
   border-radius: 15px;
   background: var(--white);
 }
-.benefit1 .pass-notice .sender-info {
-  gap: 10px;
+.benefits-slider li:first-child .pass-notice .sender-info {
   padding: 0 27px;
 }
-.benefit1 .pass-notice > div:first-child {
+.benefits-slider li:first-child .pass-notice > div:first-child {
   width: 100%;
   height: var(--base-unit);
   border-radius: 15px 15px 0 0;
   background: var(--dark--green);
 }
-.benefit1 .pass-notice .bar {
+.benefits-slider li:first-child .pass-notice .bar {
   width: 40px;
   height: 5px;
   background: var(--dark--green);
 }
-.benefit1 .pass-notice .message {
+.benefits-slider li:first-child .pass-notice .message {
   padding: 0 var(--base-unit-x2);
   gap: 10px;
 }
-.benefit1 .pass-notice .message img {
+.benefits-slider li:first-child .pass-notice .message img {
   width: 132px;
   height: 34px;
 }
-.benefit1 .benefit-card-container {
+.benefits-slider li:first-child .benefit-card-container {
   gap: 24px;
 }
-.benefit1 .benefit-card {
+.benefits-slider li:first-child .benefit-card {
   width: 408px;
   padding: var(--base-unit) 10px;
   border-radius: 10px;
   background: var(--white);
   box-shadow: var(--standard--shadow);
 }
-.benefit1 .benefit-card h6 {
+.benefits-slider li:first-child .benefit-card h6 {
   color: var(--dark--green);
 }
-.benefit1 .benefit-card p {
+.benefits-slider li:first-child .benefit-card p {
   color: var(--green);
 }
-.benefit1 .benefit-card img {
+.benefits-slider li:first-child .benefit-card img {
   width: 87px;
   height: 110px;
 }
