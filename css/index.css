@@ -369,30 +369,18 @@ header {
   border-radius: 5px;
   background: var(--green);
 }
-.benefit-section #slide1:checked ~ div > label[for="slide1"] {
-  background: var(--secondary);
-}
-.benefit-section #slide2:checked ~ div > label[for="slide2"] {
-  background: var(--secondary);
-}
-.benefit-section #slide3:checked ~ div > label[for="slide3"] {
-  background: var(--secondary);
-}
+.benefit-section #slide1:checked ~ div > label[for="slide1"],
+.benefit-section #slide2:checked ~ div > label[for="slide2"],
+.benefit-section #slide3:checked ~ div > label[for="slide3"],
 .benefit-section #slide4:checked ~ div > label[for="slide4"] {
   background: var(--secondary);
 }
 .benefit-section ul > li {
   display: none;
 }
-#slide1:checked ~ ul li:nth-child(1) {
-  display: flex;
-}
-#slide2:checked ~ ul li:nth-child(2) {
-  display: flex;
-}
-#slide3:checked ~ ul li:nth-child(3) {
-  display: flex;
-}
+#slide1:checked ~ ul li:nth-child(1),
+#slide2:checked ~ ul li:nth-child(2),
+#slide3:checked ~ ul li:nth-child(3),
 #slide4:checked ~ ul li:nth-child(4) {
   display: flex;
 }
