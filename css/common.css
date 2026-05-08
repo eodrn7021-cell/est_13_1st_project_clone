@@ -55,11 +55,6 @@
 .container {
   width: 1272px;
 }
-@media (max-width: 1280px) {
-  .container {
-    width: 100%;
-  }
-}
 .ir {
   position: absolute;
   inset: 100%;
@@ -70,6 +65,20 @@
 }
 main {
   padding-top: var(--base-unit-x3);
+}
+.responsive-line-break::before {
+  content: " ";
+}
+@media (max-width: 1280px) {
+  .container {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .responsive-line-break::before {
+    content: "\A";
+    white-space: pre;
+  }
 }
 /* //Layout */
 
@@ -108,11 +117,11 @@ body {
   font-size: var(--body--l);
 }
 .body-mp {
-  font-size: var(--nav--item);
+  font-size: var(--body--m-p);
   line-height: var(--base-unit);
 }
 .body-m {
-  font-size: var(--nav--item);
+  font-size: var(--body--m);
   line-height: var(--base-unit);
 }
 .body-s {
@@ -240,6 +249,16 @@ body {
 .introduction-card .body-mp {
   color: var(--dark--green);
 }
+@media (max-width: 768px) {
+  .introduction-card {
+    width: 150px;
+    height: var(--base-unit-x3);
+    gap: 5px;
+  }
+  .introduction-card .material-icons {
+    font-size: 32px;
+  }
+}
 /* //introduction-card */
 /* //유태구 */
 
@@ -264,24 +283,6 @@ body {
   color: var(--dark--green);
 }
 /* //Benefit Title */
-
-/* Slider Button */
-/* 부모에 position: relative; 추가 필요 */
-.slider-controller {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 50;
-}
-.slider-button {
-  font-size: 84px;
-  color: var(--secondary);
-  text-shadow: var(--standard--shadow);
-}
-.slider-button:hover {
-  color: var(--primary);
-}
-/* //Slider Button */
 
 /* Statistics Item */
 .statistics-item {
