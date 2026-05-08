@@ -114,19 +114,41 @@ header {
   right: 0;
   bottom: 0;
   left: 0;
-  background: linear-gradient(
-    to right,
-    #ffffffff 5%,
-    #ffffff00 30%,
-    #ffffff00 70%,
-    #ffffffff 95%
-  );
+  background: linear-gradient(to right, #ffffffff 5%, #ffffff00 30%, #ffffff00 70%, #ffffffff 95%);
   position: absolute;
 }
 /* //Graduates Employment Status */
 /* //유태구 */
 
 /* 박채원 */
+/* bottom-slogan */
+.bottom-slogan {
+  width: 100%;
+  padding: 81px 0 81px;
+  background: url(../image/bottom_slogan.png) no-repeat 0 0 / 100% 100%;
+  color: var(--white, --cool--gray);
+  text-align: center;
+}
+
+.bottom-slogan h2 span {
+  color: var(--primary);
+}
+
+.cta-btn {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+
+  padding: 14px 30px;
+
+  border-radius: 10px;
+
+  text-decoration: none;
+}
+
+/* bottom-slogan */
 .review-section-title {
   text-align: center;
   margin-bottom: 72px;
