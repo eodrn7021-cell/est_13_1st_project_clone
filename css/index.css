@@ -305,14 +305,14 @@ header {
 .target-list {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 371px);
+  grid-template-columns: repeat(3, 300px);
   gap: 77px;
   justify-content: center;
 }
 
 /* 카드 */
 .target-card {
-  width: 371px;
+  width: 300px;
   min-height: 437px;
   background: #fff;
   border: 1px solid rgba(132, 132, 132, 0.3);
@@ -378,7 +378,7 @@ header {
   }
 
   .target-list {
-    grid-template-columns: repeat(2, 371px);
+    grid-template-columns: repeat(2, 300px);
     justify-content: center;
     gap: 40px;
     width: fit-content;
@@ -389,7 +389,7 @@ header {
   }
 
   .target-card {
-    width: 371px;
+    width: 300px;
   }
 }
 /* 700px 이하 */
@@ -422,7 +422,7 @@ header {
   .target-card:first-child {
     display: flex;
     width: 100%;
-    max-width: 371px;
+    max-width: 300px;
     margin: 0 auto;
   }
 
