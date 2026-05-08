@@ -33,12 +33,12 @@ header {
   color: var(--primary);
 }
 
-.hero-slider li {
+.hero-slider > li {
   width: 100%;
   height: calc(var(--base-unit) * 30);
   flex-shrink: 0;
 }
-.hero-slider li:nth-child(1) {
+.hero-slider > li:nth-child(1) {
   background: url("../image/hero-bg-company.jpg") no-repeat 0 0 / cover;
 }
 .hero-company-container {
@@ -59,8 +59,13 @@ header {
 .hero-company-container > div:has(p) {
   gap: 10px;
 }
+.introduction-card-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
 
-.hero-slider li:nth-child(2) {
+.hero-slider > li:nth-child(2) {
   background: url("../image/hero-bg-vision.jpg") no-repeat 0 0 / cover;
 }
 .hero-vision-container {
@@ -76,7 +81,7 @@ header {
   color: var(--alyak-color);
 }
 
-.hero-slider li:nth-child(3) {
+.hero-slider > li:nth-child(3) {
   background: url("../image/hero-bg-estcamp.jpg") no-repeat 0 0 / cover;
 }
 .hero-estcamp-container h2 {
@@ -115,9 +120,11 @@ header {
   .hero-company-container > div:has(p) {
     gap: 0;
   }
-  .introduction-card-box {
-    flex-wrap: wrap;
-    gap: 24px;
+  .hero-company-container .heading-s {
+    font-size: var(--heading--x-s);
+  }
+  .introduction-card-list {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .hero .pagination {
