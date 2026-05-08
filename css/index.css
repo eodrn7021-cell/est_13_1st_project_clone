@@ -475,14 +475,13 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 15px;
+  gap: 10px;
 }
 
 .side-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 5px;
   margin-bottom: 0;
   text-decoration: none;
   color: #17302d;
