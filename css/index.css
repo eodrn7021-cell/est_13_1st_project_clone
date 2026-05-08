@@ -63,7 +63,7 @@ header {
 
 .hero-slider li:nth-child(2) {
   left: 100%;
-  background: url("../image/hero_bg_vision.jpg") no-repeat 0 0 / cover;
+  background: url("../image/hero-bg-vision.jpg") no-repeat 0 0 / cover;
 }
 .hero-vision-container {
   padding-top: calc(var(--base-unit) * 5);
@@ -80,7 +80,7 @@ header {
 
 .hero-slider li:nth-child(3) {
   left: 200%;
-  /* background: url("../image/frontend.png") no-repeat 0 0 / cover; */
+  background: url("../image/hero-bg-estcamp.jpg") no-repeat 0 0 / cover;
   background: var(--greenish--gray);
 }
 .hero-estcamp-container {
