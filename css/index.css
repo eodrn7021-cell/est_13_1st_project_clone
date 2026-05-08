@@ -17,12 +17,27 @@ header {
   position: relative;
 }
 
+.hero-slider-controller {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 50;
+}
+.hero-slider-controller .material-icons {
+  font-size: 84px;
+  color: var(--secondary);
+  text-shadow: var(--standard--shadow);
+}
+.hero-slider-controller .material-icons:hover {
+  color: var(--primary);
+}
+
 .hero-slider li {
   width: 100%;
   height: calc(var(--base-unit) * 30);
   flex-shrink: 0;
 }
-
 .hero-slider li:nth-child(1) {
   background: url("../image/hero-bg-company.jpg") no-repeat 0 0 / cover;
 }
@@ -86,6 +101,28 @@ header {
   bottom: var(--base-unit-x2);
   left: 50%;
   transform: translateX(-50%);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding-bottom: var(--base-unit-x2);
+  }
+
+  .hero-company-container {
+    padding-top: 0px;
+    border: none;
+  }
+  .hero-company-container > div:has(p) {
+    gap: 0;
+  }
+  .introduction-card-box {
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  .hero .pagination {
+    bottom: 0;
+  }
 }
 /* // Hero Section */
 
