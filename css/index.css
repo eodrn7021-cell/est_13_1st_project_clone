@@ -161,7 +161,74 @@ header {
 /* //Top Slogan */
 
 /* Benefits */
+.benefits {
+  padding: var(--base-unit-x3) 324px;
+  background: var(--ghost--gray);
+  gap: var(--base-unit-x3);
+  color: var(--dark--green);
+}
+.benefits .container {
+  position: relative;
+}
+.benefit1 {
+  gap: var(--base-unit-x2);
+}
+.benefit1 .pass-notice {
+  width: 624px;
+  padding-bottom: var(--base-unit);
+  gap: 10px;
+  border-radius: 15px;
+  background: var(--white);
+}
+.benefit1 .pass-notice .sender-info {
+  gap: 10px;
+  padding: 0 27px;
+}
+.benefit1 .pass-notice > div:first-child {
+  width: 100%;
+  height: var(--base-unit);
+  border-radius: 15px 15px 0 0;
+  background: var(--dark--green);
+}
+.benefit1 .pass-notice .bar {
+  width: 40px;
+  height: 5px;
+  background: var(--dark--green);
+}
+.benefit1 .pass-notice .message {
+  padding: 0 var(--base-unit-x2);
+  gap: 10px;
+}
+.benefit1 .pass-notice .message img {
+  width: 132px;
+  height: 34px;
+}
+.benefit1 .benefit-card-container {
+  gap: 24px;
+}
+.benefit1 .benefit-card {
+  width: 408px;
+  padding: var(--base-unit) 10px;
+  border-radius: 10px;
+  background: var(--white);
+  box-shadow: var(--standard--shadow);
+}
+.benefit1 .benefit-card h6 {
+  color: var(--dark--green);
+}
+.benefit1 .benefit-card p {
+  color: var(--green);
+}
+.benefit1 .benefit-card img {
+  width: 87px;
+  height: 110px;
+}
 
+.benefit5 {
+  padding-top: var(--base-unit-x3);
+  box-sizing: border-box;
+  border-top: 1px solid var(--cool--gray);
+}
 /* //Benefits */
 
 /* Statistics */
@@ -591,3 +658,30 @@ header {
   }
 }
 /* //조승아 */
+/* 권유진 */
+.footer {
+  background: var(--deep--green);
+  padding: var(--base-unit) 324px var(--base-unit-x2);
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 27px;
+}
+.footer-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+}
+
+.info {
+  color: var(--cool--gray);
+}
+
+.nav {
+  display: flex;
+  gap: 12px;
+  font-weight: bold;
+  color: var(--white);
+}
+/* 권유진 */
