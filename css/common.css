@@ -55,6 +55,11 @@
 .container {
   width: 1272px;
 }
+@media (max-width: 1280px) {
+  .container {
+    width: 100%;
+  }
+}
 .ir {
   position: absolute;
   inset: 100%;
