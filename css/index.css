@@ -12,8 +12,7 @@ header {
 /* Hero Section */
 .hero {
   width: 100%;
-  /* 작업이 끝나면 overflow: hidden;을 다시 적용해 가로 스크롤 제거하기 */
-  /* overflow: hidden; */
+  overflow: hidden;
   position: relative;
 }
 
@@ -424,7 +423,7 @@ header {
   padding: var(--base-unit-x3) 324px;
   background: var(--snow--gray);
 }
-.container {
+.est-content .container {
   padding: 27px 0 0 0;
 }
 .section-header {
