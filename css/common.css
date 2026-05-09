@@ -320,4 +320,40 @@ body {
   background-color: var(--dark--green);
   border-radius: 50%;
 }
+/* FAQ */
+input[id*="question"] {
+  display: none;
+}
+input[id*="question"] + label {
+  color: var(--dark--green);
+  display: block;
+  padding: 12px 0;
+  border: 1px solid var(--cool--gray);
+  border-left: 0;
+  border-right: 0;
+  position: relative;
+}
+input[id*="question"] + label em {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  margin-top: -15px;
+  display: inline-block;
+}
+input[id*="question"] + label + div {
+  max-height: 0;
+  transition: all 0.35s ease;
+  overflow: hidden;
+  opacity: 0;
+}
+input[id*="question"] + label + div p {
+  color: var(--greenish--gray);
+  display: inline-block;
+  padding: 13.5px 12px;
+}
+input[id*="question"]:checked ~ label ~ div {
+  max-height: 300px;
+}
 /* 권유진 */

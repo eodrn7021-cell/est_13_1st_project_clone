@@ -436,8 +436,8 @@ header {
   color: var(--point);
 }
 .card-container {
-  width: 300px;
-  height: 324px;
+  /*width: 300px;
+  height: 324px;*/
   display: flex;
   box-sizing: border-box;
 }
@@ -866,6 +866,26 @@ header {
 }
 /* //조승아 */
 /* 권유진 */
+/*FAQ*/
+.faq {
+  padding: var(--base-unit-x2) 324px;
+  background: var(--white);
+  box-sizing: border-box;
+  display: flex;
+  align-items: space-between;
+}
+.faq-container {
+  padding: 54px 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 313px;
+}
+.heading-m {
+  color: var(--green);
+  display: inline-block;
+  white-space: nowrap;
+}
+/*footer*/
 .footer {
   background: var(--deep--green);
   padding: var(--base-unit) 324px var(--base-unit-x2);
