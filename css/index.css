@@ -308,13 +308,20 @@ header {
   background: var(--white);
 }
 .benefit-section li:first-child .pass-notice .sender-info {
-  padding: 0 27px;
+  padding: 0 22px;
+  gap: 10px;
 }
 .benefit-section li:first-child .pass-notice > div:first-child {
   width: 100%;
   height: var(--base-unit);
   border-radius: 15px 15px 0 0;
   background: var(--dark--green);
+}
+.benefit-section li:first-child .sender-info .body-xs {
+  color: var(--green);
+}
+.benefit-section li:first-child .sender-info .material-icons {
+  display: inline;
 }
 .benefit-section li:first-child .pass-notice .bar {
   width: 40px;
