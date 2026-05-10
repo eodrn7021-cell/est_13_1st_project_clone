@@ -807,65 +807,48 @@ header {
 /* //조승아 */
 /* 권유진*/
 /*est-content*/
-/* =========================
-   콘텐츠 섹션
-========================= */
 
+/* 콘텐츠 섹션*/
 .est-content {
   padding: 81px 0;
   display: flex;
   justify-content: center;
   background: var(--snow--gray);
 }
-
 .est-container {
   width: 100%;
   max-width: 1200px;
 }
 
-/* =========================
-   헤더
-========================= */
-
+/* 헤더 */
 .section-header {
   text-align: center;
   padding: var(--base-unit) 0;
   border-bottom: 2px solid var(--cool--gray);
   color: var(--dark--green);
 }
-
 .section-header p span {
   color: var(--point);
 }
 
-/* =========================
-   카드 영역
-========================= */
-
+/* 카드 영역 */
 .est-card-container {
   padding: var(--base-unit-x2) var(--base-unit-x3);
   align-items: flex-start;
 }
-
-/* 왼쪽 큰 카드 */
 .card-first {
   width: 408px;
   height: 567px;
-
   background: var(--white);
   border: 2px solid var(--cool--gray);
   border-radius: 10px;
   overflow: hidden;
 }
-
-/* 오른쪽 카드 묶음 */
 .card-items {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
 }
-
-/* 작은 카드 */
 .sub-card {
   width: 300px;
   height: 324px;
@@ -875,32 +858,22 @@ header {
   overflow: hidden;
 }
 
-/* =========================
-   이미지
-========================= */
-
+/* 이미지 */
 .card-first img,
 .card img {
   display: block;
   object-fit: cover;
 }
-
-/* 큰 카드 이미지 */
 .card-first img {
   height: 215px;
   width: 100%;
 }
-
-/* 작은 카드 이미지 */
 .sub-card img {
   height: 108px;
   width: 100%;
 }
 
-/* =========================
-   카드 내용
-========================= */
-
+/* 카드 내용 */
 .card-content {
   padding: 20px 25px;
   gap: 13.5px;
@@ -924,7 +897,7 @@ header {
   color: var(--dark--green);
 }
 
-/* 설명 */
+/* 글 */
 .card-content p {
   color: var(--dark--green);
 }
@@ -932,9 +905,7 @@ header {
   color: var(--dark--green);
 }
 
-/* =========================
-   아이콘 하단 고정
-========================= */
+/* 아이콘 */
 
 .card-content a {
   color: var(--point);
@@ -946,7 +917,6 @@ header {
   font-size: 35px;
   align-self: flex-start;
 }
-/*반응형*/
 
 /*FAQ*/
 .faq {
