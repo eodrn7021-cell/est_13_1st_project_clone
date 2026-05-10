@@ -308,6 +308,7 @@ header {
   gap: 10px;
   border-radius: 15px;
   background: var(--white);
+  box-shadow: var(--standard--shadow);
 }
 .benefit-section li:first-child .pass-notice .sender-info {
   padding: 0 22px;
