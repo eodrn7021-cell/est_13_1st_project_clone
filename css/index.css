@@ -423,6 +423,7 @@ header {
 /* //Statistics */
 
 @media (max-width: 768px) {
+  /* Benefits */
   .benefit-section {
     padding: var(--base-unit) 0;
     gap: 81px;
@@ -444,6 +445,15 @@ header {
     align-items: center;
     gap: var(--base-unit);
   }
+  /* //Benefits */
+
+  /* Statistics */
+  .items-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: var(--base-unit);
+  }
+  /* //Statistics */
 }
 /* 박소영 */
 
