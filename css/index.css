@@ -299,7 +299,7 @@ header {
   flex-shrink: 0;
   gap: var(--base-unit);
 }
-.benefit-section li > img {
+.benefit-section li picture img {
   border: var(--green) solid 3px;
   border-radius: 15px;
 }
@@ -308,6 +308,7 @@ header {
   gap: 10px;
   border-radius: 15px;
   background: var(--white);
+  box-shadow: var(--standard--shadow);
 }
 .benefit-section li:first-child .pass-notice .sender-info {
   padding: 0 22px;
@@ -338,20 +339,20 @@ header {
   width: 132px;
   height: 34px;
 }
-.benefit-section li:first-child .benefit-card-container {
+.benefit-section li:first-child .card-container {
   gap: 24px;
 }
-.benefit-section li:first-child .benefit-card {
+.benefit-section li:first-child .card {
   width: 300px;
   padding: 27px 15px;
   border-radius: 10px;
   background: var(--white);
   box-shadow: var(--standard--shadow);
 }
-.benefit-section li:first-child .benefit-card p {
+.benefit-section li:first-child .card p {
   color: var(--green);
 }
-.benefit-section li:first-child .benefit-card img {
+.benefit-section li:first-child .card img {
   width: 74px;
   height: 94px;
 }
@@ -372,6 +373,9 @@ header {
   padding: 8.5px 0;
   gap: 15px;
 }
+.benefit-section .slider {
+  overflow: hidden;
+}
 .benefit-section ul {
   position: relative;
   width: 400%;
@@ -388,16 +392,16 @@ header {
   background: var(--green);
 }
 
-#slide1:checked ~ ul {
+#slide1:checked ~ .slider ul {
   transform: translateX(0);
 }
-#slide2:checked ~ ul {
+#slide2:checked ~ .slider ul {
   transform: translateX(-25%);
 }
-#slide3:checked ~ ul {
+#slide3:checked ~ .slider ul {
   transform: translateX(-50%);
 }
-#slide4:checked ~ ul {
+#slide4:checked ~ .slider ul {
   transform: translateX(-75%);
 }
 
@@ -420,6 +424,30 @@ header {
   color: var(--dark-green);
 }
 /* //Statistics */
+
+@media (max-width: 768px) {
+  .benefit-section {
+    padding: var(--base-unit) 0;
+    gap: 81px;
+  }
+  .benefit-section li {
+    height: auto;
+  }
+  .card-container {
+    flex-direction: column;
+  }
+  .benefit5 {
+    padding-top: var(--base-unit);
+  }
+  .benefit5 .benefit-title {
+    gap: 27px;
+  }
+  .benefit5 .tag-container {
+    flex-direction: column;
+    align-items: center;
+    gap: var(--base-unit);
+  }
+}
 /* 박소영 */
 
 /* COURSES 조승아 */
