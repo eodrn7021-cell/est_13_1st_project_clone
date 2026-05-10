@@ -79,6 +79,9 @@ main {
     content: "\A";
     white-space: pre;
   }
+  .r-hidden {
+    display: none;
+  }
 }
 /* //Layout */
 
