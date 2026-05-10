@@ -285,7 +285,7 @@ header {
 /* Benefits */
 .benefit-section {
   padding: var(--base-unit-x2) 0;
-  gap: var(--base-unit-x3);
+  gap: calc(var(--base-unit) * 4);
   background: var(--ghost--gray);
   color: var(--dark--green);
   overflow: hidden;
