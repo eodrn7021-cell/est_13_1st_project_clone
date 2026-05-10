@@ -245,6 +245,7 @@ body {
 }
 @media (max-width: 768px) {
   .header-container h1 a {
+    width: 51px;
     background: url("/image/logo-responsive.png") no-repeat 0 0;
   }
   .header-container nav button {
