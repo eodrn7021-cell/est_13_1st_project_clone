@@ -111,6 +111,10 @@ header {
 }
 
 @media (max-width: 1280px) {
+  .hero-slider-controller {
+    width: calc(100% - 48px);
+    margin: 0 24px;
+  }
   .hero-estcamp-container {
     padding-left: 24px;
   }
@@ -118,6 +122,9 @@ header {
 @media (max-width: 768px) {
   .hero {
     padding-bottom: var(--base-unit-x2);
+  }
+  .hero-slider-controller {
+    display: none;
   }
   .hero-company-container {
     padding-top: 0px;
