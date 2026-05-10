@@ -27,6 +27,7 @@ header {
   font-size: 84px;
   color: var(--secondary);
   text-shadow: var(--standard--shadow);
+  cursor: pointer;
 }
 .hero-slider-controller .material-icons:hover {
   color: var(--primary);
