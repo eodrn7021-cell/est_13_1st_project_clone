@@ -345,10 +345,11 @@ body {
 .benefit-title {
   padding: 0 11px 6px;
   gap: 10px;
+  text-align: center;
 }
 .tag {
   display: inline-block;
-  padding: 0 20px;
+  padding: 7px 10px;
   border-radius: 50px;
   background: var(--primary);
   color: var(--white);

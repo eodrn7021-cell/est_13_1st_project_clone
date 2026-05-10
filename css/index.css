@@ -284,8 +284,8 @@ header {
 
 /* Benefits */
 .benefit-section {
-  padding: var(--base-unit-x3) 0;
-  gap: calc(var(--base-unit) * 4);
+  padding: var(--base-unit-x2) 0;
+  gap: var(--base-unit-x3);
   background: var(--ghost--gray);
   color: var(--dark--green);
 }
@@ -293,12 +293,13 @@ header {
   flex-wrap: nowrap;
 }
 .benefit-section li {
-  padding: 0 216px;
+  width: 1272px;
+  height: 729px;
   flex-shrink: 0;
-  gap: var(--base-unit-x2);
+  gap: var(--base-unit);
 }
 .benefit-section li > img {
-  border: var(--primary) solid 3px;
+  border: var(--green) solid 3px;
   border-radius: 15px;
 }
 .benefit-section li:first-child .pass-notice {
@@ -389,7 +390,7 @@ header {
 }
 
 .benefit5 {
-  padding-top: var(--base-unit-x3);
+  padding-top: var(--base-unit-x2);
   box-sizing: border-box;
   border-top: 1px solid var(--cool--gray);
 }
