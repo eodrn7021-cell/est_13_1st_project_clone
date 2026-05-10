@@ -127,14 +127,14 @@ header {
     display: none;
   }
   .hero-company-container {
-    padding-top: 0px;
+    padding: none;
     border: none;
   }
   .hero-company-container > div:has(p) {
     gap: 0;
   }
   .hero-company-container .heading-s {
-    font-size: var(--heading--x-s);
+    line-height: calc(var(--base-unit) + 10px);
   }
   .introduction-card-list {
     grid-template-columns: repeat(2, 1fr);
