@@ -227,6 +227,7 @@ body {
   font-size: 40px;
   line-height: 54px;
   color: var(--white);
+  cursor: pointer;
   margin-right: 27px;
 }
 .header-container nav ul button {
@@ -234,6 +235,7 @@ body {
   font-size: 40px;
   line-height: 54px;
   color: var(--deep--green);
+  cursor: pointer;
   position: absolute;
   top: 24px;
   right: 24px;
@@ -245,6 +247,7 @@ body {
 }
 @media (max-width: 768px) {
   .header-container h1 a {
+    width: 51px;
     background: url("/image/logo-responsive.png") no-repeat 0 0;
   }
   .header-container nav button {
@@ -300,9 +303,11 @@ body {
   height: 10px;
   border-radius: 5px;
   background-color: var(--secondary);
+  cursor: pointer;
 }
 .pagination button.active {
   background-color: var(--green);
+  cursor: default;
 }
 /* //pagination */
 
