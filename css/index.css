@@ -152,6 +152,7 @@ header {
   box-shadow: var(--highlight--register);
 }
 /* bottom-slogan */
+
 /* training-eligibility */
 .condition-wrap {
   width: 100%;
@@ -212,22 +213,28 @@ header {
   word-break: keep-all;
 }
 /* training-eligibility */
-.review-section-title {
+/* review */
+.section-title {
   text-align: center;
   margin-bottom: 72px;
 }
 
-.review-section-title h2 {
-  font-size: 64px;
+.section-title h2 {
+  font-size: 40px;
   font-weight: 800;
-  color: #111827;
+  color: var(--deep--green);
   margin-bottom: 20px;
 }
 
-.review-section-title p {
-  font-size: 24px;
-  color: #6b7280;
+.section-title p span {
+  color: var(--point);
 }
+
+.section-title p {
+  font-size: 20x;
+  color: var(--deep--green);
+}
+/* review */
 /* 박채원 */
 
 /* 박소영 */
