@@ -413,15 +413,12 @@ header {
 /* //Benefits */
 
 /* Statistics */
-.statistics .container {
+.statistics {
   padding: var(--base-unit-x3) 0;
+  color: var(--dark--green);
 }
-.statistics-items-wrapper {
-  justify-content: space-between;
-}
-.statistics h2 {
-  text-align: center;
-  color: var(--dark-green);
+.statistics .items-wrapper {
+  gap: 24px;
 }
 /* //Statistics */
 
@@ -449,6 +446,69 @@ header {
   }
 }
 /* 박소영 */
+
+/* 권유진*/
+.est-content {
+  padding: var(--base-unit-x3) 324px;
+  background: var(--snow--gray);
+}
+.est-content .container {
+  padding: 27px 0 0 0;
+}
+.section-header {
+  padding: var(--base-unit) 0;
+  text-align: center;
+  border-bottom: 2px solid var(--cool--gray);
+}
+.section-header p span {
+  color: var(--point);
+}
+.card-container {
+  /*width: 300px;
+  height: 324px;*/
+  display: flex;
+  box-sizing: border-box;
+}
+.card-first {
+  width: 408px;
+  height: 567px;
+  background: var(--white);
+  border-radius: 10px;
+  border: 2px solid var(--cool--gray);
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.card-first p {
+  padding: 27px 0 62px;
+}
+.card-first img {
+  width: 100%;
+  height: auto;
+}
+.card {
+  background: var(--white);
+  border-radius: 10px;
+  border: 1px solid var(--cool--gray);
+  overflow: hidden;
+}
+.card img {
+  width: 100%;
+  height: auto;
+}
+.card-content {
+  box-sizing: border-box;
+  padding: 20px 25px;
+}
+.card-items p {
+  padding: 13.5px 0 39.5px 0;
+}
+.card-content a {
+  display: inline-block;
+  color: var(--point);
+  font-size: 20px;
+}
+
+/* 권유진 */
 
 /* COURSES 조승아 */
 .inner {
