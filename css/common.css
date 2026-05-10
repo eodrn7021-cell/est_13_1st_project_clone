@@ -385,7 +385,7 @@ body {
 /* //Statistics Item */
 /* //박소영 */
 /* 권유진 푸터 social icon */
-.icon {
+.footer-icon {
   display: flex;
   gap: 10px;
 }
