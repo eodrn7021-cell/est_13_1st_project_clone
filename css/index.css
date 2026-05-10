@@ -904,68 +904,106 @@ header {
 }
 /* //조승아 */
 /* 권유진*/
-/*est-content*/
 
+/*est-content*/
 .est-content {
-  padding: var(--base-unit-x3) 324px;
+  padding: var(--base-unit-x3) 0;
+  display: flex;
+  justify-content: center;
   background: var(--snow--gray);
 }
-.est-content .est-container {
-  padding: 27px 0 0 0;
+
+.est-container {
+  width: 100%;
+  max-width: 1200px;
 }
+
+/* 헤더 */
+
 .section-header {
-  padding: var(--base-unit) 0;
   text-align: center;
+  padding: var(--base-unit) 0;
   border-bottom: 2px solid var(--cool--gray);
+  color: var(--dark--green);
 }
+
 .section-header p span {
   color: var(--point);
 }
-.card-container {
-  /*width: 300px;
-  height: 324px;*/
-  display: flex;
-  box-sizing: border-box;
-}
-.card-first {
-  width: 408px;
-  height: 567px;
-  background: var(--white);
-  border-radius: 10px;
-  border: 2px solid var(--cool--gray);
-  overflow: hidden;
-  box-sizing: border-box;
-}
-.card-first p {
-  padding: 27px 0 62px;
-}
-.card-first img {
-  width: 100%;
-  height: auto;
-}
-.card {
-  background: var(--white);
-  border-radius: 10px;
-  border: 1px solid var(--cool--gray);
-  overflow: hidden;
-}
-.card img {
-  width: 100%;
-  height: auto;
-}
-.card-content {
-  box-sizing: border-box;
-  padding: 20px 25px;
-}
-.card-items p {
-  padding: 13.5px 0 39.5px 0;
-}
-.card-content a {
-  display: inline-block;
-  color: var(--point);
-  font-size: 20px;
+
+/* hover */
+
+.card-first::before,
+.sub-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: 0.3s;
+  z-index: 1;
 }
 
+.card-first:hover .hover-big-icon,
+.sub-card:hover .hover-icon {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+.card-first:hover,
+.sub-card:hover {
+  transform: translateY(-6px);
+}
+
+.hover-big-icon,
+.hover-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.7);
+  opacity: 0;
+  z-index: 2;
+  color: var(--point);
+  transition: 0.3s;
+}
+
+.hover-big-icon {
+  font-size: 70px;
+}
+.hover-icon {
+  font-size: 50px;
+}
+
+/*  반응형 */
+
+@media (max-width: 1024px) {
+  .est-card-container {
+    flex-direction: column;
+  }
+  .card-first {
+    width: 100%;
+  }
+  .card-items {
+    width: 100%;
+  }
+  .sub-card {
+    width: calc(50% - 12px);
+  }
+}
+
+@media (max-width: 768px) {
+  .sub-card {
+    width: 100%;
+  }
+  .card-first {
+    min-height: auto;
+  }
+  .est-card-container {
+    gap: 20px;
+  }
+  .card-items {
+    gap: 20px;
+  }
+}
 /*FAQ*/
 .faq {
   padding: var(--base-unit-x2) 324px;

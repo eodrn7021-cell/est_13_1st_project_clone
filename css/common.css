@@ -386,6 +386,115 @@ body {
 /* //박소영 */
 
 /* 권유진 */
+/* est-content-card*/
+
+/* 카드 전체 영역 */
+
+.est-card-container {
+  display: flex;
+  padding: var(--base-unit-x2) var(--base-unit-x3);
+  align-items: flex-start;
+}
+
+/* 공통 카드 */
+
+.card-first,
+.sub-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: var(--white);
+  border: 2px solid var(--cool--gray);
+  border-radius: 10px;
+  overflow: hidden;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* 큰 카드 */
+.card-first {
+  width: 408px;
+  min-height: 567px;
+}
+
+/* 오른쪽 카드 묶음 */
+
+.card-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  flex: 1;
+}
+/* 작은 카드 */
+
+.sub-card {
+  width: calc(50% - 12px);
+  min-width: 280px;
+  min-height: 324px;
+}
+
+/* 이미지 */
+
+.card-first img,
+.sub-card img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.card-first img {
+  height: 215px;
+}
+.sub-card img {
+  height: 108px;
+}
+
+/* 카드 내용 */
+
+.est-card,
+.card-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 16px;
+  padding: 24px;
+}
+
+/* 제목 */
+
+.est-card h3,
+.card-content h3 {
+  color: var(--dark--green);
+}
+
+/* 글 */
+
+.est-card p,
+.card-content p {
+  color: var(--dark--green);
+}
+
+/* 하단 아이콘 */
+
+.card-link-icon {
+  margin-top: auto;
+  color: var(--point);
+  font-size: 24px;
+  align-self: flex-start;
+}
+
+/* 큰 아이콘 */
+
+.card-first .card-link-icon {
+  font-size: 35px;
+}
+
+.card-first:hover::before,
+.sub-card:hover::before {
+  opacity: 1;
+}
+
 /* deadline 버튼 */
 .deadline-btn {
   display: flex;
@@ -397,6 +506,21 @@ body {
   color: var(--primary);
   text-decoration: none;
   white-space: nowrap;
+}
+/*footer social icon*/
+.icon {
+  display: flex;
+  gap: 10px;
+}
+.social-icon {
+  color: var(--cool--gray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 54px;
+  background-color: var(--dark--green);
+  border-radius: 50%;
 }
 
 /* FAQ */
@@ -434,21 +558,5 @@ input[id*="question"] + label + div p {
 }
 input[id*="question"]:checked ~ label ~ div {
   max-height: 300px;
-}
-
-/*푸터 social icon */
-.footer-icon {
-  display: flex;
-  gap: 10px;
-}
-.social-icon {
-  color: var(--cool--gray);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 54px;
-  height: 54px;
-  background-color: var(--dark--green);
-  border-radius: 50%;
 }
 /* 권유진 */
