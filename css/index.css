@@ -806,118 +806,106 @@ header {
 }
 /* //조승아 */
 /* 권유진*/
-/*est-content*/
 
-/* 콘텐츠 섹션*/
+/*est-content*/
 .est-content {
-  padding: 81px 0;
+  padding: var(--base-unit-x3) 0;
   display: flex;
   justify-content: center;
   background: var(--snow--gray);
 }
+
 .est-container {
   width: 100%;
   max-width: 1200px;
 }
 
 /* 헤더 */
+
 .section-header {
   text-align: center;
   padding: var(--base-unit) 0;
   border-bottom: 2px solid var(--cool--gray);
   color: var(--dark--green);
 }
+
 .section-header p span {
   color: var(--point);
 }
 
-/* 카드 영역 */
-.est-card-container {
-  padding: var(--base-unit-x2) var(--base-unit-x3);
-  align-items: flex-start;
-}
-.card-first {
-  width: 408px;
-  height: 567px;
-  background: var(--white);
-  border: 2px solid var(--cool--gray);
-  border-radius: 10px;
-  overflow: hidden;
-}
-.card-items {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-}
-.sub-card {
-  width: 300px;
-  height: 324px;
-  background: var(--white);
-  border: 2px solid var(--cool--gray);
-  border-radius: 10px;
-  overflow: hidden;
+/* hover */
+
+.card-first::before,
+.sub-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: 0.3s;
+  z-index: 1;
 }
 
-/* 이미지 */
-.card-first img,
-.card img {
-  display: block;
-  object-fit: cover;
+.card-first:hover .hover-big-icon,
+.sub-card:hover .hover-icon {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
 }
-.card-first img {
-  height: 215px;
-  width: 100%;
-}
-.sub-card img {
-  height: 108px;
-  width: 100%;
+.card-first:hover,
+.sub-card:hover {
+  transform: translateY(-6px);
 }
 
-/* 카드 내용 */
-.card-content {
-  padding: 20px 25px;
-  gap: 13.5px;
-  display: flex;
-  flex-direction: column;
-  margin-top: auto;
-}
-.est-card {
-  padding: 30px 30px;
-  gap: 27px;
-  display: flex;
-  flex-direction: column;
-  margin-top: auto;
-}
-
-/* 제목 */
-.card-content h3 {
-  color: var(--dark--green);
-}
-.est-card h3 {
-  color: var(--dark--green);
-}
-
-/* 글 */
-.card-content p {
-  color: var(--dark--green);
-}
-.est-card p {
-  color: var(--dark--green);
-}
-
-/* 아이콘 */
-
-.card-content a {
+.hover-big-icon,
+.hover-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.7);
+  opacity: 0;
+  z-index: 2;
   color: var(--point);
-  font-size: 20px;
-  align-self: flex-start;
-}
-.est-card a {
-  color: var(--point);
-  font-size: 35px;
-  align-self: flex-start;
+  transition: 0.3s;
 }
 
+.hover-big-icon {
+  font-size: 70px;
+}
+.hover-icon {
+  font-size: 50px;
+}
+
+/*  반응형 */
+
+@media (max-width: 1024px) {
+  .est-card-container {
+    flex-direction: column;
+  }
+  .card-first {
+    width: 100%;
+  }
+  .card-items {
+    width: 100%;
+  }
+  .sub-card {
+    width: calc(50% - 12px);
+  }
+}
+
+@media (max-width: 768px) {
+  .sub-card {
+    width: 100%;
+  }
+  .card-first {
+    min-height: auto;
+  }
+  .est-card-container {
+    gap: 20px;
+  }
+  .card-items {
+    gap: 20px;
+  }
+}
 /*FAQ*/
 .faq {
   padding: var(--base-unit-x2) 324px;
