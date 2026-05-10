@@ -384,21 +384,21 @@ body {
 }
 /* //Statistics Item */
 /* //박소영 */
-/* 권유진 푸터 social icon */
-.footer-icon {
-  display: flex;
-  gap: 10px;
-}
-.social-icon {
-  color: var(--cool--gray);
+
+/* 권유진 */
+/* deadline 버튼 */
+.deadline-btn {
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 54px;
-  height: 54px;
-  background-color: var(--dark--green);
-  border-radius: 50%;
+  gap: 10px;
+  padding: 13.5px 37px;
+  border-radius: 10px;
+  background: var(--white);
+  color: var(--primary);
+  text-decoration: none;
+  white-space: nowrap;
 }
+
 /* FAQ */
 input[id*="question"] {
   display: none;
@@ -434,5 +434,21 @@ input[id*="question"] + label + div p {
 }
 input[id*="question"]:checked ~ label ~ div {
   max-height: 300px;
+}
+
+/*푸터 social icon */
+.footer-icon {
+  display: flex;
+  gap: 10px;
+}
+.social-icon {
+  color: var(--cool--gray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 54px;
+  background-color: var(--dark--green);
+  border-radius: 50%;
 }
 /* 권유진 */

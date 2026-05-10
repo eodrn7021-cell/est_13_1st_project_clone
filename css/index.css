@@ -422,69 +422,6 @@ header {
 /* //Statistics */
 /* 박소영 */
 
-/* 권유진*/
-.est-content {
-  padding: var(--base-unit-x3) 324px;
-  background: var(--snow--gray);
-}
-.est-content .container {
-  padding: 27px 0 0 0;
-}
-.section-header {
-  padding: var(--base-unit) 0;
-  text-align: center;
-  border-bottom: 2px solid var(--cool--gray);
-}
-.section-header p span {
-  color: var(--point);
-}
-.card-container {
-  /*width: 300px;
-  height: 324px;*/
-  display: flex;
-  box-sizing: border-box;
-}
-.card-first {
-  width: 408px;
-  height: 567px;
-  background: var(--white);
-  border-radius: 10px;
-  border: 2px solid var(--cool--gray);
-  overflow: hidden;
-  box-sizing: border-box;
-}
-.card-first p {
-  padding: 27px 0 62px;
-}
-.card-first img {
-  width: 100%;
-  height: auto;
-}
-.card {
-  background: var(--white);
-  border-radius: 10px;
-  border: 1px solid var(--cool--gray);
-  overflow: hidden;
-}
-.card img {
-  width: 100%;
-  height: auto;
-}
-.card-content {
-  box-sizing: border-box;
-  padding: 20px 25px;
-}
-.card-items p {
-  padding: 13.5px 0 39.5px 0;
-}
-.card-content a {
-  display: inline-block;
-  color: var(--point);
-  font-size: 20px;
-}
-
-/* 권유진 */
-
 /* COURSES 조승아 */
 .inner {
   width: 100%;
@@ -868,7 +805,69 @@ header {
   }
 }
 /* //조승아 */
-/* 권유진 */
+/* 권유진*/
+/*est-content*/
+
+.est-content {
+  padding: var(--base-unit-x3) 324px;
+  background: var(--snow--gray);
+}
+.est-content .est-container {
+  padding: 27px 0 0 0;
+}
+.section-header {
+  padding: var(--base-unit) 0;
+  text-align: center;
+  border-bottom: 2px solid var(--cool--gray);
+}
+.section-header p span {
+  color: var(--point);
+}
+.card-container {
+  /*width: 300px;
+  height: 324px;*/
+  display: flex;
+  box-sizing: border-box;
+}
+.card-first {
+  width: 408px;
+  height: 567px;
+  background: var(--white);
+  border-radius: 10px;
+  border: 2px solid var(--cool--gray);
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.card-first p {
+  padding: 27px 0 62px;
+}
+.card-first img {
+  width: 100%;
+  height: auto;
+}
+.card {
+  background: var(--white);
+  border-radius: 10px;
+  border: 1px solid var(--cool--gray);
+  overflow: hidden;
+}
+.card img {
+  width: 100%;
+  height: auto;
+}
+.card-content {
+  box-sizing: border-box;
+  padding: 20px 25px;
+}
+.card-items p {
+  padding: 13.5px 0 39.5px 0;
+}
+.card-content a {
+  display: inline-block;
+  color: var(--point);
+  font-size: 20px;
+}
+
 /*FAQ*/
 .faq {
   padding: var(--base-unit-x2) 324px;
@@ -883,11 +882,171 @@ header {
   justify-content: space-between;
   gap: 313px;
 }
-.heading-m {
+.faq-header {
   color: var(--green);
   display: inline-block;
   white-space: nowrap;
 }
+
+/*deadline*/
+.deadline {
+  width: 100%;
+  background: var(--ice);
+  display: flex;
+  justify-content: center;
+  padding: 54px 108px;
+}
+
+.recruit-banner {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--base-unit);
+}
+
+.banner-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--base-unit);
+}
+
+.banner-left {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+/* 아이콘 */
+.banner-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 75px;
+  background: var(--white);
+  font-size: 60px;
+  color: var(--primary--light);
+}
+
+/* 텍스트 */
+.main-title {
+  color: var(--deep--green);
+}
+.deadline-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.sub-title span {
+  color: var(--primary);
+}
+
+.countdown-wrap {
+  display: flex;
+  align-items: stretch;
+  gap: 24px;
+}
+
+/* D-day */
+.d-day-box {
+  background: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40.5px 62.5px;
+}
+
+.d-day-label {
+  color: var(--primary);
+}
+
+.d-day-box h2 {
+  color: var(--deep--green);
+  font-size: 105px;
+  font-weight: bold;
+  line-height: 108px;
+  letter-spacing: 2%;
+}
+
+.d-day-box p {
+  color: var(--greenish--gray);
+}
+
+/* 타이머 */
+.timer-box {
+  display: flex;
+  align-items: stretch;
+
+  background: var(--secondary--light);
+  padding: var(--base-unit-x2) 0 var(--base-unit) 0;
+}
+
+/* 시간 그룹 */
+.time-group {
+  position: relative;
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 시간 */
+.time {
+  font-size: 85px;
+  font-weight: bold;
+  line-height: 108px;
+
+  color: var(--primary--light);
+}
+
+/* 하단 라벨 영역 */
+.time-label {
+  display: flex;
+  gap: 6px;
+  color: var(--greenish--gray);
+}
+
+/* 숫자 : 만들기 */
+.time-group:not(:last-child)::after {
+  content: ":";
+  position: absolute;
+  top: 30%;
+  right: -10px;
+  transform: translateY(-50%);
+  font-size: 85px;
+  font-weight: bold;
+  line-height: 108px;
+  color: var(--primary--light);
+}
+/* 하단 세로선 */
+.time-wrap {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.time-group:not(:last-child) .time-wrap::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 20px;
+  background: var(--cool--gray);
+}
+
+/* 반응형 */
+@media (max-width: 768px) {
+  .countdown-wrap,
+  .timer-box {
+    width: auto;
+  }
+}
+
 /*footer*/
 .footer {
   background: var(--deep--green);
@@ -904,7 +1063,7 @@ header {
   gap: 27px;
 }
 
-.info {
+.footer-info {
   color: var(--cool--gray);
 }
 
