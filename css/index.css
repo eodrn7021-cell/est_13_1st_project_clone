@@ -288,12 +288,13 @@ header {
   gap: var(--base-unit-x3);
   background: var(--ghost--gray);
   color: var(--dark--green);
+  overflow: hidden;
 }
 .benefit-section div:first-child {
   flex-wrap: nowrap;
 }
 .benefit-section li {
-  width: 1272px;
+  width: 25%;
   height: 729px;
   flex-shrink: 0;
   gap: var(--base-unit);
@@ -358,6 +359,12 @@ header {
 .benefit-section > .container {
   position: relative;
 }
+.benefit-section #slide1:checked ~ div > label[for="slide1"],
+.benefit-section #slide2:checked ~ div > label[for="slide2"],
+.benefit-section #slide3:checked ~ div > label[for="slide3"],
+.benefit-section #slide4:checked ~ div > label[for="slide4"] {
+  background: var(--secondary);
+}
 .benefit-section > .container > div:has(label[for^="slide"]) {
   position: absolute;
   top: calc(100% + var(--base-unit));
@@ -365,8 +372,12 @@ header {
   padding: 8.5px 0;
   gap: 15px;
 }
-.benefit-section input[type="radio"],
-.benefit-section ul > li {
+.benefit-section ul {
+  position: relative;
+  width: 400%;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.benefit-section input[type="radio"] {
   display: none;
 }
 .benefit-section label[for^="slide"] {
@@ -376,17 +387,18 @@ header {
   border-radius: 5px;
   background: var(--green);
 }
-.benefit-section #slide1:checked ~ div > label[for="slide1"],
-.benefit-section #slide2:checked ~ div > label[for="slide2"],
-.benefit-section #slide3:checked ~ div > label[for="slide3"],
-.benefit-section #slide4:checked ~ div > label[for="slide4"] {
-  background: var(--secondary);
+
+#slide1:checked ~ ul {
+  transform: translateX(0);
 }
-#slide1:checked ~ ul li:nth-child(1),
-#slide2:checked ~ ul li:nth-child(2),
-#slide3:checked ~ ul li:nth-child(3),
-#slide4:checked ~ ul li:nth-child(4) {
-  display: flex;
+#slide2:checked ~ ul {
+  transform: translateX(-25%);
+}
+#slide3:checked ~ ul {
+  transform: translateX(-50%);
+}
+#slide4:checked ~ ul {
+  transform: translateX(-75%);
 }
 
 .benefit5 {
