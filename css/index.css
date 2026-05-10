@@ -284,38 +284,46 @@ header {
 
 /* Benefits */
 .benefit-section {
-  padding: var(--base-unit-x3) 0;
+  padding: var(--base-unit-x2) 0;
   gap: calc(var(--base-unit) * 4);
   background: var(--ghost--gray);
   color: var(--dark--green);
+  overflow: hidden;
 }
 .benefit-section div:first-child {
   flex-wrap: nowrap;
 }
 .benefit-section li {
-  padding: 0 216px;
+  width: 25%;
+  height: 729px;
   flex-shrink: 0;
-  gap: var(--base-unit-x2);
+  gap: var(--base-unit);
 }
 .benefit-section li > img {
-  border: var(--primary) solid 3px;
+  border: var(--green) solid 3px;
   border-radius: 15px;
 }
 .benefit-section li:first-child .pass-notice {
-  width: 624px;
   padding-bottom: var(--base-unit);
   gap: 10px;
   border-radius: 15px;
   background: var(--white);
 }
 .benefit-section li:first-child .pass-notice .sender-info {
-  padding: 0 27px;
+  padding: 0 22px;
+  gap: 10px;
 }
 .benefit-section li:first-child .pass-notice > div:first-child {
   width: 100%;
   height: var(--base-unit);
   border-radius: 15px 15px 0 0;
   background: var(--dark--green);
+}
+.benefit-section li:first-child .sender-info .body-xs {
+  color: var(--green);
+}
+.benefit-section li:first-child .sender-info .material-icons {
+  display: inline;
 }
 .benefit-section li:first-child .pass-notice .bar {
   width: 40px;
@@ -334,30 +342,40 @@ header {
   gap: 24px;
 }
 .benefit-section li:first-child .benefit-card {
-  width: 408px;
-  padding: var(--base-unit) 10px;
+  width: 300px;
+  padding: 27px 15px;
   border-radius: 10px;
   background: var(--white);
   box-shadow: var(--standard--shadow);
-}
-.benefit-section li:first-child .benefit-card h6 {
-  color: var(--dark--green);
 }
 .benefit-section li:first-child .benefit-card p {
   color: var(--green);
 }
 .benefit-section li:first-child .benefit-card img {
-  width: 87px;
-  height: 110px;
+  width: 74px;
+  height: 94px;
 }
 
 .benefit-section > .container {
   position: relative;
 }
+.benefit-section #slide1:checked ~ div > label[for="slide1"],
+.benefit-section #slide2:checked ~ div > label[for="slide2"],
+.benefit-section #slide3:checked ~ div > label[for="slide3"],
+.benefit-section #slide4:checked ~ div > label[for="slide4"] {
+  background: var(--secondary);
+}
 .benefit-section > .container > div:has(label[for^="slide"]) {
   position: absolute;
   top: calc(100% + var(--base-unit));
-  left: 50%;
+  left: calc(50% - 105.2px);
+  padding: 8.5px 0;
+  gap: 15px;
+}
+.benefit-section ul {
+  position: relative;
+  width: 400%;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .benefit-section input[type="radio"] {
   display: none;
@@ -369,36 +387,22 @@ header {
   border-radius: 5px;
   background: var(--green);
 }
-.benefit-section #slide1:checked ~ div > label[for="slide1"] {
-  background: var(--secondary);
+
+#slide1:checked ~ ul {
+  transform: translateX(0);
 }
-.benefit-section #slide2:checked ~ div > label[for="slide2"] {
-  background: var(--secondary);
+#slide2:checked ~ ul {
+  transform: translateX(-25%);
 }
-.benefit-section #slide3:checked ~ div > label[for="slide3"] {
-  background: var(--secondary);
+#slide3:checked ~ ul {
+  transform: translateX(-50%);
 }
-.benefit-section #slide4:checked ~ div > label[for="slide4"] {
-  background: var(--secondary);
-}
-.benefit-section ul > li {
-  display: none;
-}
-#slide1:checked ~ ul li:nth-child(1) {
-  display: flex;
-}
-#slide2:checked ~ ul li:nth-child(2) {
-  display: flex;
-}
-#slide3:checked ~ ul li:nth-child(3) {
-  display: flex;
-}
-#slide4:checked ~ ul li:nth-child(4) {
-  display: flex;
+#slide4:checked ~ ul {
+  transform: translateX(-75%);
 }
 
 .benefit5 {
-  padding-top: var(--base-unit-x3);
+  padding-top: var(--base-unit-x2);
   box-sizing: border-box;
   border-top: 1px solid var(--cool--gray);
 }
