@@ -169,9 +169,6 @@ header {
   position: relative;
   overflow: hidden;
 }
-.logo-carousel {
-  animation: logoCarousel 17.5s linear infinite;
-}
 .mask-logo-carousel {
   top: 0;
   right: 0;
@@ -179,6 +176,9 @@ header {
   left: 0;
   background: linear-gradient(to right, #ffffffff 5%, #ffffff00 30%, #ffffff00 70%, #ffffffff 95%);
   position: absolute;
+}
+.logo-carousel {
+  animation: logoCarousel 17.5s linear infinite;
 }
 
 @keyframes logoCarousel {
