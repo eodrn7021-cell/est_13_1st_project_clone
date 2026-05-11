@@ -1016,11 +1016,30 @@ header {
   object-fit: cover;
 }
 /* 반응형 */
-.target-pagination {
+.pagination {
   display: flex;
   justify-content: center;
   gap: 15px;
-  margin-top: 27px;
+
+  list-style: none;
+  padding: 0;
+  margin: 27px 0 0;
+}
+
+.pagination button {
+  width: 40px;
+  height: 10px;
+
+  border: 0;
+  border-radius: 5px;
+  background: var(--green);
+
+  padding: 0;
+  cursor: pointer;
+}
+
+.pagination button.active {
+  background: var(--secondary);
 }
 /* 1280px 이하 */
 @media (max-width: 1280px) {
@@ -1087,25 +1106,6 @@ header {
     box-sizing: border-box;
     justify-content: space-between;
   }
-
-  .target-pagination {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top: -27px;
-  }
-
-  .page-dot {
-    display: block;
-    width: 40px;
-    height: 10px;
-    border-radius: 5px;
-    background: var(--green);
-  }
-
-  .page-dot.active {
-    background: var(--secondary);
-  }
 }
 
 /* 사이드 메뉴 조승아*/
@@ -1153,6 +1153,7 @@ header {
 }
 
 .material-icons {
+  color: var(--deep--green);
   line-height: 1;
   display: flex;
   align-items: center;
