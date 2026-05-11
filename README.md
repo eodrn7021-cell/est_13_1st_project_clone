@@ -63,6 +63,8 @@ Tools
 
 ## 5. 제작 후기
 
+- 유태구: Git 관리를 하면서 애매하거나 잘 모르는 부분은 AI를 활용해 클래스명 작명법, 커밋 메시지 작성법, 어려운 문제 해결 방법을 배우고 나아가 팀에 대한 책임감도 기르는 시간을 가질 수 있었습니다.
+
 ## 6. 기획/디자인 문서
 
 - [사이트 분석 및 레퍼런스 조사(피그잼)](https://www.figma.com/board/dXFaNiF0mNulG2uiH8q0TW/%EC%82%AC%EC%9D%B4%ED%8A%B8-%EB%B6%84%EC%84%9D-%EB%B0%8F-%EB%A0%88%ED%8D%BC%EB%9F%B0%EC%8A%A4-%EC%A1%B0%EC%82%AC?node-id=0-1&t=zjmFxVL9HzPVkOxg-1):
