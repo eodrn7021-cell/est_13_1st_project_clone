@@ -63,9 +63,6 @@
   text-indent: 65535px;
   overflow: hidden;
 }
-main {
-  padding-top: var(--base-unit-x3);
-}
 .r-line-break::before {
   content: " ";
 }
