@@ -394,56 +394,45 @@ body {
 /* //박소영 */
 
 /* 권유진 */
+
 /* est-content-card*/
 
-/* 카드 전체 영역 */
-
+/* 전체 카드 영역 */
 .est-card-container {
-  display: flex;
-  padding: var(--base-unit-x2) var(--base-unit-x3);
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: 408px 1fr 1fr;
+  gap: 24px;
+  align-items: start;
+  padding: 54px 81px;
 }
 
-/* 공통 카드 */
-
+/* 전체 카드 */
 .card-first,
 .sub-card {
-  position: relative;
   display: flex;
   flex-direction: column;
   background: var(--white);
   border: 2px solid var(--cool--gray);
   border-radius: 10px;
   overflow: hidden;
-  text-decoration: none;
-  cursor: pointer;
-  transition: 0.3s;
+  transition: 0.5s ease;
 }
 
-/* 큰 카드 */
+/* 카드*/
 .card-first {
-  width: 408px;
-  min-height: 567px;
+  grid-row: span 2;
+  height: 100%;
 }
-
-/* 오른쪽 카드 묶음 */
 
 .card-items {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-  flex: 1;
+  display: contents;
 }
-/* 작은 카드 */
 
 .sub-card {
-  width: calc(50% - 12px);
-  min-width: 280px;
-  min-height: 324px;
+  width: 100%;
 }
 
 /* 이미지 */
-
 .card-first img,
 .sub-card img {
   width: 100%;
@@ -454,37 +443,32 @@ body {
 .card-first img {
   height: 215px;
 }
+
 .sub-card img {
   height: 108px;
 }
 
-/* 카드 내용 */
-
+/* 글 */
+.est-card h3,
+.card-content h3 {
+  color: var(--dark--green);
+  line-height: 1.4;
+}
 .est-card,
 .card-content {
   display: flex;
   flex-direction: column;
   flex: 1;
-  gap: 16px;
-  padding: 24px;
+  gap: 13.5px;
+  padding: 20px 25px;
 }
-
-/* 제목 */
-
-.est-card h3,
-.card-content h3 {
-  color: var(--dark--green);
-}
-
-/* 글 */
-
 .est-card p,
 .card-content p {
   color: var(--dark--green);
+  line-height: 1.6;
 }
 
-/* 하단 아이콘 */
-
+/* 아이콘 */
 .card-link-icon {
   margin-top: auto;
   color: var(--point);
@@ -492,15 +476,57 @@ body {
   align-self: flex-start;
 }
 
-/* 큰 아이콘 */
-
 .card-first .card-link-icon {
   font-size: 35px;
+}
+
+/* hover */
+.card-first:hover,
+.sub-card:hover {
+  transform: translateY(-6px);
+}
+.card-first::before,
+.sub-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: 0.5s;
+  z-index: 1;
 }
 
 .card-first:hover::before,
 .sub-card:hover::before {
   opacity: 1;
+}
+
+/* hover 아이콘 */
+.hover-big-icon,
+.hover-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.7);
+  opacity: 0;
+  z-index: 2;
+  color: var(--point);
+  transition: 0.5s ease;
+  pointer-events: none;
+}
+
+.hover-big-icon {
+  font-size: 60px;
+}
+
+.hover-icon {
+  font-size: 40px;
+}
+
+.card-first:hover .hover-big-icon,
+.sub-card:hover .hover-icon {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
 }
 
 /* deadline 버튼 */
@@ -515,6 +541,7 @@ body {
   text-decoration: none;
   white-space: nowrap;
 }
+
 /*footer social icon*/
 .icon {
   display: flex;
