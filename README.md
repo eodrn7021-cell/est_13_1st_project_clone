@@ -10,17 +10,16 @@
 ### 1.1 목표
 
 - 이스트소프트 교육 모집 웹페이지 개선
-  - asdf
 
 ### 1.2 팀원
 
-|  이름  | 역할 | 주요 담당 |                  GitHub                  |
-| :----: | :--: | :-------: | :--------------------------------------: |
-| 유태구 |  .   |     .     |    [](https://github.com/rozer4heros)    |
-| 박소영 |  .   |     .     |       [](https://github.com/s0-p)        |
-| 조승아 |  .   |     .     |         [](https://github.com/)          |
-| 박채원 |  .   |     .     |    [](https://github.com/chaewon5205)    |
-| 권유진 |  .   |     .     | [](https://github.com/rwonyujin03-debug) |
+|  이름  | 역할 |                          주요 담당                          |                           GitHub                           |                       이메일                       |
+| :----: | :--: | :---------------------------------------------------------: | :--------------------------------------------------------: | :------------------------------------------------: |
+| 유태구 | 팀장 |     HTML 및 CSS <br/> (헤더, 히어로, 수강생 취업 현황)      |       [@rozer4heros](https://github.com/rozer4heros)       |   [rozer4heros@gmail.com](rozer4heros@gmail.com)   |
+| 박소영 | 팀원 |    HTML 및 CSS <br/> (위 슬로건, 수강 혜택, 홍보용 통계)    |              [@s0-p](https://github.com/s0-p)              |      [b00v0429@gmail.com](b00v0429@gmail.com)      |
+| 조승아 | 팀원 |    HTML 및 CSS <br/> (수강 후기, 수강 요건, 아래 슬로건)    |    [@eodrn7021-cell](https://github.com/eodrn7021-cell)    |     [eodrn7021@gmail.com](eodrn7021@gmail.com)     |
+| 박채원 | 팀원 |  HTML 및 CSS <br/> (사이드 nav, 강좌 목록, 대상 고객 안내)  |       [@chaewon5205](https://github.com/chaewon5205)       | [parkjihae9262@gmail.com](parkjihae9262@gmail.com) |
+| 권유진 | 팀원 | HTML 및 CSS <br/> (이스트캠프 콘텐트, FAQ, 신청 마감, 푸터) | [@rwonyujin03-debug](https://github.com/rwonyujin03-debug) |   [rwonyujin03@gmail.com](rwonyujin03@gmail.com)   |
 
 ### 1.3 마일스톤
 
@@ -30,12 +29,13 @@
 
 Frontend
 
+- Structure: HTML
 - Styling: CSS
 
 Tools
 
 - Version Control: Git & GitHub
-- : Visual Studio Code
+- Code Editor : Visual Studio Code
 - Design: Figma
 
 ### 2.2 URL
@@ -44,14 +44,28 @@ Tools
 
 ## 3. 프로젝트 구조
 
+> est_fe_13_1st_project/ <br/>
+> ├─ .vscode/ <br/>
+> ├─ css/ <br/>
+> │ ├─ common.css <br/>
+> │ ├─ index.css <br/>
+> │ ├─ flex-utility.css <br/>
+> │ ├─ normalize.css <br/>
+> │ └─ reset.css <br/>
+> ├─ image/ <br/>
+> ├─ common.html # 사이트 전역/반복 사용 요소 보관소 <br/>
+> ├─ index.html <br/>
+> └─ README.md '''
+
 ## 4. 향후 개선 사항
 
 - 동적 요소 미구현
 
 ## 5. 제작 후기
 
+- 유태구: Git 관리를 하면서 애매하거나 잘 모르는 부분은 AI를 활용해 클래스명 작명법, 커밋 메시지 작성법, 어려운 문제 해결 방법을 배우고 나아가 팀에 대한 책임감도 기르는 시간을 가질 수 있었습니다.
+
 ## 6. 기획/디자인 문서
 
-- [사이트 분석 및 레퍼런스 조사(피그잼)](https://www.figma.com/board/dXFaNiF0mNulG2uiH8q0TW/%EC%82%AC%EC%9D%B4%ED%8A%B8-%EB%B6%84%EC%84%9D-%EB%B0%8F-%EB%A0%88%ED%8D%BC%EB%9F%B0%EC%8A%A4-%EC%A1%B0%EC%82%AC?node-id=0-1&t=zjmFxVL9HzPVkOxg-1):
 - [기획 슬라이드(피그마 슬라이드)](https://www.figma.com/slides/NsGzmNRyeujiGmuqMgXBxt):
 - [디자인 시안(피그마)](https://www.figma.com/design/bUzmsPXP15RsPYMmtjsPpp/%EB%94%94%EC%9E%90%EC%9D%B8-%EC%8B%9C%EC%95%88?node-id=0-1&t=aNipptFfc3rsLdrL-1):
