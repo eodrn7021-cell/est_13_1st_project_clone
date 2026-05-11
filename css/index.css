@@ -551,10 +551,9 @@ header {
 /* Top Slogan */
 .top-slogan {
   width: 100%;
-  padding: 135px 0 108px;
+  padding: 108px 0 81px;
   background: url(../image/top-slogan.jpg) no-repeat 0 0 / 100% 100%;
   color: var(--white);
-  text-align: center;
 }
 .top-slogan h2 .highlight {
   color: var(--alyak-color);
@@ -700,12 +699,6 @@ header {
 /* //Statistics */
 
 @media (max-width: 768px) {
-  /* Top Slogan */
-  .top-slogan {
-    font-size: var(--heading--l);
-    line-height: var(--base-unit-x2);
-  }
-  /* //Top Slogan */
   /* Benefits */
   .benefit-section {
     padding: var(--base-unit) 0;
