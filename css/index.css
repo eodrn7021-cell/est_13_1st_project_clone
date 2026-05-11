@@ -186,7 +186,7 @@ header {
 .bottom-slogan {
   width: 100%;
   padding: 81px 0 81px;
-  background: url(../image/bottom_slogan.png) no-repeat 0 0 / 100% 100%;
+  background: url(../image/bottom-slogan.png) no-repeat 0 0 / 100% 100%;
   color: var(--white, --cool--gray);
   text-align: center;
 }
@@ -194,65 +194,75 @@ header {
 .bottom-slogan h2 span {
   color: var(--primary);
 }
+
+.cta-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 14px 30px;
+}
 /* bottom-slogan */
 
 /* training-eligibility */
 .training-eligibility {
-  padding: 80px 20px;
-}
-
-/* 가운데 정렬 */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
+  width: 100%;
+  padding: 100px 20px;
 }
 
 /* 제목 */
-.section-title {
+.training-container {
   text-align: center;
-  font-size: 36px;
-  font-weight: 800;
-  margin-bottom: 50px;
-  line-height: 1.4;
-  color: #222;
+  margin-bottom: 60px;
 }
 
-.section-title span {
+.training-container h2 {
+  font-size: 48px;
+  font-weight: 800;
+  color: #222;
+  line-height: 1.4;
+}
+
+.training-container span {
   color: var(--point);
 }
 
 /* 카드 4개 영역 */
 .condition-cards {
+  max-width: 1200px;
+
+  margin: 0 auto;
+
   display: grid;
+
   grid-template-columns: repeat(2, 1fr);
-  gap: 24px;
+
+  gap: 28px;
 }
 
 /* 카드 */
 .condition-card {
   display: flex;
-  align-items: stretch;
-  background: #fff;
   min-height: 180px;
-  border-radius: 6px;
+  background: var(--white);
+  border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 /* 왼쪽 아이콘 영역 */
 .icon-box {
   width: 100px;
   min-width: 100px;
-  background: #b7ddd5;
+  background: var(--secondary);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.icon-box img {
-  width: 42px;
-  height: 42px;
-  object-fit: contain;
+.material-icons {
+  font-size: 42px;
+  color: var(--white);
 }
 
 /* 오른쪽 텍스트 영역 */
@@ -260,31 +270,59 @@ header {
   flex: 1;
   padding: 28px 24px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  align-items: center;
 }
 
-/* 본문 */
-.text-box p {
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 1.6;
+.text-box h2 {
+  font-size: 22px;
+  line-height: 1.7;
+  font-weight: 700;
   color: #222;
   word-break: keep-all;
 }
 
-/* 리스트 */
-.text-box ul {
-  margin-top: 14px;
-  padding-left: 0;
-  list-style: none;
-}
+@media (max-width: 768px) {
+  .training-eligibility {
+    padding: 70px 20px;
+  }
 
-.text-box li {
-  font-size: 16px;
-  line-height: 1.7;
-  color: #444;
-  word-break: keep-all;
+  .training-container {
+    margin-bottom: 40px;
+  }
+
+  .training-container h2 {
+    font-size: 32px;
+    line-height: 1.5;
+  }
+
+  /* 한 줄 1개 */
+
+  .condition-cards {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .condition-card {
+    min-height: auto;
+  }
+
+  .icon-box {
+    width: 80px;
+    min-width: 80px;
+  }
+
+  .material-icons {
+    font-size: 34px;
+  }
+
+  .text-box {
+    padding: 22px 18px;
+  }
+
+  .text-box h2 {
+    font-size: 16px;
+    line-height: 1.6;
+  }
 }
 /* training-eligibility */
 
@@ -292,7 +330,7 @@ header {
 .review-section {
   width: 100%;
   overflow: hidden;
-  padding: 81px 54px 81px;
+  padding: 100px 0;
 }
 
 .review-title-wrap {
@@ -324,24 +362,21 @@ header {
   display: flex;
   flex-direction: column;
   gap: 27px;
+  overflow: hidden;
 }
-
-/* 한 줄 */
 
 .review-track {
   display: flex;
-  width: max-content;
   gap: 26px;
+  width: max-content;
 }
 
-/* 위쪽 -> 오른쪽 */
-
+/* 위 -> 오른쪽 */
 .track-top {
   animation: marqueeRight 35s linear infinite;
 }
 
-/* 아래쪽 -> 왼쪽 */
-
+/* 아래 -> 왼쪽 */
 .track-bottom {
   animation: marqueeLeft 35s linear infinite;
 }
@@ -410,7 +445,6 @@ header {
   font-size: 15px;
   line-height: 1.8;
   color: #555;
-
   word-break: keep-all;
 }
 
@@ -424,19 +458,69 @@ header {
   }
 
   100% {
-    transform: translateX(-20%);
+    transform: translateX(calc(-50% - 13px));
   }
 }
 
 @keyframes marqueeRight {
   0% {
-    transform: translateX(-20%);
+    transform: translateX(calc(-50% - 13px));
   }
 
   100% {
     transform: translateX(0);
   }
 }
+
+@media (max-width: 768px) {
+  .review-section {
+    padding: 70px 0;
+  }
+
+  .review-title {
+    font-size: 32px;
+  }
+
+  .review-sub-title {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .review-marquee {
+    gap: 18px;
+  }
+
+  .review-track {
+    gap: 18px;
+  }
+
+  .review-card {
+    width: 320px;
+    min-height: 170px;
+
+    padding: 24px 20px 24px 88px;
+  }
+
+  .review-profile {
+    left: -10px;
+  }
+
+  .review-profile img {
+    width: 72px;
+    height: 72px;
+  }
+
+  .review-content h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+
+  .review-content p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+}
+
 /* review */
 /* 박채원 */
 
