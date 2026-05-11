@@ -674,6 +674,7 @@ header {
 .statistics {
   padding: var(--base-unit-x3) 0;
   color: var(--dark--green);
+  border-bottom: var(--cool--gray);
 }
 .statistics .items-wrapper {
   gap: 24px;
