@@ -628,6 +628,11 @@ body {
   white-space: nowrap;
 }
 
+.deadline-btn:hover {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
 /* FAQ */
 
 /*footer social icon*/
@@ -676,6 +681,7 @@ body {
   width: 54px;
   height: 54px;
   border-radius: 65535px;
+  color: var(--cool--gray);
   background: var(--dark--green);
   display: flex;
   justify-content: center;
@@ -683,9 +689,10 @@ body {
   box-shadow: var(--standard--shadow);
 }
 
-.social-icon a {
+.social-icon:hover {
+  background: var(--primary);
   color: var(--cool--gray);
-  font-size: 27px;
+  box-shadow: var(--standard--shadow);
 }
 
 /* 권유진 */

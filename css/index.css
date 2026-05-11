@@ -1446,9 +1446,9 @@ header {
 .banner-top {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  gap: var(--base-unit);
+  gap: 64px;
 }
 
 .banner-left {
@@ -1649,6 +1649,7 @@ header {
     width: 54px;
     height: 54px;
   }
+
   .social-icon a {
     font-size: var(--base-unit);
     font-weight: var(--base-unit);
