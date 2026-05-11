@@ -264,7 +264,7 @@ body {
 
     position: absolute;
     top: 0;
-    right: 100vw;
+    right: -100vw;
 
     flex-direction: column;
     align-items: flex-end;
