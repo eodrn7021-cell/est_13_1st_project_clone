@@ -825,7 +825,6 @@ header {
   grid-template-columns: repeat(3, 300px);
   column-gap: 78px;
   row-gap: 81px;
-  justify-content: center;
 }
 
 /* 카드 */
@@ -836,8 +835,6 @@ header {
   border-radius: 12px;
   overflow: hidden;
   box-shadow: var(--standard--shadow);
-  display: flex;
-  flex-direction: column;
   transition: box-shadow 0.3s ease;
 }
 
@@ -880,10 +877,7 @@ header {
   font-size: var(--button---primary);
   font-weight: 500;
   border-radius: 10px;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  box-shadow: var(--standard--shadow);
   line-height: 19.1px;
 }
 
@@ -928,6 +922,9 @@ header {
     justify-content: center;
   }
 }
+.courses h2 {
+  text-align: center;
+}
 
 /* 768px 이하 */
 @media (max-width: 768px) {
@@ -954,14 +951,10 @@ header {
   padding: var(--base-unit-x3) 0;
   background: #fff;
   box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  gap: 54px;
 }
 
 .target-audience h2 {
   width: 100%;
-  text-align: center;
   color: var(--dark--green);
   font-weight: bold;
   white-space: nowrap;
@@ -977,7 +970,6 @@ header {
   display: grid;
   grid-template-columns: repeat(3, 300px);
   gap: 77px;
-  justify-content: center;
 }
 
 /* 카드 */
@@ -990,8 +982,6 @@ header {
   overflow: hidden;
   box-shadow: var(--standard--shadow);
   transition: all 0.3s ease;
-  display: flex;
-  flex-direction: column;
 }
 
 .target-card:hover {
@@ -1005,7 +995,6 @@ header {
   height: 197px;
   box-sizing: border-box;
   padding: var(--base-unit) var(--base-unit) 25px;
-  display: flex;
   flex-direction: column;
   justify-content: flex-end;
 }
@@ -1037,9 +1026,7 @@ header {
 /* 반응형 */
 .target-audience .pagination {
   display: none;
-  justify-content: center;
   gap: 15px;
-
   list-style: none;
   padding: 0;
   margin: 27px 0 0;
@@ -1048,11 +1035,9 @@ header {
 .target-audience .pagination button {
   width: 40px;
   height: 10px;
-
   border: 0;
   border-radius: 5px;
   background: var(--green);
-
   padding: 0;
   cursor: pointer;
 }
@@ -1144,23 +1129,14 @@ header {
   border-radius: 30px;
   box-shadow: var(--standard--shadow);
   z-index: 999;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   box-sizing: border-box;
 }
 
 .side-bar nav {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   gap: 10px;
 }
 
 .side-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   margin-bottom: 0;
   text-decoration: none;
   color: #17302d;
@@ -1178,9 +1154,6 @@ header {
 .side-bar .side-item .material-icons {
   color: var(--deep--green);
   line-height: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .top-btn {
   gap: 0;
