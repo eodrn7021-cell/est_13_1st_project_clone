@@ -185,7 +185,7 @@ header {
 .bottom-slogan {
   width: 100%;
   padding: 81px 0 81px;
-  background: url(../image/bottom_slogan.png) no-repeat 0 0 / 100% 100%;
+  background: url(../image/bottom-slogan.png) no-repeat 0 0 / 100% 100%;
   color: var(--white, --cool--gray);
   text-align: center;
 }
@@ -193,83 +193,334 @@ header {
 .bottom-slogan h2 span {
   color: var(--primary);
 }
+
+.cta-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 14px 30px;
+}
 /* bottom-slogan */
+
 /* training-eligibility */
-.condition-wrap {
+.training-eligibility {
   width: 100%;
+  padding: 100px 20px;
+}
+
+/* 제목 */
+.training-container {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.training-container h2 {
+  font-size: 48px;
+  font-weight: 800;
+  color: #222;
+  line-height: 1.4;
+}
+
+.training-container span {
+  color: var(--point);
+}
+
+/* 카드 4개 영역 */
+.condition-cards {
+  max-width: 1200px;
+
+  margin: 0 auto;
 
   display: grid;
+
   grid-template-columns: repeat(2, 1fr);
 
-  gap: 24px;
-
-  margin: 60px auto;
+  gap: 28px;
 }
 
 /* 카드 */
 .condition-card {
   display: flex;
-  align-items: center;
-
-  min-height: 140px;
-
-  background: #ffffff;
-
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-
+  min-height: 180px;
+  background: var(--white);
+  border-radius: 8px;
   overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 /* 왼쪽 아이콘 영역 */
 .icon-box {
-  width: 110px;
-  min-width: 110px;
-  height: 100%;
-
+  width: 100px;
+  min-width: 100px;
+  background: var(--secondary);
   display: flex;
-  justify-content: center;
   align-items: center;
-
-  background: #b8ddd7;
+  justify-content: center;
 }
 
-/* 아이콘 */
-.icon-box .material-icons {
-  font-size: 48px;
-  color: #ffffff;
-
-  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.18);
+.material-icons {
+  font-size: 42px;
+  color: var(--white);
 }
 
-/* 텍스트 영역 */
+/* 오른쪽 텍스트 영역 */
 .text-box {
-  padding: 24px 28px;
+  flex: 1;
+  padding: 28px 24px;
+  display: flex;
+  align-items: center;
+}
 
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 1.6;
-
-  color: #3d2f35;
-
+.text-box h2 {
+  font-size: 22px;
+  line-height: 1.7;
+  font-weight: 700;
+  color: #222;
   word-break: keep-all;
 }
+
+@media (max-width: 768px) {
+  .training-eligibility {
+    padding: 70px 20px;
+  }
+
+  .training-container {
+    margin-bottom: 40px;
+  }
+
+  .training-container h2 {
+    font-size: 32px;
+    line-height: 1.5;
+  }
+
+  /* 한 줄 1개 */
+
+  .condition-cards {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .condition-card {
+    min-height: auto;
+  }
+
+  .icon-box {
+    width: 80px;
+    min-width: 80px;
+  }
+
+  .material-icons {
+    font-size: 34px;
+  }
+
+  .text-box {
+    padding: 22px 18px;
+  }
+
+  .text-box h2 {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+}
 /* training-eligibility */
-.review-section-title {
+
+/* review-section */
+.review-section {
+  width: 100%;
+  overflow: hidden;
+  padding: 100px 0;
+}
+
+.review-title-wrap {
   text-align: center;
-  margin-bottom: 72px;
+  margin-bottom: 70px;
+  padding: 0 20px;
 }
 
-.review-section-title h2 {
-  font-size: 64px;
+.review-title {
+  font-size: 48px;
+  text-align: center;
   font-weight: 800;
-  color: #111827;
-  margin-bottom: 20px;
+  color: #222;
+  margin-bottom: 14px;
 }
 
-.review-section-title p {
-  font-size: 24px;
-  color: #6b7280;
+.review-sub-title {
+  text-align: center;
+  font-size: 18px;
+  color: #777;
 }
+
+.review-sub-title span {
+  color: var(--point);
+  font-weight: 700;
+}
+
+.review-marquee {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  overflow: hidden;
+}
+
+.review-track {
+  display: flex;
+  gap: 26px;
+  width: max-content;
+}
+
+/* 위 -> 오른쪽 */
+.track-top {
+  animation: marqueeRight 35s linear infinite;
+}
+
+/* 아래 -> 왼쪽 */
+.track-bottom {
+  animation: marqueeLeft 35s linear infinite;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.review-card {
+  position: relative;
+
+  width: 420px;
+  min-height: 180px;
+
+  padding: 28px 28px 28px 110px;
+
+  background: #fff;
+
+  border-radius: 12px;
+
+  overflow: hidden;
+
+  flex-shrink: 0;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* 가운데 강조 카드 */
+
+.review-card.active {
+  background: #cfeee8;
+}
+
+/* =========================
+   PROFILE
+========================= */
+
+.review-profile {
+  position: absolute;
+
+  left: -18px;
+  top: 50%;
+
+  transform: translateY(-50%);
+}
+
+.review-profile img {
+  width: 92px;
+  height: 92px;
+
+  object-fit: cover;
+}
+
+/* =========================
+   TEXT
+========================= */
+
+.review-content h3 {
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 16px;
+  color: #222;
+}
+
+.review-content p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #555;
+  word-break: keep-all;
+}
+
+/* =========================
+   ANIMATION
+========================= */
+
+@keyframes marqueeLeft {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-50% - 13px));
+  }
+}
+
+@keyframes marqueeRight {
+  0% {
+    transform: translateX(calc(-50% - 13px));
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .review-section {
+    padding: 70px 0;
+  }
+
+  .review-title {
+    font-size: 32px;
+  }
+
+  .review-sub-title {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .review-marquee {
+    gap: 18px;
+  }
+
+  .review-track {
+    gap: 18px;
+  }
+
+  .review-card {
+    width: 320px;
+    min-height: 170px;
+
+    padding: 24px 20px 24px 88px;
+  }
+
+  .review-profile {
+    left: -10px;
+  }
+
+  .review-profile img {
+    width: 72px;
+    height: 72px;
+  }
+
+  .review-content h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+
+  .review-content p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+}
+
+/* review */
 /* 박채원 */
 
 /* 박소영 */
