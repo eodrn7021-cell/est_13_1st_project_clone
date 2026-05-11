@@ -3,7 +3,7 @@
 header {
   width: 100%;
   background: var(--deep--green);
-  position: fixed;
+  position: sticky;
   z-index: 65535;
 }
 /* //Header */
