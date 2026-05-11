@@ -944,95 +944,6 @@ header {
   color: var(--point);
 }
 
-/* 전체 카드 영역 */
-
-.est-card-container {
-  display: grid;
-  grid-template-columns: 408px 1fr 1fr;
-  gap: 24px;
-  align-items: start;
-  padding: 54px 81px;
-}
-
-/* 전체 카드 */
-
-.card-first,
-.sub-card {
-  display: flex;
-  flex-direction: column;
-  background: var(--white);
-  border: 2px solid var(--cool--gray);
-  border-radius: 10px;
-  overflow: hidden;
-  transition: 0.5s ease;
-}
-
-/* 카드*/
-
-.card-first {
-  grid-row: span 2;
-  height: 100%;
-}
-
-.card-items {
-  display: contents;
-}
-
-.sub-card {
-  width: 100%;
-}
-
-/* 이미지 */
-
-.card-first img,
-.sub-card img {
-  width: 100%;
-  display: block;
-  object-fit: cover;
-}
-
-.card-first img {
-  height: 215px;
-}
-
-.sub-card img {
-  height: 108px;
-}
-
-/* 글 */
-
-.est-card h3,
-.card-content h3 {
-  color: var(--dark--green);
-  line-height: 1.4;
-}
-.est-card,
-.card-content {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  gap: 13.5px;
-  padding: 20px 25px;
-}
-.est-card p,
-.card-content p {
-  color: var(--dark--green);
-  line-height: 1.6;
-}
-
-/* 아이콘 */
-
-.card-link-icon {
-  margin-top: auto;
-  color: var(--point);
-  font-size: 24px;
-  align-self: flex-start;
-}
-
-.card-first .card-link-icon {
-  font-size: 35px;
-}
-
 /* HOVER */
 
 .card-first:hover,
@@ -1086,39 +997,65 @@ header {
 
 /* 반응형 */
 
-@media (max-width: 1024px) {
-  .est-card-container {
-    grid-template-columns: 1fr;
+@media (max-width: 768px) {
+  .est-content {
+    padding: var(--base-unit-x2) 0;
   }
+
+  .section-header {
+    padding: 27px 0;
+  }
+
+  /* 전체 카드 */
+
+  .est-card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    overflow: visible;
+  }
+
+  /* 큰 카드 */
 
   .card-first {
+    width: 100%;
     min-height: auto;
   }
-}
 
-@media (max-width: 768px) {
+  /* 작은 카드 영역 */
+
   .card-items {
-    grid-template-columns: 1fr;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
   }
-  .sub-card:last-child {
-    grid-column: auto;
+
+  /* 작은 카드 */
+
+  .sub-card {
+    width: 100%;
+    min-height: auto;
   }
-  .est-card-container {
-    padding: var(--base-unit-x2) 16px;
-  }
+
+  /* 이미지 */
+
   .card-first img {
     height: 215px;
   }
+
   .sub-card img {
     height: 108px;
   }
-  .hover-big-icon {
-    font-size: 60px;
-  }
-  .hover-icon {
-    font-size: 40px;
+
+  /* 내용 */
+
+  .est-card,
+  .card-content {
+    padding: 20px 25px;
+    gap: 13.5px;
   }
 }
+
 /*FAQ*/
 
 .faq {
