@@ -163,11 +163,14 @@ header {
   color: var(--deep--green);
 }
 
-.logo-carousel {
+.logo-carousel-container {
   width: 100%;
   padding: var(--base-unit-x2) 0;
   position: relative;
   overflow: hidden;
+}
+.logo-carousel {
+  animation: logoCarousel 17.5s linear infinite;
 }
 .mask-logo-carousel {
   top: 0;
@@ -176,6 +179,16 @@ header {
   left: 0;
   background: linear-gradient(to right, #ffffffff 5%, #ffffff00 30%, #ffffff00 70%, #ffffffff 95%);
   position: absolute;
+}
+
+@keyframes logoCarousel {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-1568px - calc(var(--base-unit) * 8)));
+  }
 }
 /* //Graduates Employment Status */
 /* //유태구 */
