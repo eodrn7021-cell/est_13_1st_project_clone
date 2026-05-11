@@ -72,12 +72,12 @@ Tools
 > ├─ css/ <br/>
 > │ ├─ common.css <br/>
 > │ ├─ index.css <br/>
-> │ ├─ flex-utility.css <br/>
+> │ ├─ flex-utility.css # Flex 정렬·레이아웃 라이브러리 <br/>
 > │ ├─ normalize.css <br/>
 > │ └─ reset.css <br/>
 > ├─ image/ <br/>
-> ├─ common.html # 사이트 전역/반복 사용 요소 보관소 <br/>
-> ├─ index.html <br/>
+> ├─ common.html # 컴포넌트 라이브러리 <br/>
+> ├─ index.html # 메인 페이지 <br/>
 > └─ README.md '''
 
 ## 4. 향후 개선 사항
@@ -87,6 +87,10 @@ Tools
 ## 5. 제작 후기
 
 - 유태구: Git 관리를 하면서 애매하거나 잘 모르는 부분은 AI를 활용해 클래스명 작명법, 커밋 메시지 작성법, 어려운 문제 해결 방법을 배우고 나아가 팀에 대한 책임감도 기르는 시간을 가질 수 있었습니다.
+- 박소영:
+- 조승아:
+- 박채원:
+- 권유진:
 
 ## 6. 기획/디자인 문서
 
