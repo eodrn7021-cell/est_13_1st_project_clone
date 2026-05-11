@@ -671,8 +671,9 @@ header {
 /* //Benefits */
 
 /* Statistics */
-.statistics {
+.statistics .container {
   padding: var(--base-unit-x3) 0;
+  border-bottom: 1px solid var(--cool--gray);
   color: var(--dark--green);
 }
 .statistics .items-wrapper {
