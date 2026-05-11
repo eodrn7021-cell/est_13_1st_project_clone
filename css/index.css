@@ -564,10 +564,7 @@ header {
   color: var(--white);
   text-align: center;
 }
-.top-slogan h2 {
-  display: block;
-}
-.top-slogan h2 span {
+.top-slogan h2 .highlight {
   color: var(--alyak-color);
 }
 /* //Top Slogan */
