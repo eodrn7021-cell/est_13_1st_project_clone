@@ -200,10 +200,7 @@ header {
   padding: 108px 0 81px 0;
   background: url(../image/bottom-slogan.png) no-repeat 0 0 / cover;
   color: var(--white);
-  text-align: center;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   gap: 27px;
 }
 
@@ -213,8 +210,6 @@ header {
 
 .cta-btn {
   display: inline-flex;
-  align-items: center;
-  justify-content: center;
   gap: 15px;
   padding: 14px 30px;
 }
@@ -224,17 +219,10 @@ header {
 .training-eligibility {
   width: 100%;
   padding: 100px 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   gap: 27px;
 }
 
 /* 제목 */
-.training-container {
-  text-align: center;
-}
-
 .training-container h2 {
   color: var(--deep--green);
 }
@@ -258,7 +246,6 @@ header {
 
 /* 카드 */
 .condition-card {
-  display: flex;
   min-height: 200px;
   background: var(--white);
   border-radius: 8px;
@@ -271,9 +258,6 @@ header {
   width: 100px;
   min-width: 100px;
   background: var(--secondary);
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .condition-card .material-icons {
@@ -286,7 +270,6 @@ header {
   flex: 1;
   padding: 28px 24px;
   display: flex;
-  align-items: center;
 }
 
 .text-box p {
@@ -348,22 +331,16 @@ header {
 }
 
 .review-title-wrap {
-  text-align: center;
   margin-bottom: 70px;
   padding: 0 20px;
 }
 
 .review-title {
-  font-size: 40px;
-  text-align: center;
-  font-weight: 700;
   color: var(--deep--green);
   margin-bottom: 14px;
 }
 
 .review-sub-title {
-  text-align: center;
-  font-size: 18px;
   color: var(--deep--green);
 }
 
@@ -372,14 +349,11 @@ header {
 }
 
 .review-marquee {
-  display: flex;
-  flex-direction: column;
   gap: 27px;
   overflow: hidden;
 }
 
 .review-track {
-  display: flex;
   gap: 24px;
   width: max-content;
   will-change: transform;
@@ -406,10 +380,8 @@ header {
   width: 420px;
   min-height: 190px;
   padding: 27px 27px 27px 120px;
-  background: var(--white);
+  background: var(--snow--gray);
   border-radius: 14px;
-  display: flex;
-  align-items: center;
   flex-shrink: 0;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
@@ -430,10 +402,8 @@ header {
 
 .review-profile {
   position: absolute;
-
   left: 20px;
   top: 50%;
-
   transform: translateY(-50%);
 }
 
@@ -447,20 +417,13 @@ header {
 /* =========================
    TEXT
 ========================= */
-.review-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
 
 .review-content h3 {
-  text-align: center;
   color: var(--deep--green);
 }
 
 .review-content p {
   color: var(--deep--green);
-  text-align: center;
   word-break: keep-all;
   display: -webkit-box;
   -webkit-line-clamp: 5;
