@@ -21,7 +21,7 @@
 | 박채원 | 팀원 |  HTML 및 CSS <br/> (사이드 nav, 강좌 목록, 대상 고객 안내)  |       [@chaewon5205](https://github.com/chaewon5205)       | [parkjihae9262@gmail.com](parkjihae9262@gmail.com) |
 | 권유진 | 팀원 | HTML 및 CSS <br/> (이스트캠프 콘텐트, FAQ, 신청 마감, 푸터) | [@rwonyujin03-debug](https://github.com/rwonyujin03-debug) |   [rwonyujin03@gmail.com](rwonyujin03@gmail.com)   |
 
-### 1.3 마일스톤
+### 1.3 프로젝트 일정
 
 ```mermaid
 gantt
@@ -30,15 +30,16 @@ gantt
     excludes    weekends
 
     section 기획/설계
-    사이트 장단점 분석<br/>사이트 벤치마킹 :done, 2026-04-28, 2d
+    사이트 장단점 분석 :done, 2026-04-28, 2d
+    사이트 벤치마킹 :done, 2026-04-28, 2d
 
     section 디자인 작업
-    디자인 설계 및 파트분배 :done, 2026-04-30, 5d
-    디자인 작업 : 2026-04-30, 6d
+    디자인 설계 및 파트분배 :done, 2026-04-30, 3d
+    디자인 작업 : 2026-04-30, 4d
 
     section 구현
     HTML 구조 작성 : 2026-05-06, 3d
-    CSS 작성 : 2026-05-06, 6d
+    CSS 작성 : 2026-05-06, 4d
 
     section 검사
     웹접근성 및 욉표준 검사 : 2026-05-11, 1d
