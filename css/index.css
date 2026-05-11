@@ -1224,17 +1224,18 @@ header {
 /*deadline*/
 .deadline {
   background: var(--ice);
-  display: flex;
-  justify-content: center;
-  padding: 54px 108px;
+  padding: 54px 0;
 }
 
 .recruit-banner {
-  max-width: 1272px;
+  max-width: 1200px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  margin: 0 auto;
   gap: var(--base-unit);
+  overflow: hidden;
 }
 
 .banner-top {
@@ -1376,9 +1377,15 @@ header {
 
 /* 반응형 */
 @media (max-width: 768px) {
-  .countdown-wrap,
+  .recruit-banner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .d-day-box,
   .timer-box {
-    width: auto;
+    width: 100%;
+    max-width: 400px;
   }
 }
 
