@@ -554,7 +554,6 @@ header {
   padding: 135px 0 108px;
   background: url(../image/top-slogan.jpg) no-repeat 0 0 / 100% 100%;
   color: var(--white);
-  text-align: center;
 }
 .top-slogan h2 .highlight {
   color: var(--alyak-color);
