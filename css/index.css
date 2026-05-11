@@ -699,12 +699,6 @@ header {
 /* //Statistics */
 
 @media (max-width: 768px) {
-  /* Top Slogan */
-  .top-slogan {
-    font-size: var(--heading--l);
-    line-height: var(--base-unit-x2);
-  }
-  /* //Top Slogan */
   /* Benefits */
   .benefit-section {
     padding: var(--base-unit) 0;
