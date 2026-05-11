@@ -1301,29 +1301,64 @@ header {
 }
 
 /*footer*/
+
 .footer {
   background: var(--deep--green);
   padding: var(--base-unit) 324px var(--base-unit-x2);
 }
+
 .footer-container {
+  width: 100%;
+  padding: 27px;
   display: flex;
   justify-content: space-between;
-  padding: 27px;
-}
-.footer-inner {
-  display: flex;
-  flex-direction: column;
-  gap: 27px;
+  align-items: flex-start;
 }
 
-.footer-info {
-  color: var(--cool--gray);
+/* 반응형 */
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 54px 0;
+  }
+
+  .footer-container {
+    padding: 0;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 27px;
+  }
+
+  .footer-inner {
+    align-items: center;
+    gap: 27px;
+  }
+  .footer-nav {
+    justify-content: center;
+    gap: 10px;
+  }
+  .footer-info {
+    align-items: center;
+    gap: 12px;
+  }
+  .footer-info p {
+    color: var(--green);
+  }
+
+  .footer-icon {
+    justify-content: center;
+    gap: var(--base-unit);
+  }
+  .social-icon {
+    width: 54px;
+    height: 54px;
+  }
+  .social-icon a {
+    font-size: var(--base-unit);
+    font-weight: var(--base-unit);
+  }
 }
 
-.nav {
-  display: flex;
-  gap: 12px;
-  font-weight: bold;
-  color: var(--white);
-}
 /* 권유진 */
