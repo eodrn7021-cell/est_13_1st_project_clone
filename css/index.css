@@ -1141,7 +1141,6 @@ header {
 
 /*deadline*/
 .deadline {
-  width: 100%;
   background: var(--ice);
   display: flex;
   justify-content: center;
@@ -1149,7 +1148,7 @@ header {
 }
 
 .recruit-banner {
-  width: 100%;
+  max-width: 1272px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1157,6 +1156,7 @@ header {
 }
 
 .banner-top {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1193,7 +1193,9 @@ header {
 }
 
 .countdown-wrap {
+  width: 100%;
   display: flex;
+  justify-content: center;
   align-items: stretch;
   gap: 24px;
 }
