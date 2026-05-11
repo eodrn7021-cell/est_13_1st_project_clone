@@ -213,6 +213,45 @@ header {
   gap: 15px;
   padding: 14px 30px;
 }
+
+@media (max-width: 768px) {
+  .bottom-slogan {
+    padding: 80px 20px 70px;
+
+    background: url(../image/bottom-slogan.png) no-repeat center center / cover;
+
+    gap: 24px;
+  }
+
+  /* 제목 */
+
+  .bottom-slogan h2 {
+    font-size: 42px;
+    line-height: 1.35;
+    font-weight: 800;
+    word-break: keep-all;
+  }
+
+  /* span 강조 */
+
+  .bottom-slogan h2 span {
+    display: inline;
+  }
+
+  /* 버튼 */
+
+  .cta-btn {
+    padding: 14px 28px;
+    font-size: 22px;
+    border-radius: 14px;
+    gap: 12px;
+  }
+
+  .cta-btn img {
+    width: 24px;
+    height: 24px;
+  }
+}
 /* bottom-slogan */
 
 /* training-eligibility */
