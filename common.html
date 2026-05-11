@@ -16,22 +16,21 @@
   <body>
     <!-- 유태구 -->
     <!-- header-container -->
-    <div class="container header-container d-flex justify-content-between">
-      <div class="logo-group d-flex align-items-center">
-        <a href="index.html"></a>
-        <h1>
-          <a href="index.html"><span class="ir">EST Camp</span></a>
-        </h1>
-      </div>
+    <!-- 스타일 속성을 빼고 사용할 것-->
+    <div class="header-container container" style="background: var(--deep--green)">
+      <h1>
+        <a href="index.html"><span class="ir">EST Camp</span></a>
+      </h1>
       <nav>
+        <button type="button" class="material-icons">list</button>
         <ul class="d-flex">
+          <li><button type="button" class="material-icons">close</button></li>
           <li><a href="" class="nav-item">강좌보기</a></li>
           <li><a href="" class="nav-item">지원하기</a></li>
         </ul>
       </nav>
     </div>
     <!-- //header-container -->
-    <hr />
     <!-- pagination -->
     <ul class="pagination d-flex">
       <li><button type="button" class="active"></button></li>
@@ -60,11 +59,12 @@
     </a>
     <!-- cta -->
     <!-- //유태구 -->
+
     <!-- 박소영 -->
     <!-- Statistics item -->
     <div class="statistics-item">
       <div>
-        <h6 class="heading-m">누적 수강생</h6>
+        <h3 class="heading-s">누적 수강생</h3>
         <p class="heading-l">10,000+</p>
       </div>
     </div>
@@ -82,11 +82,12 @@
     </div>
     <!-- //Benefit Title -->
 
-    <!-- Arrow_Left -->
-    <span class="arrow material-icons">keyboard_arrow_left</span>
-    <span class="arrow material-icons">keyboard_arrow_right</span>
-    <!-- //Arrow_Left -->
-
+    <!-- Benefit tag -->
+    <div class="tag">
+      <h2 class="heading-m">#</h2>
+      <h2 class="heading-s">주제별 취업 특강</h2>
+    </div>
+    <!-- //Benefit tag -->
     <!-- //박소영 -->
   </body>
 </html>
