@@ -10,17 +10,16 @@
 ### 1.1 목표
 
 - 이스트소프트 교육 모집 웹페이지 개선
-  - asdf
 
 ### 1.2 팀원
 
-|  이름  | 역할 | 주요 담당 |                  GitHub                  |
-| :----: | :--: | :-------: | :--------------------------------------: |
-| 유태구 |  .   |     .     |    [](https://github.com/rozer4heros)    |
-| 박소영 |  .   |     .     |       [](https://github.com/s0-p)        |
-| 조승아 |  .   |     .     |         [](https://github.com/)          |
-| 박채원 |  .   |     .     |    [](https://github.com/chaewon5205)    |
-| 권유진 |  .   |     .     | [](https://github.com/rwonyujin03-debug) |
+|  이름  | 역할 |                          주요 담당                          |                           GitHub                           |                       이메일                       |
+| :----: | :--: | :---------------------------------------------------------: | :--------------------------------------------------------: | :------------------------------------------------: |
+| 유태구 | 팀장 |     HTML 및 CSS <br/> (헤더, 히어로, 수강생 취업 현황)      |       [@rozer4heros](https://github.com/rozer4heros)       |   [rozer4heros@gmail.com](rozer4heros@gmail.com)   |
+| 박소영 | 팀원 |    HTML 및 CSS <br/> (위 슬로건, 수강 혜택, 홍보용 통계)    |              [@s0-p](https://github.com/s0-p)              |      [b00v0429@gmail.com](b00v0429@gmail.com)      |
+| 조승아 | 팀원 |    HTML 및 CSS <br/> (수강 후기, 수강 요건, 아래 슬로건)    |    [@eodrn7021-cell](https://github.com/eodrn7021-cell)    |     [eodrn7021@gmail.com](eodrn7021@gmail.com)     |
+| 박채원 | 팀원 |  HTML 및 CSS <br/> (사이드 nav, 강좌 목록, 대상 고객 안내)  |       [@chaewon5205](https://github.com/chaewon5205)       | [parkjihae9262@gmail.com](parkjihae9262@gmail.com) |
+| 권유진 | 팀원 | HTML 및 CSS <br/> (이스트캠프 콘텐트, FAQ, 신청 마감, 푸터) | [@rwonyujin03-debug](https://github.com/rwonyujin03-debug) |   [rwonyujin03@gmail.com](rwonyujin03@gmail.com)   |
 
 ### 1.3 마일스톤
 
@@ -43,6 +42,19 @@ Tools
 - [https://rozer4heros.github.io/est_fe_13_1st_project/](https://rozer4heros.github.io/est_fe_13_1st_project/)
 
 ## 3. 프로젝트 구조
+
+> est_fe_13_1st_project/ <br/>
+> ├─ .vscode/ <br/>
+> ├─ css/ <br/>
+> │ ├─ common.css <br/>
+> │ ├─ index.css <br/>
+> │ ├─ flex-utility.css <br/>
+> │ ├─ normalize.css <br/>
+> │ └─ reset.css <br/>
+> ├─ image/ <br/>
+> ├─ common.html # 사이트 전역/반복 사용 요소 보관소 <br/>
+> ├─ index.html <br/>
+> └─ README.md '''
 
 ## 4. 향후 개선 사항
 
