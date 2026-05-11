@@ -67,6 +67,5 @@ Tools
 
 ## 6. 기획/디자인 문서
 
-- [사이트 분석 및 레퍼런스 조사(피그잼)](https://www.figma.com/board/dXFaNiF0mNulG2uiH8q0TW/%EC%82%AC%EC%9D%B4%ED%8A%B8-%EB%B6%84%EC%84%9D-%EB%B0%8F-%EB%A0%88%ED%8D%BC%EB%9F%B0%EC%8A%A4-%EC%A1%B0%EC%82%AC?node-id=0-1&t=zjmFxVL9HzPVkOxg-1):
 - [기획 슬라이드(피그마 슬라이드)](https://www.figma.com/slides/NsGzmNRyeujiGmuqMgXBxt):
 - [디자인 시안(피그마)](https://www.figma.com/design/bUzmsPXP15RsPYMmtjsPpp/%EB%94%94%EC%9E%90%EC%9D%B8-%EC%8B%9C%EC%95%88?node-id=0-1&t=aNipptFfc3rsLdrL-1):
