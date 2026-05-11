@@ -154,85 +154,245 @@ header {
 /* bottom-slogan */
 
 /* training-eligibility */
-.condition-wrap {
-  width: 100%;
+.training-eligibility {
+  padding: 80px 20px;
+}
 
+/* 가운데 정렬 */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* 제목 */
+.section-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 50px;
+  line-height: 1.4;
+  color: #222;
+}
+
+.section-title span {
+  color: var(--point);
+}
+
+/* 카드 4개 영역 */
+.condition-cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-
   gap: 24px;
-
-  margin: 60px auto;
 }
 
 /* 카드 */
 .condition-card {
   display: flex;
-  align-items: center;
-
-  min-height: 140px;
-
-  background: #ffffff;
-
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-
+  align-items: stretch;
+  background: #fff;
+  min-height: 180px;
+  border-radius: 6px;
   overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
 
 /* 왼쪽 아이콘 영역 */
 .icon-box {
-  width: 110px;
-  min-width: 110px;
-  height: 100%;
-
+  width: 100px;
+  min-width: 100px;
+  background: #b7ddd5;
   display: flex;
-  justify-content: center;
   align-items: center;
-
-  background: #b8ddd7;
+  justify-content: center;
 }
 
-/* 아이콘 */
-.icon-box .material-icons {
-  font-size: 48px;
-  color: #ffffff;
-
-  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.18);
+.icon-box img {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
 }
 
-/* 텍스트 영역 */
+/* 오른쪽 텍스트 영역 */
 .text-box {
-  padding: 24px 28px;
+  flex: 1;
+  padding: 28px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
-  font-size: 18px;
-  font-weight: 500;
+/* 본문 */
+.text-box p {
+  font-size: 20px;
+  font-weight: 600;
   line-height: 1.6;
+  color: #222;
+  word-break: keep-all;
+}
 
-  color: #3d2f35;
+/* 리스트 */
+.text-box ul {
+  margin-top: 14px;
+  padding-left: 0;
+  list-style: none;
+}
 
+.text-box li {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #444;
   word-break: keep-all;
 }
 /* training-eligibility */
-/* review */
-.section-title {
+
+/* review-section */
+.review-section {
+  width: 100%;
+  overflow: hidden;
+  padding: 81px 54px 81px;
+}
+
+.review-title-wrap {
   text-align: center;
-  margin-bottom: 72px;
+  margin-bottom: 70px;
+  padding: 0 20px;
 }
 
-.section-title h2 {
-  font-size: 40px;
+.review-title {
+  font-size: 48px;
+  text-align: center;
   font-weight: 800;
-  color: var(--deep--green);
-  margin-bottom: 20px;
+  color: #222;
+  margin-bottom: 14px;
 }
 
-.section-title p span {
+.review-sub-title {
+  text-align: center;
+  font-size: 18px;
+  color: #777;
+}
+
+.review-sub-title span {
   color: var(--point);
+  font-weight: 700;
 }
 
-.section-title p {
-  font-size: 20x;
-  color: var(--deep--green);
+.review-marquee {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+}
+
+/* 한 줄 */
+
+.review-track {
+  display: flex;
+  width: max-content;
+  gap: 26px;
+}
+
+/* 위쪽 -> 오른쪽 */
+
+.track-top {
+  animation: marqueeRight 35s linear infinite;
+}
+
+/* 아래쪽 -> 왼쪽 */
+
+.track-bottom {
+  animation: marqueeLeft 35s linear infinite;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.review-card {
+  position: relative;
+
+  width: 420px;
+  min-height: 180px;
+
+  padding: 28px 28px 28px 110px;
+
+  background: #fff;
+
+  border-radius: 12px;
+
+  overflow: hidden;
+
+  flex-shrink: 0;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* 가운데 강조 카드 */
+
+.review-card.active {
+  background: #cfeee8;
+}
+
+/* =========================
+   PROFILE
+========================= */
+
+.review-profile {
+  position: absolute;
+
+  left: -18px;
+  top: 50%;
+
+  transform: translateY(-50%);
+}
+
+.review-profile img {
+  width: 92px;
+  height: 92px;
+
+  object-fit: cover;
+}
+
+/* =========================
+   TEXT
+========================= */
+
+.review-content h3 {
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 16px;
+  color: #222;
+}
+
+.review-content p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #555;
+
+  word-break: keep-all;
+}
+
+/* =========================
+   ANIMATION
+========================= */
+
+@keyframes marqueeLeft {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-20%);
+  }
+}
+
+@keyframes marqueeRight {
+  0% {
+    transform: translateX(-20%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
 }
 /* review */
 /* 박채원 */
