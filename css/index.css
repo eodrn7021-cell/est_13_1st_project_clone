@@ -1106,7 +1106,7 @@ header {
     box-sizing: border-box;
     justify-content: space-between;
   }
-  .pagination {
+  .target-audience .pagination {
     margin-top: -27px;
   }
 }
