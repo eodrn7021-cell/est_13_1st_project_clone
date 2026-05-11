@@ -199,7 +199,7 @@ body {
   display: block;
   width: 200px;
   height: 40px;
-  background: url("/image/logo.png") no-repeat 0 0 / contain;
+  background: url("../image/logo.png") no-repeat 0 0 / contain;
 
   position: absolute;
   top: 50%;
@@ -251,7 +251,7 @@ body {
 }
 @media (max-width: 768px) {
   .header-container h1 a {
-    background: url("/image/logo-responsive.png") no-repeat 0 0 / contain;
+    background: url("../image/logo-responsive.png") no-repeat 0 0 / contain;
   }
   .header-container nav button {
     display: block;
