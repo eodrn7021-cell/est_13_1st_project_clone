@@ -660,9 +660,6 @@ header {
   width: 400%;
   transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.benefit-section input[type="radio"] {
-  display: none;
-}
 .benefit-section label[for^="slide"] {
   display: inline-block;
   width: 40px;
