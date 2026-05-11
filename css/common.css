@@ -257,6 +257,7 @@ body {
     display: block;
   }
   .header-container ul {
+    display: none;
     width: 100vw;
     height: 100vh;
     padding: 81px 24px 0;
