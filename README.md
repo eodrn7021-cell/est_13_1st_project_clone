@@ -13,13 +13,13 @@
 
 ### 1.2 팀원
 
-|  이름  | 역할 |                          주요 담당                          |                           GitHub                           |                       이메일                       |
-| :----: | :--: | :---------------------------------------------------------: | :--------------------------------------------------------: | :------------------------------------------------: |
-| 유태구 | 팀장 |     HTML 및 CSS <br/> (헤더, 히어로, 수강생 취업 현황)      |       [@rozer4heros](https://github.com/rozer4heros)       |   [rozer4heros@gmail.com](rozer4heros@gmail.com)   |
-| 박소영 | 팀원 |    HTML 및 CSS <br/> (위 슬로건, 수강 혜택, 홍보용 통계)    |              [@s0-p](https://github.com/s0-p)              |      [b00v0429@gmail.com](b00v0429@gmail.com)      |
-| 조승아 | 팀원 |    HTML 및 CSS <br/> (수강 후기, 수강 요건, 아래 슬로건)    |    [@eodrn7021-cell](https://github.com/eodrn7021-cell)    |     [eodrn7021@gmail.com](eodrn7021@gmail.com)     |
-| 박채원 | 팀원 |  HTML 및 CSS <br/> (사이드 nav, 강좌 목록, 대상 고객 안내)  |       [@chaewon5205](https://github.com/chaewon5205)       | [parkjihae9262@gmail.com](parkjihae9262@gmail.com) |
-| 권유진 | 팀원 | HTML 및 CSS <br/> (이스트캠프 콘텐트, FAQ, 신청 마감, 푸터) | [@rwonyujin03-debug](https://github.com/rwonyujin03-debug) |   [rwonyujin03@gmail.com](rwonyujin03@gmail.com)   |
+|  이름  | 역할 |                                                                        주요 담당                                                                        |                           GitHub                           |                       이메일                       |
+| :----: | :--: | :-----------------------------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------: | :------------------------------------------------: |
+| 유태구 | 팀장 | Figma 디자인 (헤더, 히어로, 수강생 취업 현황, 강의 만족도, FAQ, 푸터) <br/> HTML 및 CSS (헤더, 히어로, 수강생 취업 현황) <br/> 프로젝트 발표 · Git 관리 |       [@rozer4heros](https://github.com/rozer4heros)       |   [rozer4heros@gmail.com](rozer4heros@gmail.com)   |
+| 박소영 | 팀원 |      Figma 디자인 (상단 슬로건, 수강생 혜택, 강좌 목록, 신청 데드라인) <br/> HTML 및 CSS (상단 슬로건, 수강생 혜택, 홍보용 통계) <br/> 회의록 작성      |              [@s0-p](https://github.com/s0-p)              |      [b00v0429@gmail.com](b00v0429@gmail.com)      |
+| 조승아 | 팀원 |                            Figma 디자인 (대상 고객 안내, 하단 슬로건) <br/> HTML 및 CSS (수강 후기, 수강 요건, 하단 슬로건)                             |    [@eodrn7021-cell](https://github.com/eodrn7021-cell)    |     [eodrn7021@gmail.com](eodrn7021@gmail.com)     |
+| 박채원 | 팀원 |                             Figma 디자인 (수강 요건, 사이드 nav) <br/> HTML 및 CSS (사이드 nav, 강좌 목록, 대상 고객 안내)                              |       [@chaewon5205](https://github.com/chaewon5205)       | [parkjihae9262@gmail.com](parkjihae9262@gmail.com) |
+| 권유진 | 팀원 |                                   Figma 디자인 (EST 콘텐츠) <br/> HTML 및 CSS (EST 콘텐츠, FAQ, 신청 데드라인, 푸터)                                    | [@rwonyujin03-debug](https://github.com/rwonyujin03-debug) |   [rwonyujin03@gmail.com](rwonyujin03@gmail.com)   |
 
 ### 1.3 프로젝트 일정
 
@@ -92,7 +92,3 @@ Tools
 
 - [기획 슬라이드(피그마 슬라이드)](https://www.figma.com/slides/NsGzmNRyeujiGmuqMgXBxt):
 - [디자인 시안(피그마)](https://www.figma.com/design/bUzmsPXP15RsPYMmtjsPpp/%EB%94%94%EC%9E%90%EC%9D%B8-%EC%8B%9C%EC%95%88?node-id=0-1&t=aNipptFfc3rsLdrL-1):
-
-```
-
-```
