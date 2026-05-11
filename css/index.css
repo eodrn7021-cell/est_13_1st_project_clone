@@ -290,9 +290,7 @@ header {
 }
 
 .text-box p {
-  line-height: 1.7;
   min-width: 206px;
-  font-weight: 700;
   color: var(--deep--green);
   word-break: keep-all;
 }
@@ -356,22 +354,21 @@ header {
 }
 
 .review-title {
-  font-size: 48px;
+  font-size: 40px;
   text-align: center;
-  font-weight: 800;
-  color: #222;
+  font-weight: 700;
+  color: var(--deep--green);
   margin-bottom: 14px;
 }
 
 .review-sub-title {
   text-align: center;
   font-size: 18px;
-  color: #777;
+  color: var(--deep--green);
 }
 
 .review-sub-title span {
   color: var(--point);
-  font-weight: 700;
 }
 
 .review-marquee {
@@ -457,22 +454,17 @@ header {
 }
 
 .review-content h3 {
-  font-size: 30px;
-  font-weight: 800;
-  margin-bottom: 12px;
   text-align: center;
   color: var(--deep--green);
 }
 
 .review-content p {
-  font-size: 14px;
-  line-height: 1.8;
   color: var(--deep--green);
+  text-align: center;
   word-break: keep-all;
   display: -webkit-box;
-  -webkit-line-clamp: 4;
+  -webkit-line-clamp: 5;
   -webkit-box-orient: vertical;
-  overflow: hidden;
 }
 
 /* =========================
