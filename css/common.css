@@ -543,22 +543,6 @@ body {
   white-space: nowrap;
 }
 
-/*footer social icon*/
-.icon {
-  display: flex;
-  gap: 10px;
-}
-.social-icon {
-  color: var(--cool--gray);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 54px;
-  height: 54px;
-  background-color: var(--dark--green);
-  border-radius: 50%;
-}
-
 /* FAQ */
 input[id*="question"] {
   display: none;
@@ -595,4 +579,63 @@ input[id*="question"] + label + div p {
 input[id*="question"]:checked ~ label ~ div {
   max-height: 300px;
 }
+
+/*footer social icon*/
+
+/* 왼쪽 영역 */
+
+.footer-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+}
+
+/* 메뉴 */
+
+.footer-nav {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer-nav a {
+  color: var(--white);
+  font-weight: bold;
+}
+
+/* 정보 */
+
+.footer-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-info p {
+  color: var(--white);
+}
+
+/* 아이콘 */
+
+.footer-icon {
+  display: flex;
+  align-items: center;
+  gap: 27px;
+}
+
+.social-icon {
+  width: 54px;
+  height: 54px;
+  border-radius: 65535px;
+  background: var(--dark--green);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: var(--standard--shadow);
+}
+
+.social-icon a {
+  color: var(--cool--gray);
+  font-size: 27px;
+}
+
 /* 권유진 */
