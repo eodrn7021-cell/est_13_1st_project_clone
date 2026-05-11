@@ -450,6 +450,16 @@ body {
 }
 
 /* 글 */
+.est-card-container {
+  display: grid;
+  grid-template-columns: 408px 210px 210px;
+  gap: 24px;
+  justify-content: center;
+}
+
+.card-first {
+  grid-row: span 2;
+}
 
 .est-card h3,
 .card-content h3 {
@@ -458,6 +468,7 @@ body {
 }
 .est-card,
 .card-content {
+  max-width: 768px;
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -483,83 +494,162 @@ body {
   font-size: 35px;
 }
 
-/* 전체 카드 영역 */
-.est-card-container {
-  display: grid;
-  grid-template-columns: 408px 1fr 1fr;
-  gap: 24px;
-  align-items: start;
-  padding: 54px 81px;
+.apply {
+  color: var(--primary);
+  font-size: var(--base-unit);
+}
+/* HOVER */
+
+.card-first:hover,
+.sub-card:hover {
+  transform: translateY(-6px);
+}
+.card-first::before,
+.sub-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: 0.5s;
+  z-index: 1;
 }
 
-/* 전체 카드 */
-.card-first,
-.sub-card {
-  display: flex;
-  flex-direction: column;
-  background: var(--white);
-  border: 2px solid var(--cool--gray);
-  border-radius: 10px;
-  overflow: hidden;
-  transition: 0.5s ease;
+.card-first:hover::before,
+.sub-card:hover::before {
+  opacity: 1;
 }
 
-/* 카드*/
-.card-first {
-  grid-row: span 2;
-  height: 100%;
-}
+/* HOVER ICON */
 
-.card-items {
-  display: contents;
-}
-
-.sub-card {
-  width: 100%;
-}
-
-/* 이미지 */
-.card-first img,
-.sub-card img {
-  width: 100%;
-  display: block;
-  object-fit: cover;
-}
-
-.card-first img {
-  height: 215px;
-}
-
-.sub-card img {
-  height: 108px;
-}
-
-/* 글 */
-.est-card h3,
-.card-content h3 {
-  color: var(--dark--green);
-  line-height: 1.4;
-}
-.est-card,
-.card-content {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  gap: 13.5px;
-  padding: 20px 25px;
-}
-.est-card p,
-.card-content p {
-  color: var(--dark--green);
-  line-height: 1.6;
-}
-
-/* 아이콘 */
-.card-link-icon {
-  margin-top: auto;
+.hover-big-icon,
+.hover-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.7);
+  opacity: 0;
+  z-index: 2;
   color: var(--point);
-  font-size: 24px;
-  align-self: flex-start;
+  transition: 0.5s ease;
+  pointer-events: none;
+}
+
+.hover-big-icon {
+  font-size: 60px;
+}
+
+.hover-icon {
+  font-size: 40px;
+}
+
+.card-first:hover .hover-big-icon,
+.sub-card:hover .hover-icon {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/* 반응형 */
+
+@media (max-width: 768px) {
+  .est-content {
+    padding: 54px 0;
+  }
+
+  .section-header {
+    padding: 0 24px 32px;
+  }
+
+  /* 전체 카드 */
+
+  .est-card-container {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+
+    padding: 32px 24px 0;
+
+    overflow: visible;
+  }
+
+  /* 큰 카드 */
+
+  .card-first {
+    width: 100%;
+    min-height: auto;
+  }
+
+  /* 작은 카드 영역 */
+
+  .card-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 16px;
+  }
+
+  /* 작은 카드 */
+
+  .sub-card {
+    width: 100%;
+    min-height: auto;
+  }
+
+  /* 이미지 */
+
+  .card-first img {
+    height: 220px;
+  }
+
+  .sub-card img {
+    height: 160px;
+    width: 100%;
+  }
+
+  /* 내용 */
+
+  .est-card,
+  .card-content {
+    padding: 16px;
+    gap: 10px;
+  }
+
+  /* 제목 */
+
+  .est-card h3,
+  .card-content h3 {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  /* 본문 */
+
+  .est-card p,
+  .card-content p {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  /* 아이콘 */
+
+  .card-link-icon {
+    font-size: 20px;
+  }
+
+  .card-first .card-link-icon {
+    font-size: 28px;
+  }
+
+  /* hover icon */
+
+  .hover-big-icon {
+    font-size: 48px;
+  }
+
+  .hover-icon {
+    font-size: 32px;
+  }
 }
 
 .card-first .card-link-icon {
@@ -648,6 +738,7 @@ body {
 /* 메뉴 */
 
 .footer-nav {
+  white-space: nowrap;
   display: flex;
   align-items: center;
   gap: 12px;
@@ -661,6 +752,7 @@ body {
 /* 정보 */
 
 .footer-info {
+  white-space: nowrap;
   display: flex;
   flex-direction: column;
 }
@@ -677,11 +769,15 @@ body {
   gap: 27px;
 }
 
+.social-icon a {
+  color: var(--cool--gray);
+  font-size: var(--base-unit);
+}
 .social-icon {
   width: 54px;
   height: 54px;
   border-radius: 65535px;
-  color: var(--cool--gray);
+
   background: var(--dark--green);
   display: flex;
   justify-content: center;
