@@ -46,7 +46,7 @@
 #### 4일차 (05-01)
 
 - [ ] 사이트 색상 스타일 지정
-- [ ] Figma 디자인 파트 분배
+- [ ] Figma 디자인 담당 파트 분배
 - [ ] Figma 기본 골격 제작 (Layout Guide)
 
 #### 5일차 (05-04)
@@ -62,12 +62,13 @@
 #### 7일차 (05-06)
 
 - [ ] Figma 디자인 개편
-- [ ] 필요한 이미지, 아이콘, 폰트 등의 자산 추출/준비
 - [ ] GitHub 저장소 생성 및 로컬 환경 연결
+- [ ] 시맨틱 태그를 사용하여 전체 HTML 골격 작성
+- [ ] HTML 및 CSS 작성 담당 파트 분배
 
 #### 8일차 (05-07)
 
-- [ ] 시맨틱 태그를 사용하여 전체 HTML 골격 작성
+- [ ] 필요한 이미지, 아이콘, 폰트 등의 자산 추출/준비
 - [ ] Figma 기준 색상, 폰트, 간격 적용
 - [ ] 공통 스타일(리셋·폰트·변수) 적용
 
@@ -160,5 +161,5 @@ Tools
 
 ## 6. 기획/디자인 문서
 
-- [기획 슬라이드(피그마 슬라이드)](https://www.figma.com/slides/NsGzmNRyeujiGmuqMgXBxt):
-- [디자인 시안(피그마)](https://www.figma.com/design/bUzmsPXP15RsPYMmtjsPpp/%EB%94%94%EC%9E%90%EC%9D%B8-%EC%8B%9C%EC%95%88?node-id=0-1&t=aNipptFfc3rsLdrL-1):
+- [기획 슬라이드(피그마 슬라이드)](https://www.figma.com/slides/NsGzmNRyeujiGmuqMgXBxt)
+- [디자인 시안(피그마)](https://www.figma.com/design/bUzmsPXP15RsPYMmtjsPpp/%EB%94%94%EC%9E%90%EC%9D%B8-%EC%8B%9C%EC%95%88?node-id=0-1&t=aNipptFfc3rsLdrL-1)
