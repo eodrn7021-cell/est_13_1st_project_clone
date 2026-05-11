@@ -66,7 +66,7 @@
 main {
   padding-top: var(--base-unit-x3);
 }
-.responsive-line-break::before {
+.r-line-break::before {
   content: " ";
 }
 @media (max-width: 1280px) {
@@ -75,9 +75,12 @@ main {
   }
 }
 @media (max-width: 768px) {
-  .responsive-line-break::before {
+  .r-line-break::before {
     content: "\A";
     white-space: pre;
+  }
+  .r-hidden {
+    display: none;
   }
 }
 /* //Layout */
@@ -136,22 +139,6 @@ body {
 /* //Typography */
 
 /* Linked Buttons */
-.header-container nav a {
-  display: inline-block;
-  padding: 0px 12px;
-
-  background: var(--deep--green);
-  border-radius: 10px;
-  color: var(--ghost--gray);
-  box-shadow: none;
-
-  transition: 300ms ease-out;
-}
-.header-container nav a:hover {
-  color: var(--primary);
-  box-shadow: var(--highlight--register);
-}
-
 .cta-btn {
   display: flex;
   justify-content: center;
@@ -201,14 +188,106 @@ body {
 
 /* 유태구 */
 /* header-container */
+.header-container {
+  position: relative;
+  box-sizing: border-box;
+}
 .header-container h1 a {
   display: block;
   width: 268px;
   height: 54px;
-  background: url("/image/logo.png") no-repeat 0 0 / cover;
+  background: url("/image/logo.png") no-repeat 0 0;
 }
-.header-container nav ul {
+.header-container nav {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.header-container ul {
   gap: 24px;
+}
+.header-container nav a {
+  display: block;
+  padding: 0px 12px;
+
+  background: var(--deep--green);
+  border-radius: 10px;
+  color: var(--ghost--gray);
+  box-shadow: none;
+
+  transition: 300ms ease-out;
+}
+.header-container nav a:hover {
+  color: var(--primary);
+  box-shadow: var(--highlight--register);
+}
+.header-container nav button {
+  display: none;
+  font-size: 40px;
+  line-height: 54px;
+  cursor: pointer;
+  color: var(--white);
+}
+.header-container nav ul button {
+  color: var(--deep--green);
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+@media (max-width: 1280px) {
+  .header-container {
+    padding: 0 27px;
+  }
+  .header-container nav {
+    margin-right: 27px;
+  }
+}
+@media (max-width: 768px) {
+  .header-container h1 a {
+    width: 51px;
+    background: url("/image/logo-responsive.png") no-repeat 0 0;
+  }
+  .header-container nav button {
+    display: block;
+  }
+  .header-container ul {
+    width: 100vw;
+    height: 100vh;
+    padding: 81px 24px 0;
+    background-color: var(--cool--gray);
+
+    position: absolute;
+    top: 0;
+    right: 100vw;
+
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0;
+  }
+  .header-container ul.active {
+    right: 0;
+  }
+  .header-container nav a {
+    width: 300px;
+    padding: calc(var(--base-unit) * 0.5) 12px;
+    border-bottom: 1px solid var(--dark--green);
+    box-sizing: border-box;
+    background-color: var(--cool--gray);
+    border-radius: 0px;
+    color: var(--deep--green);
+    text-align: end;
+  }
+  .header-container nav a:hover {
+    color: var(--deep--green);
+    box-shadow: inset 0px 0px 20px rgba(78, 174, 163, 1);
+  }
+  .header-container nav > button {
+    display: block;
+  }
+  .header-container nav ul button {
+    display: block;
+  }
 }
 /* //header-container */
 
@@ -222,9 +301,11 @@ body {
   height: 10px;
   border-radius: 5px;
   background-color: var(--secondary);
+  cursor: pointer;
 }
 .pagination button.active {
   background-color: var(--green);
+  cursor: default;
 }
 /* //pagination */
 
@@ -265,12 +346,15 @@ body {
 /* 박소영 */
 /* Benefit Title */
 .benefit-title {
-  text-align: center;
+  padding: 0 11px 6px;
   gap: 10px;
+  text-align: center;
+}
+.tag-container {
+  gap: 21px;
 }
 .tag {
-  display: inline-block;
-  padding: 0 24px;
+  padding: 7px 10px;
   border-radius: 50px;
   background: var(--primary);
   color: var(--white);
@@ -287,7 +371,7 @@ body {
 /* Statistics Item */
 .statistics-item {
   display: inline-block;
-  width: 408px;
+  width: 300px;
   padding: var(--base-unit) 0;
   background: var(--ghost--gray);
   border-radius: 10px;
@@ -295,17 +379,138 @@ body {
   text-align: center;
   box-sizing: border-box;
 }
-.statistics-item h6 {
-  font-size: var(--heading--m);
-  color: var(--dark--green);
+.statistics h2 {
+  text-align: center;
 }
 .statistics-item p {
-  font-size: var(--heading--l);
   color: var(--primary);
 }
 /* //Statistics Item */
 /* //박소영 */
-/* 권유진 푸터 social icon */
+
+/* 권유진 */
+/* est-content-card*/
+
+/* 카드 전체 영역 */
+
+.est-card-container {
+  display: flex;
+  padding: var(--base-unit-x2) var(--base-unit-x3);
+  align-items: flex-start;
+}
+
+/* 공통 카드 */
+
+.card-first,
+.sub-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: var(--white);
+  border: 2px solid var(--cool--gray);
+  border-radius: 10px;
+  overflow: hidden;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* 큰 카드 */
+.card-first {
+  width: 408px;
+  min-height: 567px;
+}
+
+/* 오른쪽 카드 묶음 */
+
+.card-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  flex: 1;
+}
+/* 작은 카드 */
+
+.sub-card {
+  width: calc(50% - 12px);
+  min-width: 280px;
+  min-height: 324px;
+}
+
+/* 이미지 */
+
+.card-first img,
+.sub-card img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.card-first img {
+  height: 215px;
+}
+.sub-card img {
+  height: 108px;
+}
+
+/* 카드 내용 */
+
+.est-card,
+.card-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 16px;
+  padding: 24px;
+}
+
+/* 제목 */
+
+.est-card h3,
+.card-content h3 {
+  color: var(--dark--green);
+}
+
+/* 글 */
+
+.est-card p,
+.card-content p {
+  color: var(--dark--green);
+}
+
+/* 하단 아이콘 */
+
+.card-link-icon {
+  margin-top: auto;
+  color: var(--point);
+  font-size: 24px;
+  align-self: flex-start;
+}
+
+/* 큰 아이콘 */
+
+.card-first .card-link-icon {
+  font-size: 35px;
+}
+
+.card-first:hover::before,
+.sub-card:hover::before {
+  opacity: 1;
+}
+
+/* deadline 버튼 */
+.deadline-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 13.5px 37px;
+  border-radius: 10px;
+  background: var(--white);
+  color: var(--primary);
+  text-decoration: none;
+  white-space: nowrap;
+}
+/*footer social icon*/
 .icon {
   display: flex;
   gap: 10px;
@@ -319,5 +524,42 @@ body {
   height: 54px;
   background-color: var(--dark--green);
   border-radius: 50%;
+}
+
+/* FAQ */
+input[id*="question"] {
+  display: none;
+}
+input[id*="question"] + label {
+  color: var(--dark--green);
+  display: block;
+  padding: 12px 0;
+  border: 1px solid var(--cool--gray);
+  border-left: 0;
+  border-right: 0;
+  position: relative;
+}
+input[id*="question"] + label em {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  margin-top: -15px;
+  display: inline-block;
+}
+input[id*="question"] + label + div {
+  max-height: 0;
+  transition: all 0.35s ease;
+  overflow: hidden;
+  opacity: 0;
+}
+input[id*="question"] + label + div p {
+  color: var(--greenish--gray);
+  display: inline-block;
+  padding: 13.5px 12px;
+}
+input[id*="question"]:checked ~ label ~ div {
+  max-height: 300px;
 }
 /* 권유진 */
