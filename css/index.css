@@ -2,7 +2,6 @@
 /* Header */
 header {
   width: 100%;
-  padding: calc(var(--base-unit) * 0.5) 0;
   background: var(--deep--green);
   position: fixed;
   z-index: 65535;
