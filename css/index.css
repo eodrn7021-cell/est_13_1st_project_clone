@@ -535,7 +535,7 @@ header {
 .top-slogan h2 {
   display: block;
 }
-.top-slogan h2 span {
+.top-slogan h2 .point {
   color: var(--alyak-color);
 }
 /* //Top Slogan */
