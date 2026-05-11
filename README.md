@@ -9,40 +9,108 @@
 
 ### 1.1 목표
 
-- 이스트소프트 교육 모집 웹페이지 개선
+- [이스트소프트 교육 모집 웹페이지](https://estbootcamp.co.kr/) 개선
 
-### 1.2 팀원
+### 1.2 팀원 및 역할
 
-|  이름  | 역할 |                          주요 담당                          |                           GitHub                           |                       이메일                       |
-| :----: | :--: | :---------------------------------------------------------: | :--------------------------------------------------------: | :------------------------------------------------: |
-| 유태구 | 팀장 |     HTML 및 CSS <br/> (헤더, 히어로, 수강생 취업 현황)      |       [@rozer4heros](https://github.com/rozer4heros)       |   [rozer4heros@gmail.com](rozer4heros@gmail.com)   |
-| 박소영 | 팀원 |    HTML 및 CSS <br/> (위 슬로건, 수강 혜택, 홍보용 통계)    |              [@s0-p](https://github.com/s0-p)              |      [b00v0429@gmail.com](b00v0429@gmail.com)      |
-| 조승아 | 팀원 |    HTML 및 CSS <br/> (수강 후기, 수강 요건, 아래 슬로건)    |    [@eodrn7021-cell](https://github.com/eodrn7021-cell)    |     [eodrn7021@gmail.com](eodrn7021@gmail.com)     |
-| 박채원 | 팀원 |  HTML 및 CSS <br/> (사이드 nav, 강좌 목록, 대상 고객 안내)  |       [@chaewon5205](https://github.com/chaewon5205)       | [parkjihae9262@gmail.com](parkjihae9262@gmail.com) |
-| 권유진 | 팀원 | HTML 및 CSS <br/> (이스트캠프 콘텐트, FAQ, 신청 마감, 푸터) | [@rwonyujin03-debug](https://github.com/rwonyujin03-debug) |   [rwonyujin03@gmail.com](rwonyujin03@gmail.com)   |
+- 첫 프로젝트는 주요 담당 역할 없이 작업을 나눠서 맡음
+
+|  이름  | 역할 |                 Figma 디자인 담당 파트                 |      HTML 및 CSS 작성 담당 파트       |        기타 담당         | GitHub                                                     | 이메일                                             |
+| :----: | :--: | :----------------------------------------------------: | :-----------------------------------: | :----------------------: | ---------------------------------------------------------- | -------------------------------------------------- |
+| 유태구 | 팀장 | 헤더, 히어로, 수강생 취업 현황, 강의 만족도, FAQ, 푸터 |    헤더, 히어로, 수강생 취업 현황     | 프로젝트 발표 · Git 관리 | [@rozer4heros](https://github.com/rozer4heros)             | [rozer4heros@gmail.com](rozer4heros@gmail.com)     |
+| 박소영 | 팀원 |         수강생 혜택, 강좌 목록, 신청 데드라인          | 상단 슬로건, 수강생 혜택, 홍보용 통계 |       회의록 작성        | [@s0-p](https://github.com/s0-p)                           | [b00v0429@gmail.com](b00v0429@gmail.com)           |
+| 조승아 | 팀원 |          대상 고객 안내, 상단 및 하단 슬로건           | 사이드 nav, 강좌 목록, 대상 고객 안내 |                          | [@eodrn7021-cell](https://github.com/eodrn7021-cell)       | [eodrn7021@gmail.com](eodrn7021@gmail.com)         |
+| 박채원 | 팀원 |                 수강 요건, 사이드 nav                  |   수강 후기, 수강 요건, 하단 슬로건   |                          | [@chaewon5205](https://github.com/chaewon5205)             | [parkjihae9262@gmail.com](parkjihae9262@gmail.com) |
+| 권유진 | 팀원 |                       EST 콘텐츠                       | EST 콘텐츠, FAQ, 신청 데드라인, 푸터  |      대본 초안 작성      | [@rwonyujin03-debug](https://github.com/rwonyujin03-debug) | [rwonyujin03@gmail.com](rwonyujin03@gmail.com)     |
 
 ### 1.3 마일스톤
 
-## 프로젝트 일정
+#### 1일차 (04-28)
 
-```gantt
+- [ ] 사이트 장단점 개별 분석
+- [ ] 벤치마킹 대상 사이트 수집
+
+#### 2일차 (04-29)
+
+- [ ] 분석 내용 및 벤치마킹 합치
+- [ ] 프로젝트 기획안 슬라이드 및 대본 1차 작성
+  - [ ] 현황 분석
+  - [ ] 벤치마킹
+  - [ ] 리뉴얼 방향 도출
+
+#### 3일차 (04-30)
+
+- [ ] 프로젝트 1차 발표
+- [ ] 스토리보드 제작
+
+#### 4일차 (05-01)
+
+- [ ] 사이트 색상 스타일 지정
+- [ ] Figma 디자인 담당 파트 분배
+- [ ] Figma 기본 골격 제작 (Layout Guide)
+
+#### 5일차 (05-04)
+
+- [ ] Figma 메인 디자인 완성 (PC-First)
+
+#### 6일차 (05-05)
+
+- [ ] Figma 반응형(모바일) 디자인 완성
+- [ ] 프로젝트 기획안 슬라이드 2차 작성
+  - [ ] 디자인 시안
+
+#### 7일차 (05-06)
+
+- [ ] Figma 디자인 개편
+- [ ] GitHub 저장소 생성 및 로컬 환경 연결
+- [ ] 시맨틱 태그를 사용하여 전체 HTML 골격 작성
+- [ ] HTML 및 CSS 작성 담당 파트 분배
+
+#### 8일차 (05-07)
+
+- [ ] 필요한 이미지, 아이콘, 폰트 등의 자산 추출/준비
+- [ ] Figma 기준 색상, 폰트, 간격 적용
+- [ ] 공통 스타일(리셋·폰트·변수) 적용
+
+#### 9일차 (05-08)
+
+- [ ] 공통요소 스타일 적용
+- [ ] 헤더·메인·푸터 등 주요 파트 스타일 완성
+
+#### 10일차 (05-11)
+
+- [ ] 버튼·폼·이미지 등 세부 요소 스타일링
+- [ ] Figma와 디자인 비교·오차 수정
+- [ ] 웹표준 & 웹접근성 검사 및 수정
+- [ ] ReadMe.md 작성
+- [ ] GitHub Pages 배포 설정 및 URL 공유
+
+#### 11일차 (05-12)
+
+- [ ] 프로젝트 기획안 슬라이드 및 대본 최종 작성
+- [ ] 프로젝트 최종 발표
+
+```mermaid
+gantt
     title 프로젝트 일정
     dateFormat  YYYY-MM-DD
     excludes    weekends
 
     section 기획/설계
-    사이트 장단점 분석<br/>사이트 벤치마킹 :done, 2026-04-28, 2d
+    사이트 장단점 분석 :done, 2026-04-28, 2d
+    사이트 벤치마킹 :done, 2026-04-28, 2d
 
     section 디자인 작업
-    디자인 설계 및 파트분배 :done, 2026-04-30, 5d
-    디자인 작업 : 2026-04-30, 6d
+    디자인 설계 및 파트분배 :done, 2026-04-30, 3d
+    디자인 작업 : done, 2026-04-30, 4d
 
     section 구현
-    HTML 구조 작성 : 2026-05-06, 3d
-    CSS 작성 : 2026-05-06, 6d
+    HTML 구조 작성 : done, 2026-05-06, 3d
+    CSS 작성 : active, 2026-05-06, 4d
 
     section 검사
     웹접근성 및 욉표준 검사 : 2026-05-11, 1d
+    프로젝트 발표 : milestone, 2026-05-12, 0d
 ```
 
 ## 2. 개발 환경 및 배포
@@ -71,12 +139,12 @@ Tools
 > ├─ css/ <br/>
 > │ ├─ common.css <br/>
 > │ ├─ index.css <br/>
-> │ ├─ flex-utility.css <br/>
+> │ ├─ flex-utility.css # Flex 정렬·레이아웃 라이브러리 <br/>
 > │ ├─ normalize.css <br/>
 > │ └─ reset.css <br/>
 > ├─ image/ <br/>
-> ├─ common.html # 사이트 전역/반복 사용 요소 보관소 <br/>
-> ├─ index.html <br/>
+> ├─ common.html # 컴포넌트 라이브러리 <br/>
+> ├─ index.html # 메인 페이지 <br/>
 > └─ README.md '''
 
 ## 4. 향후 개선 사항
@@ -86,12 +154,12 @@ Tools
 ## 5. 제작 후기
 
 - 유태구: Git 관리를 하면서 애매하거나 잘 모르는 부분은 AI를 활용해 클래스명 작명법, 커밋 메시지 작성법, 어려운 문제 해결 방법을 배우고 나아가 팀에 대한 책임감도 기르는 시간을 가질 수 있었습니다.
+- 박소영:
+- 조승아:
+- 박채원:
+- 권유진:
 
 ## 6. 기획/디자인 문서
 
-- [기획 슬라이드(피그마 슬라이드)](https://www.figma.com/slides/NsGzmNRyeujiGmuqMgXBxt):
-- [디자인 시안(피그마)](https://www.figma.com/design/bUzmsPXP15RsPYMmtjsPpp/%EB%94%94%EC%9E%90%EC%9D%B8-%EC%8B%9C%EC%95%88?node-id=0-1&t=aNipptFfc3rsLdrL-1):
-
-```
-
-```
+- [기획 슬라이드(피그마 슬라이드)](https://www.figma.com/slides/NsGzmNRyeujiGmuqMgXBxt)
+- [디자인 시안(피그마)](https://www.figma.com/design/bUzmsPXP15RsPYMmtjsPpp/%EB%94%94%EC%9E%90%EC%9D%B8-%EC%8B%9C%EC%95%88?node-id=0-1&t=aNipptFfc3rsLdrL-1)

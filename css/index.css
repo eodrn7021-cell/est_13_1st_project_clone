@@ -163,11 +163,14 @@ header {
   color: var(--deep--green);
 }
 
-.logo-carousel {
+.logo-carousel-container {
   width: 100%;
   padding: var(--base-unit-x2) 0;
   position: relative;
   overflow: hidden;
+}
+.logo-carousel {
+  animation: logoCarousel 17.5s linear infinite;
 }
 .mask-logo-carousel {
   top: 0;
@@ -176,6 +179,16 @@ header {
   left: 0;
   background: linear-gradient(to right, #ffffffff 5%, #ffffff00 30%, #ffffff00 70%, #ffffffff 95%);
   position: absolute;
+}
+
+@keyframes logoCarousel {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-1568px - calc(var(--base-unit) * 8)));
+  }
 }
 /* //Graduates Employment Status */
 /* //유태구 */
@@ -1035,11 +1048,30 @@ header {
   object-fit: cover;
 }
 /* 반응형 */
-.target-pagination {
-  display: flex;
+.target-audience .pagination {
+  display: none;
   justify-content: center;
   gap: 15px;
-  margin-top: 27px;
+
+  list-style: none;
+  padding: 0;
+  margin: 27px 0 0;
+}
+
+.target-audience .pagination button {
+  width: 40px;
+  height: 10px;
+
+  border: 0;
+  border-radius: 5px;
+  background: var(--green);
+
+  padding: 0;
+  cursor: pointer;
+}
+
+.target-audience .pagination button.active {
+  background: var(--secondary);
 }
 /* 1280px 이하 */
 @media (max-width: 1280px) {
@@ -1106,24 +1138,9 @@ header {
     box-sizing: border-box;
     justify-content: space-between;
   }
-
-  .target-pagination {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
+  .target-audience .pagination {
     margin-top: -27px;
-  }
-
-  .page-dot {
-    display: block;
-    width: 40px;
-    height: 10px;
-    border-radius: 5px;
-    background: var(--green);
-  }
-
-  .page-dot.active {
-    background: var(--secondary);
+    display: flex;
   }
 }
 
@@ -1172,6 +1189,7 @@ header {
 }
 
 .material-icons {
+  color: var(--deep--green);
   line-height: 1;
   display: flex;
   align-items: center;
@@ -1494,25 +1512,26 @@ header {
 /*deadline*/
 .deadline {
   background: var(--ice);
-  display: flex;
-  justify-content: center;
-  padding: 54px 108px;
+  padding: 54px 0;
 }
 
 .recruit-banner {
-  max-width: 1272px;
+  max-width: 1200px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  margin: 0 auto;
   gap: var(--base-unit);
+  overflow: hidden;
 }
 
 .banner-top {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  gap: var(--base-unit);
+  gap: 64px;
 }
 
 .banner-left {
@@ -1646,9 +1665,15 @@ header {
 
 /* 반응형 */
 @media (max-width: 768px) {
-  .countdown-wrap,
+  .recruit-banner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .d-day-box,
   .timer-box {
-    width: auto;
+    width: 100%;
+    max-width: 400px;
   }
 }
 
@@ -1707,6 +1732,7 @@ header {
     width: 54px;
     height: 54px;
   }
+
   .social-icon a {
     font-size: var(--base-unit);
     font-weight: var(--base-unit);
