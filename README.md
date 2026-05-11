@@ -23,9 +23,8 @@
 
 ### 1.3 마일스톤
 
-## 프로젝트 일정
-
-```gantt
+```mermaid
+gantt
     title 프로젝트 일정
     dateFormat  YYYY-MM-DD
     excludes    weekends
@@ -43,6 +42,7 @@
 
     section 검사
     웹접근성 및 욉표준 검사 : 2026-05-11, 1d
+    프로젝트 발표 : milestone, 2026-05-12, 0d
 ```
 
 ## 2. 개발 환경 및 배포
