@@ -23,6 +23,28 @@
 
 ### 1.3 마일스톤
 
+## 프로젝트 일정
+
+```gantt
+    title 프로젝트 일정
+    dateFormat  YYYY-MM-DD
+    excludes    weekends
+
+    section 기획/설계
+    사이트 장단점 분석<br/>사이트 벤치마킹 :done, 2026-04-28, 2d
+
+    section 디자인 작업
+    디자인 설계 및 파트분배 :done, 2026-04-30, 5d
+    디자인 작업 : 2026-04-30, 6d
+
+    section 구현
+    HTML 구조 작성 : 2026-05-06, 3d
+    CSS 작성 : 2026-05-06, 6d
+
+    section 검사
+    웹접근성 및 욉표준 검사 : 2026-05-11, 1d
+```
+
 ## 2. 개발 환경 및 배포
 
 ### 2.1 개발 스택
@@ -69,3 +91,7 @@ Tools
 
 - [기획 슬라이드(피그마 슬라이드)](https://www.figma.com/slides/NsGzmNRyeujiGmuqMgXBxt):
 - [디자인 시안(피그마)](https://www.figma.com/design/bUzmsPXP15RsPYMmtjsPpp/%EB%94%94%EC%9E%90%EC%9D%B8-%EC%8B%9C%EC%95%88?node-id=0-1&t=aNipptFfc3rsLdrL-1):
+
+```
+
+```
