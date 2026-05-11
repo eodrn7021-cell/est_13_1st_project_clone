@@ -1016,7 +1016,7 @@ header {
   object-fit: cover;
 }
 /* 반응형 */
-.pagination {
+.target-audience .pagination {
   display: flex;
   justify-content: center;
   gap: 15px;
@@ -1026,7 +1026,7 @@ header {
   margin: 27px 0 0;
 }
 
-.pagination button {
+.target-audience .pagination button {
   width: 40px;
   height: 10px;
 
@@ -1038,7 +1038,7 @@ header {
   cursor: pointer;
 }
 
-.pagination button.active {
+.target-audience .pagination button.active {
   background: var(--secondary);
 }
 /* 1280px 이하 */
