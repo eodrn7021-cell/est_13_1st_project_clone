@@ -29,12 +29,13 @@
 
 Frontend
 
+- Structure: HTML
 - Styling: CSS
 
 Tools
 
 - Version Control: Git & GitHub
-- : Visual Studio Code
+- Code Editor : Visual Studio Code
 - Design: Figma
 
 ### 2.2 URL
