@@ -1120,23 +1120,105 @@ header {
   }
 }
 /*FAQ*/
+
 .faq {
-  padding: var(--base-unit-x2) 324px;
+  width: 100%;
   background: var(--white);
-  box-sizing: border-box;
   display: flex;
-  align-items: space-between;
+  justify-content: center;
 }
+
 .faq-container {
-  padding: 54px 0;
+  width: 100%;
+  max-width: 1200px;
+  padding: var(--base-unit-x2) 0;
+  display: flex;
+  align-items: flex-start;
+}
+/* LEFT TITLE */
+
+.faq-header {
+  min-width: 220px;
+  color: var(--green);
+}
+
+/*  ACCORDION*/
+
+.accordion {
+  flex: 1;
+}
+
+/* 체크박스 숨김 */
+
+.accordion input {
+  display: none;
+}
+
+/* 질문 */
+
+.accordion label {
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  gap: 313px;
+  align-items: center;
+  padding: 13.5px 12px;
+  border-bottom: 1px solid var(--cool--gray);
+  color: var(--dark--green);
 }
-.faq-header {
-  color: var(--green);
-  display: inline-block;
-  white-space: nowrap;
+
+/* 화살표 */
+
+.accordion label em {
+  color: var(--dark--green);
+  font-size: 30px;
+}
+
+/* 답변 */
+
+.accordion div {
+  padding: 13.5px 12px;
+  border-bottom: 1px solid var(--cool--gray);
+}
+
+.accordion p {
+  color: var(--greenish--gray);
+}
+
+/* 반응형 */
+
+@media (max-width: 768px) {
+  .faq {
+    padding: var(--base-unit) 0;
+  }
+
+  .faq-container {
+    flex-direction: column;
+  }
+
+  /* 제목 */
+
+  .faq-header {
+    min-width: auto;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* 질문 */
+
+  .accordion label {
+    padding: 13.5px 0;
+  }
+
+  /* 답변 */
+
+  .accordion div {
+    padding: 13.5px 12px;
+  }
+  /* 아이콘 */
+
+  .accordion label em {
+    font-size: 30px;
+  }
 }
 
 /*deadline*/
