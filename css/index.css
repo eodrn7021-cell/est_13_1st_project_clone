@@ -1175,7 +1175,7 @@ header {
   flex-shrink: 0;
 }
 
-.material-icons {
+.side-bar .side-item .material-icons {
   color: var(--deep--green);
   line-height: 1;
   display: flex;
