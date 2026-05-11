@@ -366,18 +366,21 @@ header {
 
 .review-track {
   display: flex;
-  gap: 26px;
+  gap: 24px;
   width: max-content;
+  will-change: transform;
 }
 
 /* 위 -> 오른쪽 */
 .track-top {
-  animation: marqueeRight 35s linear infinite;
+  padding-left: 60px;
+  animation: marqueeRight 55s linear infinite;
 }
 
 /* 아래 -> 왼쪽 */
 .track-bottom {
-  animation: marqueeLeft 35s linear infinite;
+  padding-left: 80px;
+  animation: marqueeLeft 55s linear infinite;
 }
 
 /* =========================
@@ -386,27 +389,25 @@ header {
 
 .review-card {
   position: relative;
-
   width: 420px;
-  min-height: 180px;
-
-  padding: 28px 28px 28px 110px;
-
-  background: #fff;
-
-  border-radius: 12px;
-
-  overflow: hidden;
-
+  min-height: 190px;
+  padding: 27px 27px 27px 120px;
+  background: var(--white);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
   flex-shrink: 0;
-
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
 
 /* 가운데 강조 카드 */
 
 .review-card.active {
-  background: #cfeee8;
+  background: var(--secondary--light);
+}
+
+.review-card.twice {
+  background: var(--vanilla);
 }
 
 /* =========================
@@ -416,35 +417,45 @@ header {
 .review-profile {
   position: absolute;
 
-  left: -18px;
+  left: 20px;
   top: 50%;
 
   transform: translateY(-50%);
 }
 
 .review-profile img {
-  width: 92px;
-  height: 92px;
-
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
   object-fit: cover;
 }
 
 /* =========================
    TEXT
 ========================= */
+.review-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
 .review-content h3 {
-  font-size: 24px;
+  font-size: 30px;
   font-weight: 800;
-  margin-bottom: 16px;
-  color: #222;
+  margin-bottom: 12px;
+  text-align: center;
+  color: var(--deep--green);
 }
 
 .review-content p {
-  font-size: 15px;
+  font-size: 14px;
   line-height: 1.8;
-  color: #555;
+  color: var(--deep--green);
   word-break: keep-all;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 /* =========================
@@ -477,7 +488,7 @@ header {
   }
 
   .review-title {
-    font-size: 32px;
+    font-size: 16px;
   }
 
   .review-sub-title {
@@ -495,28 +506,32 @@ header {
 
   .review-card {
     width: 320px;
-    min-height: 170px;
+    min-height: 150px;
 
-    padding: 24px 20px 24px 88px;
+    padding: 24px 20px 24px 95px;
   }
 
   .review-profile {
-    left: -10px;
+    left: 16px;
   }
 
   .review-profile img {
-    width: 72px;
-    height: 72px;
+    width: 64px;
+    height: 64px;
   }
 
   .review-content h3 {
-    font-size: 20px;
-    margin-bottom: 12px;
+    font-size: 16px;
+    margin-bottom: 10px;
   }
 
   .review-content p {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
     font-size: 14px;
-    line-height: 1.7;
+    line-height: 1.6;
   }
 }
 
