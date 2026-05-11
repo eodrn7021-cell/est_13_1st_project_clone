@@ -21,7 +21,7 @@
 | 박소영 | 팀원 |         수강생 혜택, 강좌 목록, 신청 데드라인          | 상단 슬로건, 수강생 혜택, 홍보용 통계 |       회의록 작성        | [@s0-p](https://github.com/s0-p)                           | [b00v0429@gmail.com](b00v0429@gmail.com)           |
 | 조승아 | 팀원 |          대상 고객 안내, 상단 및 하단 슬로건           | 사이드 nav, 강좌 목록, 대상 고객 안내 |                          | [@eodrn7021-cell](https://github.com/eodrn7021-cell)       | [eodrn7021@gmail.com](eodrn7021@gmail.com)         |
 | 박채원 | 팀원 |                 수강 요건, 사이드 nav                  |   수강 후기, 수강 요건, 하단 슬로건   |                          | [@chaewon5205](https://github.com/chaewon5205)             | [parkjihae9262@gmail.com](parkjihae9262@gmail.com) |
-| 권유진 | 팀원 |                       EST 콘텐츠                       | EST 콘텐츠, FAQ, 신청 데드라인, 푸터  |      대본 초안 작성      | [@rwonyujin03-debug](https://github.com/rwonyujin03-debug) | [rwonyujin03@gmail.com](rwonyujin03@gmail.com)     |
+| 권유진 | 팀원 |                 수강 후기, EST 콘텐츠                  | EST 콘텐츠, FAQ, 신청 데드라인, 푸터  |      대본 초안 작성      | [@rwonyujin03-debug](https://github.com/rwonyujin03-debug) | [rwonyujin03@gmail.com](rwonyujin03@gmail.com)     |
 
 ### 1.3 마일스톤
 
