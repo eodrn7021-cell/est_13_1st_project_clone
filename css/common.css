@@ -401,15 +401,13 @@ body {
   grid-template-columns: 408px 1fr 1fr;
   gap: 24px;
   align-items: start;
-  padding: 54px 81px;
+  padding: var(--base-unit-x2) var(--base-unit-x3);
 }
 
 /* 전체 카드 */
 
 .card-first,
 .sub-card {
-  display: flex;
-  flex-direction: column;
   background: var(--white);
   border: 2px solid var(--cool--gray);
   border-radius: 10px;
@@ -469,8 +467,6 @@ body {
 .est-card,
 .card-content {
   max-width: 768px;
-  display: flex;
-  flex-direction: column;
   flex: 1;
   gap: 13.5px;
   padding: 20px 25px;
@@ -707,8 +703,6 @@ body {
 
 /* deadline 버튼 */
 .deadline-btn {
-  display: flex;
-  align-items: center;
   gap: 10px;
   padding: 13.5px 37px;
   border-radius: 10px;
@@ -725,13 +719,9 @@ body {
 
 /* FAQ */
 
-/*footer social icon*/
-
 /* 왼쪽 영역 */
 
 .footer-inner {
-  display: flex;
-  flex-direction: column;
   gap: 27px;
 }
 
@@ -739,8 +729,6 @@ body {
 
 .footer-nav {
   white-space: nowrap;
-  display: flex;
-  align-items: center;
   gap: 12px;
 }
 
@@ -753,8 +741,6 @@ body {
 
 .footer-info {
   white-space: nowrap;
-  display: flex;
-  flex-direction: column;
 }
 
 .footer-info p {
@@ -763,25 +749,15 @@ body {
 
 /* 아이콘 */
 
-.footer-icon {
-  display: flex;
-  align-items: center;
-  gap: 27px;
-}
-
 .social-icon a {
   color: var(--cool--gray);
   font-size: var(--base-unit);
 }
 .social-icon {
-  width: 54px;
-  height: 54px;
+  width: var(--base-unit-x2);
+  height: var(--base-unit-x2);
   border-radius: 65535px;
-
   background: var(--dark--green);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   box-shadow: var(--standard--shadow);
 }
 

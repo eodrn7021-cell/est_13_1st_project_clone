@@ -1192,8 +1192,6 @@ header {
 
 .est-content {
   padding: var(--base-unit-x3) 0;
-  display: flex;
-  justify-content: center;
   background: var(--snow--gray);
 }
 .est-container {
@@ -1201,7 +1199,6 @@ header {
   max-width: 1200px;
 }
 .section-header {
-  text-align: center;
   padding: var(--base-unit) 0;
   border-bottom: 2px solid var(--cool--gray);
   color: var(--dark--green);
@@ -1213,14 +1210,11 @@ header {
   grid-template-columns: 1.2fr 1fr 1fr;
   display: grid;
   gap: 24px;
-  justify-content: center;
   padding: 55.5px 81px;
 }
 .card-first,
 .sub-card {
   position: relative;
-  display: flex;
-  flex-direction: column;
   background: var(--white);
   border: 2px solid var(--cool--gray);
   border-radius: 10px;
@@ -1249,8 +1243,6 @@ header {
 }
 .est-card,
 .card-content {
-  display: flex;
-  flex-direction: column;
   flex: 1;
   gap: 13.5px;
   padding: 20px 25px;
@@ -1374,15 +1366,12 @@ header {
 .faq {
   width: 100%;
   background: var(--white);
-  display: flex;
-  justify-content: center;
 }
 
 .faq-container {
   width: 100%;
   max-width: 1200px;
   padding: var(--base-unit-x2) 0;
-  display: flex;
   align-items: flex-start;
 }
 /* LEFT TITLE */
@@ -1408,9 +1397,6 @@ header {
 
 .accordion label {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 13.5px 12px;
   border-bottom: 1px solid var(--cool--gray);
   color: var(--dark--green);
@@ -1479,26 +1465,16 @@ header {
 
 .recruit-banner {
   max-width: 1200px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   margin: 0 auto;
-  gap: var(--base-unit);
   overflow: hidden;
 }
 
 .banner-top {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 64px;
 }
 
 .banner-left {
-  display: flex;
-  align-items: center;
   gap: 24px;
 }
 
@@ -1517,10 +1493,6 @@ header {
   color: var(--deep--green);
   white-space: nowrap;
 }
-.deadline-text {
-  display: flex;
-  flex-direction: column;
-}
 .sub-title {
   white-space: nowrap;
 }
@@ -1530,8 +1502,6 @@ header {
 
 .countdown-wrap {
   width: 100%;
-  display: flex;
-  justify-content: center;
   align-items: stretch;
   gap: 24px;
 }
@@ -1539,10 +1509,6 @@ header {
 /* D-day */
 .d-day-box {
   background: var(--white);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   padding: 40.5px 62.5px;
 }
 
@@ -1565,7 +1531,6 @@ header {
 
 /* 타이머 */
 .timer-box {
-  display: flex;
   align-items: stretch;
   white-space: nowrap;
   background: var(--secondary--light);
@@ -1576,10 +1541,6 @@ header {
 .time-group {
   position: relative;
   width: 180px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
 }
 
 /* 시간 */
@@ -1593,7 +1554,6 @@ header {
 
 /* 하단 라벨 영역 */
 .time-label {
-  display: flex;
   gap: 6px;
   color: var(--greenish--gray);
 }
@@ -1614,8 +1574,6 @@ header {
 .time-wrap {
   position: relative;
   width: 100%;
-  display: flex;
-  justify-content: center;
 }
 
 .time-group:not(:last-child) .time-wrap::after {
@@ -1653,8 +1611,6 @@ header {
 .footer-container {
   width: 100%;
   padding: 27px;
-  display: flex;
-  justify-content: space-between;
   align-items: flex-start;
 }
 
