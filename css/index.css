@@ -532,9 +532,6 @@ header {
   color: var(--white);
   text-align: center;
 }
-.top-slogan h2 {
-  display: block;
-}
 .top-slogan h2 .point {
   color: var(--alyak-color);
 }
