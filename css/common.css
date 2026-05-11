@@ -199,7 +199,7 @@ body {
   display: block;
   width: 200px;
   height: 40px;
-  background: url("/image/logo.png") no-repeat 0 0 / contain;
+  background: url("../image/logo.png") no-repeat 0 0 / contain;
 
   position: absolute;
   top: 50%;
@@ -251,7 +251,7 @@ body {
 }
 @media (max-width: 768px) {
   .header-container h1 a {
-    background: url("/image/logo-responsive.png") no-repeat 0 0 / contain;
+    background: url("../image/logo-responsive.png") no-repeat 0 0 / contain;
   }
   .header-container nav button {
     display: block;
@@ -397,6 +397,94 @@ body {
 /* 권유진 */
 
 /* est-content-card*/
+/* 전체 카드 영역 */
+
+.est-card-container {
+  display: grid;
+  grid-template-columns: 408px 1fr 1fr;
+  gap: 24px;
+  align-items: start;
+  padding: 54px 81px;
+}
+
+/* 전체 카드 */
+
+.card-first,
+.sub-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--white);
+  border: 2px solid var(--cool--gray);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.5s ease;
+}
+
+/* 카드*/
+
+.card-first {
+  grid-row: span 2;
+  height: 100%;
+}
+
+.card-items {
+  display: contents;
+}
+
+.sub-card {
+  width: 100%;
+}
+
+/* 이미지 */
+
+.card-first img,
+.sub-card img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.card-first img {
+  height: 215px;
+}
+
+.sub-card img {
+  height: 108px;
+}
+
+/* 글 */
+
+.est-card h3,
+.card-content h3 {
+  color: var(--dark--green);
+  line-height: 1.4;
+}
+.est-card,
+.card-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 13.5px;
+  padding: 20px 25px;
+}
+.est-card p,
+.card-content p {
+  color: var(--dark--green);
+  line-height: 1.6;
+}
+
+/* 아이콘 */
+
+.card-link-icon {
+  margin-top: auto;
+  color: var(--point);
+  font-size: 24px;
+  align-self: flex-start;
+}
+
+.card-first .card-link-icon {
+  font-size: 35px;
+}
 
 /* 전체 카드 영역 */
 .est-card-container {
