@@ -15,13 +15,13 @@
 
 - 첫 프로젝트는 주요 담당 역할 없이 작업을 나눠서 맡음
 
-|  이름  | 역할 |                 Figma 디자인 담당 파트                 |      HTML 및 CSS 작성 담당 파트       |        기타 담당         | GitHub                                                     | 이메일                                             |
-| :----: | :--: | :----------------------------------------------------: | :-----------------------------------: | :----------------------: | ---------------------------------------------------------- | -------------------------------------------------- |
-| 유태구 | 팀장 | 헤더, 히어로, 수강생 취업 현황, 강의 만족도, FAQ, 푸터 |    헤더, 히어로, 수강생 취업 현황     | 프로젝트 발표 · Git 관리 | [@rozer4heros](https://github.com/rozer4heros)             | [rozer4heros@gmail.com](rozer4heros@gmail.com)     |
-| 박소영 | 팀원 |         수강생 혜택, 강좌 목록, 신청 데드라인          | 상단 슬로건, 수강생 혜택, 홍보용 통계 |       회의록 작성        | [@s0-p](https://github.com/s0-p)                           | [b00v0429@gmail.com](b00v0429@gmail.com)           |
-| 조승아 | 팀원 |          대상 고객 안내, 상단 및 하단 슬로건           | 사이드 nav, 강좌 목록, 대상 고객 안내 |                          | [@eodrn7021-cell](https://github.com/eodrn7021-cell)       | [eodrn7021@gmail.com](eodrn7021@gmail.com)         |
-| 박채원 | 팀원 |                 수강 요건, 사이드 nav                  |   수강 후기, 수강 요건, 하단 슬로건   |                          | [@chaewon5205](https://github.com/chaewon5205)             | [parkjihae9262@gmail.com](parkjihae9262@gmail.com) |
-| 권유진 | 팀원 |                 수강 후기, EST 콘텐츠                  | EST 콘텐츠, FAQ, 신청 데드라인, 푸터  |      대본 초안 작성      | [@rwonyujin03-debug](https://github.com/rwonyujin03-debug) | [rwonyujin03@gmail.com](rwonyujin03@gmail.com)     |
+|  이름  | 역할 |                 Figma 디자인 담당 파트                 |      HTML 및 CSS 작성 담당 파트       |          기타 담당           | GitHub                                                     | 이메일                                             |
+| :----: | :--: | :----------------------------------------------------: | :-----------------------------------: | :--------------------------: | ---------------------------------------------------------- | -------------------------------------------------- |
+| 유태구 | 팀장 | 헤더, 히어로, 수강생 취업 현황, 강의 만족도, FAQ, 푸터 |    헤더, 히어로, 수강생 취업 현황     | 프로젝트 발표 <br/> Git 관리 | [@rozer4heros](https://github.com/rozer4heros)             | [rozer4heros@gmail.com](rozer4heros@gmail.com)     |
+| 박소영 | 팀원 |         수강생 혜택, 강좌 목록, 신청 데드라인          | 상단 슬로건, 수강생 혜택, 홍보용 통계 |         회의록 작성          | [@s0-p](https://github.com/s0-p)                           | [b00v0429@gmail.com](b00v0429@gmail.com)           |
+| 조승아 | 팀원 |          대상 고객 안내, 상단 및 하단 슬로건           | 사이드 nav, 강좌 목록, 대상 고객 안내 |                              | [@eodrn7021-cell](https://github.com/eodrn7021-cell)       | [eodrn7021@gmail.com](eodrn7021@gmail.com)         |
+| 박채원 | 팀원 |                 수강 요건, 사이드 nav                  |   수강 후기, 수강 요건, 하단 슬로건   |                              | [@chaewon5205](https://github.com/chaewon5205)             | [parkjihae9262@gmail.com](parkjihae9262@gmail.com) |
+| 권유진 | 팀원 |                 수강 후기, EST 콘텐츠                  | EST 콘텐츠, FAQ, 신청 데드라인, 푸터  |        대본 초안 작성        | [@rwonyujin03-debug](https://github.com/rwonyujin03-debug) | [rwonyujin03@gmail.com](rwonyujin03@gmail.com)     |
 
 ### 1.3 마일스톤
 
@@ -150,6 +150,8 @@ Tools
 ## 4. 향후 개선 사항
 
 - 동적 요소 미구현
+- 공통 컴포넌트(common.html) 사용 부족
+  - 별도의 내부 컨테이너를 과도하게 사용해 유지·보수가 어려움
 
 ## 5. 제작 후기
 
