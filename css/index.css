@@ -1561,17 +1561,33 @@ header {
   background: var(--cool--gray);
 }
 
-/* 반응형 */
+/*반응형*/
 @media (max-width: 768px) {
   .recruit-banner {
     flex-direction: column;
     align-items: center;
+    gap: 20px;
   }
 
   .d-day-box,
   .timer-box {
     width: 100%;
-    max-width: 400px;
+    max-width: 450px;
+    padding: 30px 15px;
+  }
+
+  .d-day-box h2 {
+    font-size: clamp(60px, 15vw, 105px);
+  }
+
+  .time,
+  .time-group:not(:last-child)::after {
+    font-size: clamp(40px, 10vw, 85px);
+  }
+
+  .time-group {
+    width: auto;
+    flex: 1;
   }
 }
 
