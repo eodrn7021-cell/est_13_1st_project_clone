@@ -1178,6 +1178,7 @@ header {
 .section-header p span {
   color: var(--point);
 }
+
 .est-card-container {
   grid-template-columns: 1.2fr 1fr 1fr;
   display: grid;
@@ -1197,6 +1198,8 @@ header {
 .card-first {
   grid-row: span 2;
   height: 100%;
+  flex-direction: column;
+  align-items: start;
 }
 .card-items {
   display: contents;
@@ -1215,6 +1218,9 @@ header {
 }
 .sub-card {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
 }
 
 .est-card,
@@ -1361,6 +1367,7 @@ header {
 
 .accordion {
   flex: 1;
+  padding: 0 24px;
 }
 
 /* 질문 */
@@ -1377,7 +1384,6 @@ header {
   color: var(--dark--green);
   font-size: 30px;
 }
-
 /* 답변 */
 
 .accordion div {
@@ -1432,7 +1438,7 @@ header {
   padding: 54px 0;
 }
 
-.recruit-banner {
+.deadline-container {
   max-width: 1200px;
   margin: 0 auto;
   overflow: hidden;
