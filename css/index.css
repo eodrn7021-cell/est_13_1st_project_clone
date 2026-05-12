@@ -1213,6 +1213,10 @@ header {
 .sub-card img {
   height: 108px;
 }
+.sub-card {
+  width: 100%;
+}
+
 .est-card,
 .card-content {
   flex: 1;
@@ -1359,17 +1363,10 @@ header {
   flex: 1;
 }
 
-/* 체크박스 숨김 */
-
-.accordion input {
-  text-indent: -9999px;
-}
-
 /* 질문 */
 
 .accordion label {
   width: 100%;
-  padding: 13.5px 12px;
   border-bottom: 1px solid var(--cool--gray);
   color: var(--dark--green);
 }
@@ -1520,7 +1517,6 @@ header {
   font-size: 85px;
   font-weight: bold;
   line-height: 108px;
-
   color: var(--primary--light);
 }
 
