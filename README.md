@@ -130,7 +130,7 @@ Tools
 
 ### 2.2 URL
 
-- [https://github.com/eodrn7021-cell/est_13_1st_project_clone)
+- [file:///D:/HTML/est_fe_13_1st_project_clone/est_fe_13_1st_project_clone/index.html)
 
 ## 3. 프로젝트 구조
 
